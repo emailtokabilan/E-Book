@@ -1,0 +1,52 @@
+@page {
+    margin-bottom: 5pt;
+    margin-top: 5pt
+    }
+@font-face {
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-size: 100%;
+    font-family: "Garamond";
+    font-variant: normal;
+    src: url(OPS/fonts/Garamond.ttf) format(truetype)
+    }
+@font-face {
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-size: 100%;
+    font-family: "Calibri", "Carlito";
+    font-variant: normal;
+    src: url(OPS/fonts/198e8dac512206f27c9bdbfeb3d5b3e55a33de9dcf58d801823ef8c5ef5a76dc.otf) format(opentype)
+    }
+@font-face {
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-family: "Bookman Old Style";
+    src: url(OPS/fonts/BookmanOldStyle.ttf) format(truetype)
+    }
+@font-face {
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: normal;
+    font-family: "Bookman Old Style";
+    src: url(OPS/fonts/BookmanOldStyle-Bold.ttf) format(truetype)
+    }
+@font-face {
+    font-style: italic;
+    font-weight: 700;
+    font-stretch: normal;
+    font-family: "Bookman Old Style";
+    src: url(OPS/fonts/BookmanOldStyle-BoldItalic.ttf) format(truetype)
+    }
+@font-face {
+    font-style: italic;
+    font-weight: 400;
+    font-stretch: normal;
+    font-size: 100%;
+    font-family: "Bookman Old Style";
+    font-variant: normal;
+    src: url(OPS/fonts/BookmanOldStyle-Italic.ttf) format(truetype)
+    }

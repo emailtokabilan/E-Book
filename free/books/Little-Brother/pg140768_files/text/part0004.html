@@ -1,0 +1,463 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta name="generator" content="HTML Tidy for Linux (vers 7 December 2008), see www.w3.org"/>
+    <title>The Project Gutenberg eBook of Little Brother, by Cory Doctorow</title>
+    <meta content="Ebookmaker 0.4.0a5 by Marcello Perathoner &lt;webmaster@gutenberg.org&gt;" name="generator"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link href="../stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="../page_styles.css" rel="stylesheet" type="text/css"/>
+
+  
+
+
+<link href="../calibreHtmlOutBasicCss.css" type="text/css" rel="stylesheet" />
+
+</head>
+<body>
+
+<div class="calibreMeta">
+  <div class="calibreMetaTitle">
+  
+  
+    
+    <h1>
+      <a href="../../pg140768.html">Little Brother
+</a>
+    </h1>
+    
+    
+  
+  </div>
+  <div class="calibreMetaAuthor">
+    Cory Doctorow
+
+  </div>
+</div>
+
+<div class="calibreMain">
+
+  <div class="calibreEbookContent">
+    
+      <div class="calibreEbNavTop">
+        
+          <a href="part0003.html" class="calibreAPrev">previous page</a>
+        
+
+        
+          <a href="part0005.html" class="calibreANext"> next page</a>
+        
+      </div>
+    
+
+    
+<p class="western18"/>
+<p class="western17">&gt; That's what I wanted to ask you about -- how can we do it without getting busted?</p>
+<p class="western18"/>
+<p class="calibre1">Jolu typed some words and erased them, typed more and erased them.</p>
+<p class="western17">&gt; Darryl would know</p>
+<p class="western18"/>
+<p class="calibre1">I typed.</p>
+<p class="western17">&gt; God, this was the stuff he was great at.</p>
+<p class="western18"/>
+<p class="calibre1">Jolu didn't type anything. Then,</p>
+<p class="western18"/>
+<p class="western17">&gt; How about a party?</p>
+<p class="western18"/>
+<p class="calibre1">he typed.</p>
+<p class="western17">&gt; How about if we all get together somewhere like we're teenagers having a party and that way we'll have a ready-made excuse if anyone shows up asking us what we're doing there?</p>
+<p class="western18"/>
+<p class="western17">&gt; That would totally work! You're a genius, Jolu.</p>
+<p class="western18"/>
+<p class="western17">&gt; I know it. And you're going to love this: I know just where to do it, too</p>
+<p class="western18"/>
+<p class="western17">&gt; Where?</p>
+<p class="western18"/>
+<p class="western17">&gt; Sutro baths!</p>
+<p class="western18"/>
+<p class="c3">Chapter 10</p>
+<p class="c5">This chapter is dedicated to Anderson's Bookshops, Chicago's legendary kids' bookstore. Anderson's is an old, old family-run business, which started out as an old-timey drug-store selling some books on the side. Today, it's a booming, multi-location kids' book empire, with some incredibly innovative bookselling practices that get books and kids together in really exciting ways. The best of these is the store's mobile book-fairs, in which they ship huge, rolling bookcases, already stocked with excellent kids' books, direct to schools on trucks -- voila, instant book-fair!</p>
+<p class="c5"><a tag="{http://www.w3.org/1999/xhtml}a">Anderson's Bookshops</a>: 123 West Jefferson, Naperville, IL 60540 USA +1 630 355 2665</p>
+<p class="calibre1">What would you do if you found out you had a spy in your midst? You could denounce him, put him up against the wall and take him out. But then you might end up with another spy in your midst, and the new spy would be more careful than the last one and maybe not get caught quite so readily.</p>
+<p class="calibre1">Here's a better idea: start intercepting the spy's communications and feed him and his masters misinformation. Say his masters instruct him to gather information on your movements. Let him follow you around and take all the notes he wants, but steam open the envelopes that he sends back to HQ and replace his account of your movements with a fictitious one. If you want, you can make him seem erratic and unreliable so they get rid of him. You can manufacture crises that might make one side or the other reveal the identities of other spies. In short, you own them.</p>
+<p class="calibre1">This is called the man-in-the-middle attack and if you think about it, it's pretty scary. Someone who man-in-the-middles your communications can trick you in any of a thousand ways.</p>
+<p class="calibre1">Of course, there's a great way to get around the man-in-the-middle attack: use crypto. With crypto, it doesn't matter if the enemy can see your messages, because he can't decipher them, change them, and re-send them. That's one of the main reasons to use crypto.</p>
+<p class="calibre1">But remember: for crypto to work, you need to have keys for the people you want to talk to. You and your partner need to share a secret or two, some keys that you can use to encrypt and decrypt your messages so that men-in-the-middle get locked out.</p>
+<p class="calibre1">That's where the idea of public keys comes in. This is a little hairy, but it's so unbelievably elegant too.</p>
+<p class="calibre1">In public key crypto, each user gets two keys. They're long strings of mathematical gibberish, and they have an almost magic property. Whatever you scramble with one key, the other will unlock, and vice-versa. What's more, they're the <i class="calibre6">only</i> keys that can do this -- if you can unscramble a message with one key, you <i class="calibre6">know</i> it was scrambled with the other (and vice-versa).</p>
+<p class="calibre1">So you take either one of these keys (it doesn't matter which one) and you just <i class="calibre6">publish</i> it. You make it a total <i class="calibre6">non-secret</i>. You want anyone in the world to know what it is. For obvious reasons, they call this your "public key."</p>
+<p class="calibre1">The other key, you hide in the darkest reaches of your mind. You protect it with your life. You never let anyone ever know what it is. That's called your "private key." (Duh.)</p>
+<p class="calibre1">Now say you're a spy and you want to talk with your bosses. Their public key is known by everyone. Your public key is known by everyone. No one knows your private key but you. No one knows their private key but them.</p>
+<p class="calibre1">You want to send them a message. First, you encrypt it with your private key. You could just send that message along, and it would work pretty well, since they would know when the message arrived that it came from you. How? Because if they can decrypt it with your public key, it can <i class="calibre6">only</i> have been encrypted with your private key. This is the equivalent of putting your seal or signature on the bottom of a message. It says, "I wrote this, and no one else. No one could have tampered with it or changed it."</p>
+<p class="calibre1">Unfortunately, this won't actually keep your message a <i class="calibre6">secret</i>. That's because your public key is really well known (it has to be, or you'll be limited to sending messages to those few people who have your public key). Anyone who intercepts the message can read it. They can't change it and make it seem like it came from you, but if you don't want people to know what you're saying, you need a better solution.</p>
+<p class="calibre1">So instead of just encrypting the message with your private key, you <i class="calibre6">also</i> encrypt it with your boss's public key. Now it's been locked twice. The first lock -- the boss's public key -- only comes off when combined with your boss's private key. The second lock -- your private key -- only comes off with your public key. When your bosses receive the message, they unlock it with both keys and now they know for sure that: a) you wrote it and b) that only they can read it.</p>
+<p class="calibre1">It's very cool. The day I discovered it, Darryl and I immediately exchanged keys and spent months cackling and rubbing our hands as we exchanged our military-grade secret messages about where to meet after school and whether Van would ever notice him.</p>
+<p class="calibre1">But if you want to understand security, you need to consider the most paranoid possibilities. Like, what if I tricked you into thinking that <i class="calibre6">my</i> public key was your boss's public key? You'd encrypt the message with your private key and my public key. I'd decrypt it, read it, re-encrypt it with your boss's <i class="calibre6">real</i> public key and send it on. As far as your boss knows, no one but you could have written the message and no one but him could have read it.</p>
+<p class="calibre1">And I get to sit in the middle, like a fat spider in a web, and all your secrets belong to me.</p>
+<p class="calibre1">Now, the easiest way to fix this is to really widely advertise your public key. If it's <i class="calibre6">really</i> easy for anyone to know what your real key is, man-in-the-middle gets harder and harder. But you know what? Making things well-known is just as hard as keeping them secret. Think about it -- how many billions of dollars are spent on shampoo ads and other crap, just to make sure that as many people know about something that some advertiser wants them to know?</p>
+<p class="calibre1">There's a cheaper way of fixing man-in-the-middle: the web of trust. Say that before you leave HQ, you and your bosses sit down over coffee and actually tell each other your keys. No more man-in-the-middle! You're absolutely certain whose keys you have, because they were put into your own hands.</p>
+<p class="calibre1">So far, so good. But there's a natural limit to this: how many people can you physically meet with and swap keys? How many hours in the day do you want to devote to the equivalent of writing your own phone book? How many of those people are willing to devote that kind of time to you?</p>
+<p class="calibre1">Thinking about this like a phonebook helps. The world was once a place with a lot of phonebooks, and when you needed a number, you could look it up in the book. But for many of the numbers that you wanted to refer to on a given day, you would either know it by heart, or you'd be able to ask someone else. Even today, when I'm out with my cell-phone, I'll ask Jolu or Darryl if they have a number I'm looking for. It's faster and easier than looking it up online and they're more reliable, too. If Jolu has a number, I trust him, so I trust the number, too. That's called "transitive trust" -- trust that moves across the web of our relationships.</p>
+<p class="calibre1">A web of trust is a bigger version of this. Say I meet Jolu and get his key. I can put it on my "keyring" -- a list of keys that I've signed with my private key. That means you can unlock it with my public key and know for sure that me -- or someone with my key, anyway -- says that "this key belongs to this guy."</p>
+<p class="calibre1">So I hand you my keyring and provided that you trust me to have actually met and verified all the keys on it, you can take it and add it to your keyring. Now, you meet someone else and you hand the whole ring to him. Bigger and bigger the ring grows, and provided that you trust the next guy in the chain, and he trusts the next guy in his chain and so on, you're pretty secure.</p>
+<p class="calibre1">Which brings me to keysigning parties. These are <i class="calibre6">exactly</i> what they sound like: a party where everyone gets together and signs everyone else's keys. Darryl and I, when we traded keys, that was kind of a mini-keysigning party, one with only two sad and geeky attendees. But with more people, you create the seed of the web of trust, and the web can expand from there. As everyone on your keyring goes out into the world and meets more people, they can add more and more names to the ring. You don't have to meet the new people, just trust that the signed key you get from the people in your web is valid.</p>
+<p class="calibre1">So that's why web of trust and parties go together like peanut butter and chocolate.</p>
+<p class="western7">#</p>
+<p class="western7"/>
+<p class="calibre1">"Just tell them it's a super-private party, invitational only," I said. "Tell them not to bring anyone along or they won't be admitted."</p>
+<p class="calibre1">Jolu looked at me over his coffee. "You're joking, right? You tell people that, and they'll bring <i class="calibre6">extra</i> friends."</p>
+<p class="calibre1">"Argh," I said. I spent a night a week at Jolu's these days, keeping the code up to date on indienet. Pigspleen actually paid me a non-zero sum of money to do this, which was really weird. I never thought I'd be paid to write code.</p>
+<p class="calibre1">"So what do we do? We only want people we really trust there, and we don't want to mention why until we've got everyone's keys and can send them messages in secret."</p>
+<p class="calibre1">Jolu debugged and I watched over his shoulder. This used to be called "extreme programming," which was a little embarrassing. Now we just call it "programming." Two people are much better at spotting bugs than one. As the cliche goes, "With enough eyeballs, all bugs are shallow."</p>
+<p class="calibre1">We were working our way through the bug reports and getting ready to push out the new rev. It all auto-updated in the background, so our users didn't really need to do anything, they just woke up once a week or so with a better program. It was pretty freaky to know that the code I wrote would be used by hundreds of thousands of people, <i class="calibre6">tomorrow</i>!</p>
+<p class="calibre1">"What do we do? Man, I don't know. I think we just have to live with it."</p>
+<p class="calibre1">I thought back to our Harajuku Fun Madness days. There were lots of social challenges involving large groups of people as part of that game.</p>
+<p class="calibre1">"OK, you're right. But let's at least try to keep this secret. Tell them that they can bring a maximum of one person, and it has to be someone they've known personally for a minimum of five years."</p>
+<p class="calibre1">Jolu looked up from the screen. "Hey," he said. "Hey, that would totally work. I can really see it. I mean, if you told me not to bring anyone, I'd be all, 'Who the hell does he think he is?' But when you put it that way, it sounds like some awesome 007 stuff."</p>
+<p class="calibre1">I found a bug. We drank some coffee. I went home and played a little Clockwork Plunder, trying not to think about key-winders with nosy questions, and slept like a baby.</p>
+<p class="western7">#</p>
+<p class="western7"/>
+<p class="calibre1">Sutro baths are San Francisco's authentic fake Roman ruins. When it opened in 1896, it was the largest indoor bathing house in the world, a huge Victorian glass solarium filled with pools and tubs and even an early water slide. It went downhill by the fifties, and the owners torched it for the insurance in 1966. All that's left is a labyrinth of weathered stone set into the sere cliff-face at Ocean Beach. It looks for all the world like a Roman ruin, crumbled and mysterious, and just beyond them is a set of caves that let out into the sea. In rough tides, the waves rush through the caves and over the ruins -- they've even been known to suck in and drown the occasional tourist.</p>
+<p class="calibre1">Ocean Beach is way out past Golden Gate park, a stark cliff lined with expensive, doomed houses, plunging down to a narrow beach studded with jellyfish and brave (insane) surfers. There's a giant white rock that juts out of the shallows off the shore. That's called Seal Rock, and it used to be the place where the sea lions congregated until they were relocated to the more tourist-friendly environs of Fisherman's Wharf.</p>
+<p class="calibre1">After dark, there's hardly anyone out there. It gets very cold, with a salt spray that'll soak you to your bones if you let it. The rocks are sharp and there's broken glass and the occasional junkie needle.</p>
+<p class="calibre1">It is an awesome place for a party.</p>
+<p class="calibre1">Bringing along the tarpaulins and chemical glove-warmers was my idea. Jolu figured out where to get the beer -- his older brother, Javier, had a buddy who actually operated a whole underage drinking service: pay him enough and he'd back up to your secluded party spot with ice-chests and as many brews as you wanted. I blew a bunch of my indienet programming money, and the guy showed up right on time: 8PM, a good hour after sunset, and lugged the six foam ice-chests out of his pickup truck and down into the ruins of the baths. He even brought a spare chest for the empties.</p>
+<p class="calibre1">"You kids play safe now," he said, tipping his cowboy hat. He was a fat Samoan guy with a huge smile, and a scary tank-top that you could see his armpit- and belly- and shoulder-hair escaping from. I peeled twenties off my roll and handed them to him -- his markup was 150 percent. Not a bad racket.</p>
+<p class="calibre1">He looked at my roll. "You know, I could just take that from you," he said, still smiling. "I'm a criminal, after all."</p>
+<p class="calibre1">I put my roll in my pocket and looked him levelly in the eye. I'd been stupid to show him what I was carrying, but I knew that there were times when you should just stand your ground.</p>
+<p class="calibre1">"I'm just messing with you," he said, at last. "But you be careful with that money. Don't go showing it around."</p>
+<p class="calibre1">"Thanks," I said. "Homeland Security'll get my back though."</p>
+<p class="calibre1">His smile got even bigger. "Ha! They're not even real five-oh. Those peckerwoods don't know nothin'."</p>
+<p class="calibre1">I looked over at his truck. Prominently displayed in his windscreen was a FasTrak. I wondered how long it would be until he got busted.</p>
+<p class="calibre1">"You got girls coming tonight? That why you got all the beer?"</p>
+<p class="calibre1">I smiled and waved at him as though he was walking back to his truck, which he should have been doing. He eventually got the hint and drove away. His smile never faltered.</p>
+<p class="calibre1">Jolu helped me hide the coolers in the rubble, working with little white LED torches on headbands. Once the coolers were in place, we threw little white LED keychains into each one, so it would glow when you took the styrofoam lids off, making it easier to see what you were doing.</p>
+<p class="calibre1">It was a moonless night and overcast, and the distant streetlights barely illuminated us. I knew we'd stand out like blazes on an infrared scope, but there was no chance that we'd be able to get a bunch of people together without being observed. I'd settle for being dismissed as a little drunken beach-party.</p>
+<p class="calibre1">I don't really drink much. There's been beer and pot and ecstasy at the parties I've been going to since I was 14, but I hated smoking (though I'm quite partial to a hash brownie every now and again), ecstasy took too long -- who's got a whole weekend to get high and come down -- and beer, well, it was all right, but I didn't see what the big deal was. My favorite was big, elaborate cocktails, the kind of thing served in a ceramic volcano, with six layers, on fire, and a plastic monkey on the rim, but that was mostly for the theater of it all.</p>
+<p class="calibre1">I actually like being drunk. I just don't like being hungover, and boy, do I ever get hungover. Though again, that might have to do with the kind of drinks that come in a ceramic volcano.</p>
+<p class="calibre1">But you can't throw a party without putting a case or two of beer on ice. It's expected. It loosens things up. People do stupid things after too many beers, but it's not like my friends are the kind of people who have cars. And people do stupid things no matter what -- beer or grass or whatever are all incidental to that central fact.</p>
+<p class="calibre1">Jolu and I each cracked beers -- Anchor Steam for him, a Bud Lite for me -- and clinked the bottles together, sitting down on a rock.</p>
+<p class="calibre1">"You told them 9PM?"</p>
+<p class="calibre1">"Yeah," he said.</p>
+<p class="calibre1">"Me too."</p>
+<p class="calibre1">We drank in silence. The Bud Lite was the least alcoholic thing in the ice-chest. I'd need a clear head later.</p>
+<p class="calibre1">"You ever get scared?" I said, finally.</p>
+<p class="calibre1">He turned to me. "No man, I don't get scared. I'm always scared. I've been scared since the minute the explosions happened. I'm so scared sometimes, I don't want to get out of bed."</p>
+<p class="calibre1">"Then why do you do it?"</p>
+<p class="calibre1">He smiled. "About that," he said. "Maybe I won't, not for much longer. I mean, it's been great helping you. Great. Really excellent. I don't know when I've done anything so important. But Marcus, bro, I have to say. . ." He trailed off.</p>
+<p class="calibre1">"What?" I said, though I knew what was coming next.</p>
+<p class="calibre1">"I can't do it forever," he said at last. "Maybe not even for another month. I think I'm through. It's too much risk. The DHS, you can't go to war on them. It's crazy. Really actually crazy."</p>
+<p class="calibre1">"You sound like Van," I said. My voice was much more bitter than I'd intended.</p>
+<p class="calibre1">"I'm not criticizing you, man. I think it's great that you've got the bravery to do this all the time. But I haven't got it. I can't live my life in perpetual terror."</p>
+<p class="calibre1">"What are you saying?"</p>
+<p class="calibre1">"I'm saying I'm out. I'm going to be one of those people who acts like it's all OK, like it'll all go back to normal some day. I'm going to use the Internet like I always did, and only use the Xnet to play games. I'm going to get out is what I'm saying. I won't be a part of your plans anymore."</p>
+<p class="calibre1">I didn't say anything.</p>
+<p class="calibre1">"I know that's leaving you on your own. I don't want that, believe me. I'd much rather you give up with me. You can't declare war on the government of the USA. It's not a fight you're going to win. Watching you try is like watching a bird fly into a window again and again."</p>
+<p class="calibre1">He wanted me to say something. What <i class="calibre6">I</i> wanted to say was, <i class="calibre6">Jesus Jolu, thanks so very much for abandoning me! Do you forget what it was like when they took us away? Do you forget what the country used to be like before they took it over?</i> But that's not what he wanted me to say. What he wanted me to say was:</p>
+<p class="calibre1">"I understand, Jolu. I respect your choice."</p>
+<p class="calibre1">He drank the rest of his bottle and pulled out another one and twisted off the cap.</p>
+<p class="calibre1">"There's something else," he said.</p>
+<p class="calibre1">"What?"</p>
+<p class="calibre1">"I wasn't going to mention it, but I want you to understand why I have to do this."</p>
+<p class="calibre1">"Jesus, Jolu, <i class="calibre6">what</i>?"</p>
+<p class="calibre1">"I hate to say it, but you're <i class="calibre6">white</i>. I'm not. White people get caught with cocaine and do a little rehab time. Brown people get caught with crack and go to prison for twenty years. White people see cops on the street and feel safer. Brown people see cops on the street and wonder if they're about to get searched. The way the DHS is treating you? The law in this country has always been like that for us."</p>
+<p class="calibre1">It was so unfair. I didn't ask to be white. I didn't think I was being braver just because I'm white. But I knew what Jolu was saying. If the cops stopped someone in the Mission and asked to see some ID, chances were that person wasn't white. Whatever risk I ran, Jolu ran more. Whatever penalty I'd pay, Jolu would pay more.</p>
+<p class="calibre1">"I don't know what to say," I said.</p>
+<p class="calibre1">"You don't have to say anything," he said. "I just wanted you to know, so you could understand."</p>
+<p class="calibre1">I could see people walking down the side trail toward us. They were friends of Jolu's, two Mexican guys and a girl I knew from around, short and geeky, always wearing cute black Buddy Holly glasses that made her look like the outcast art-student in a teen movie who comes back as the big success.</p>
+<p class="calibre1">Jolu introduced me and gave them beers. The girl didn't take one, but instead produced a small silver flask of vodka from her purse and offered me a drink. I took a swallow -- warm vodka must be an acquired taste -- and complimented her on the flask, which was embossed with a repeating motif of Parappa the Rapper characters.</p>
+<p class="calibre1">"It's Japanese," she said as I played another LED keyring over it. "They have all these great booze-toys based on kids' games. Totally twisted."</p>
+<p class="calibre1">I introduced myself and she introduced herself. "Ange," she said, and shook my hand with hers -- dry, warm, with short nails. Jolu introduced me to his pals, whom he'd known since computer camp in the fourth grade. More people showed up -- five, then ten, then twenty. It was a seriously big group now.</p>
+<p class="calibre1">We'd told people to arrive by 9:30 sharp, and we gave it until 9:45 to see who all would show up. About three quarters were Jolu's friends. I'd invited all the people I really trusted. Either I was more discriminating than Jolu or less popular. Now that he'd told me he was quitting, it made me think that he was less discriminating. I was really pissed at him, but trying not to let it show by concentrating on socializing with other people. But he wasn't stupid. He knew what was going on. I could see that he was really bummed. Good.</p>
+<p class="calibre1">"OK," I said, climbing up on a ruin, "OK, hey, hello?" A few people nearby paid attention to me, but the ones in the back kept on chatting. I put my arms in the air like a referee, but it was too dark. Eventually I hit on the idea of turning my LED keychain on and pointing it at each of the talkers in turn, then at me. Gradually, the crowd fell quiet.</p>
+<p class="calibre1">I welcomed them and thanked them all for coming, then asked them to close in so I could explain why we were there. I could tell they were into the secrecy of it all, intrigued and a little warmed up by the beer.</p>
+<p class="calibre1">"So here it is. You all use the Xnet. It's no coincidence that the Xnet was created right after the DHS took over the city. The people who did that are an organization devoted to personal liberty, who created the network to keep us safe from DHS spooks and enforcers." Jolu and I had worked this out in advance. We weren't going to cop to being behind it all, not to anyone. It was way too risky. Instead, we'd put it out that we were merely lieutenants in "M1k3y"'s army, acting to organize the local resistance.</p>
+<p class="calibre1">"The Xnet isn't pure," I said. "It can be used by the other side just as readily as by us. We know that there are DHS spies who use it now. They use social engineering hacks to try to get us to reveal ourselves so that they can bust us. If the Xnet is going to succeed, we need to figure out how to keep them from spying on us. We need a network within the network."</p>
+<p class="calibre1">I paused and let this sink in. Jolu had suggested that this might be a little heavy -- learning that you're about to be brought into a revolutionary cell.</p>
+<p class="calibre1">"Now, I'm not here to ask you to do anything active. You don't have to go out jamming or anything. You've been brought here because we know you're cool, we know you're trustworthy. It's that trustworthiness I want to get you to contribute tonight. Some of you will already be familiar with the web of trust and keysigning parties, but for the rest of you, I'll run it down quickly --" Which I did.</p>
+<p class="calibre1">"Now what I want from you tonight is to meet the people here and figure out how much you can trust them. We're going to help you generate key-pairs and share them with each other."</p>
+<p class="calibre1">This part was tricky. Asking people to bring their own laptops wouldn't have worked out, but we still needed to do something hella complicated that wouldn't exactly work with paper and pencil.</p>
+<p class="calibre1">I held up a laptop Jolu and I had rebuilt the night before, from the ground up. "I trust this machine. Every component in it was laid by our own hands. It's running a fresh out-of-the-box version of ParanoidLinux, booted off of the DVD. If there's a trustworthy computer left anywhere in the world, this might well be it.</p>
+<p class="calibre1">"I've got a key-generator loaded here. You come up here and give it some random input -- mash the keys, wiggle the mouse -- and it will use that as the seed to create a random public- and private key for you, which it will display on the screen. You can take a picture of the private key with your phone, and hit any key to make it go away forever -- it's not stored on the disk at all. Then it will show you your public key. At that point, you call over all the people here you trust and who trust you, and <i class="calibre6">they</i> take a picture of the screen with you standing next to it, so they know whose key it is.</p>
+<p class="calibre1">"When you get home, you have to convert the photos to keys. This is going to be a lot of work, I'm afraid, but you'll only have to do it once. You have to be super-careful about typing these in -- one mistake and you're screwed. Luckily, we've got a way to tell if you've got it right: beneath the key will be a much shorter number, called the 'fingerprint'. Once you've typed in the key, you can generate a fingerprint from it and compare it to the fingerprint, and if they match, you've got it right."</p>
+<p class="calibre1">They all boggled at me. OK, so I'd asked them to do something pretty weird, it's true, but still.</p>
+<p class="c3">Chapter 11</p>
+<p class="c5">This chapter is dedicated to the University Bookstore at the University of Washington, whose science fiction section rivals many specialty stores, thanks to the sharp-eyed, dedicated science fiction buyer, Duane Wilkins. Duane's a real science fiction fan -- I first met him at the World Science Fiction Convention in Toronto in 2003 -- and it shows in the eclectic and informed choices on display at the store. One great predictor of a great bookstore is the quality of the "shelf review" -- the little bits of cardboard stuck to the shelves with (generally hand-lettered) staff-reviews extolling the virtues of books you might otherwise miss. The staff at the University Bookstore have clearly benefited from Duane's tutelage, as the shelf reviews at the University Bookstore are second to none.</p>
+<p class="c5"><a tag="{http://www.w3.org/1999/xhtml}a">The University Bookstore</a> 4326 University Way NE, Seattle, WA 98105 USA +1 800 335 READ</p>
+<p class="calibre1">Jolu stood up.</p>
+<p class="calibre1">"This is where it starts, guys. This is how we know which side you're on. You might not be willing to take to the streets and get busted for your beliefs, but if you <i class="calibre6">have</i> beliefs, this will let us know it. This will create the web of trust that tells us who's in and who's out. If we're ever going to get our country back, we need to do this. We need to do something like this."</p>
+<p class="calibre1">Someone in the audience -- it was Ange -- had a hand up, holding a beer bottle.</p>
+<p class="calibre1">"So call me stupid but I don't understand this at all. Why do you want us to do this?"</p>
+<p class="calibre1">Jolu looked at me, and I looked back at him. It had all seemed so obvious when we were organizing it. "The Xnet isn't just a way to play free games. It's the last open communications network in America. It's the last way to communicate without being snooped on by the DHS. For it to work we need to know that the person we're talking to isn't a snoop. That means that we need to know that the people we're sending messages to are the people we think they are.</p>
+<p class="calibre1">"That's where you come in. You're all here because we trust you. I mean, really trust you. Trust you with our lives."</p>
+<p class="calibre1">Some of the people groaned. It sounded melodramatic and stupid.</p>
+<p class="calibre1">I got back to my feet.</p>
+<p class="calibre1">"When the bombs went off," I said, then something welled up in my chest, something painful. "When the bombs went off, there were four of us caught up by Market Street. For whatever reason, the DHS decided that made us suspicious. They put bags over our heads, put us on a ship and interrogated us for days. They humiliated us. Played games with our minds. Then they let us go.</p>
+<p class="calibre1">"All except one person. My best friend. He was with us when they picked us up. He'd been hurt and he needed medical care. He never came out again. They say they never saw him. They say that if we ever tell anyone about this, they'll arrest us and make us disappear.</p>
+<p class="calibre1">"Forever."</p>
+<p class="calibre1">I was shaking. The shame. The goddamned shame. Jolu had the light on me.</p>
+<p class="calibre1">"Oh Christ," I said. "You people are the first ones I've told. If this story gets around, you can bet they'll know who leaked it. You can bet they'll come knocking on my door." I took some more deep breaths. "That's why I volunteered on the Xnet. That's why my life, from now on, is about fighting the DHS. With every breath. Every day. Until we're free again. Any one of you could put me in jail now, if you wanted to."</p>
+<p class="calibre1">Ange put her hand up again. "We're not going to rat on you," she said. "No way. I know pretty much everyone here and I can promise you that. I don't know how to know who to trust, but I know who <i class="calibre6">not</i> to trust: old people. Our parents. Grownups. When they think of someone being spied on, they think of someone <i class="calibre6">else</i>, a bad guy. When they think of someone being caught and sent to a secret prison, it's someone <i class="calibre6">else</i> -- someone brown, someone young, someone foreign.</p>
+<p class="calibre1">"They forget what it's like to be our age. To be the object of suspicion <i class="calibre6">all the time</i>! How many times have you gotten on the bus and had every person on it give you a look like you'd been gargling turds and skinning puppies?</p>
+<p class="calibre1">"What's worse, they're turning into adults younger and younger out there. Back in the day, they used to say 'Never trust anyone over 30.' I say, 'Don't trust any bastard over 25!'"</p>
+<p class="calibre1">That got a laugh, and she laughed too. She was pretty, in a weird, horsey way, with a long face and a long jaw. "I'm not really kidding, you know? I mean, think about it. Who elected these ass-clowns? Who let them invade our city? Who voted to put the cameras in our classrooms and follow us around with creepy spyware chips in our transit passes and cars? It wasn't a 16-year-old. We may be dumb, we may be young, but we're not scum."</p>
+<p class="calibre1">"I want that on a t-shirt," I said.</p>
+<p class="calibre1">"It would be a good one," she said. We smiled at each other.</p>
+<p class="calibre1">"Where do I go to get my keys?" she said, and pulled out her phone.</p>
+<p class="calibre1">"We'll do it over there, in the secluded spot by the caves. I'll take you in there and set you up, then you do your thing and take the machine around to your friends to get photos of your public key so they can sign it when they get home."</p>
+<p class="calibre1">I raised my voice. "Oh! One more thing! Jesus, I can't believe I forgot this. <i class="calibre6">Delete those photos once you've typed in the keys</i>! The last thing we want is a Flickr stream full of pictures of all of us conspiring together."</p>
+<p class="calibre1">There was some good-natured, nervous chuckling, then Jolu turned out the light and in the sudden darkness I could see nothing. Gradually, my eyes adjusted and I set off for the cave. Someone was walking behind me. Ange. I turned and smiled at her, and she smiled back, luminous teeth in the dark.</p>
+<p class="calibre1">"Thanks for that," I said. "You were great."</p>
+<p class="calibre1">"You mean what you said about the bag on your head and everything?"</p>
+<p class="calibre1">"I meant it," I said. "It happened. I never told anyone, but it happened." I thought about it for a moment. "You know, with all the time that went by since, without saying anything, it started to feel like a bad dream. It was real though." I stopped and climbed up into the cave. "I'm glad I finally told people. Any longer and I might have started to doubt my own sanity."</p>
+<p class="calibre1">I set up the laptop on a dry bit of rock and booted it from the DVD with her watching. "I'm going to reboot it for every person. This is a standard ParanoidLinux disc, though I guess you'd have to take my word for it."</p>
+<p class="calibre1">"Hell," she said. "This is all about trust, right?"</p>
+<p class="calibre1">"Yeah," I said. "Trust."</p>
+<p class="calibre1">I retreated some distance as she ran the key-generator, listening to her typing and mousing to create randomness, listening to the crash of the surf, listening to the party noises from over where the beer was.</p>
+<p class="calibre1">She stepped out of the cave, carrying the laptop. On it, in huge white luminous letters, were her public key and her fingerprint and email address. She held the screen up beside her face and waited while I got my phone out.</p>
+<p class="calibre1">"Cheese," she said. I snapped her pic and dropped the camera back in my pocket. She wandered off to the revelers and let them each get pics of her and the screen. It was festive. Fun. She really had a lot of charisma -- you didn't want to laugh at her, you just wanted to laugh <i class="calibre6">with</i> her. And hell, it <i class="calibre6">was</i> funny! We were declaring a secret war on the secret police. Who the hell did we think we were?</p>
+<p class="calibre1">So it went, through the next hour or so, everyone taking pictures and making keys. I got to meet everyone there. I knew a lot of them -- some were my invitees -- and the others were friends of my pals or my pals' pals. We should all be buddies. We were, by the time the night was out. They were all good people.</p>
+<p class="calibre1">Once everyone was done, Jolu went to make a key, and then turned away, giving me a sheepish grin. I was past my anger with him, though. He was doing what he had to do. I knew that no matter what he said, he'd always be there for me. And we'd been through the DHS jail together. Van too. No matter what, that would bind us together forever.</p>
+<p class="calibre1">I did my key and did the perp-walk around the gang, letting everyone snap a pic. Then I climbed up on the high spot I'd spoken from earlier and called for everyone's attention.</p>
+<p class="calibre1">"So a lot of you have noted that there's a vital flaw in this procedure: what if this laptop can't be trusted? What if it's secretly recording our instructions? What if it's spying on us? What if Jose-Luis and I can't be trusted?"</p>
+<p class="calibre1">More good-natured chuckles. A little warmer than before, more beery.</p>
+<p class="calibre1">"I mean it," I said. "If we were on the wrong side, this could get all of us -- all of <i class="calibre6">you</i> -- into a heap of trouble. Jail, maybe."</p>
+<p class="calibre1">The chuckles turned more nervous.</p>
+<p class="calibre1">"So that's why I'm going to do this," I said, and picked up a hammer I'd brought from my Dad's toolkit. I set the laptop down beside me on the rock and swung the hammer, Jolu following the swing with his keychain light. Crash -- I'd always dreamt of killing a laptop with a hammer, and here I was doing it. It felt pornographically good. And bad.</p>
+<p class="calibre1">Smash! The screen-panel fell off, shattered into millions of pieces, exposing the keyboard. I kept hitting it, until the keyboard fell off, exposing the motherboard and the hard-drive. Crash! I aimed square for the hard-drive, hitting it with everything I had. It took three blows before the case split, exposing the fragile media inside. I kept hitting it until there was nothing bigger than a cigarette lighter, then I put it all in a garbage bag. The crowd was cheering wildly -- loud enough that I actually got worried that someone far above us might hear over the surf and call the law.</p>
+<p class="calibre1">"All right!" I called. "Now, if you'd like to accompany me, I'm going to march this down to the sea and soak it in salt water for ten minutes."</p>
+<p class="calibre1">I didn't have any takers at first, but then Ange came forward and took my arm in her warm hand and said, "That was beautiful," in my ear and we marched down to the sea together.</p>
+<p class="calibre1">It was perfectly dark by the sea, and treacherous, even with our keychain lights. Slippery, sharp rocks that were difficult enough to walk on even without trying to balance six pounds of smashed electronics in a plastic bag. I slipped once and thought I was going to cut myself up, but she caught me with a surprisingly strong grip and kept me upright. I was pulled in right close to her, close enough to smell her perfume, which smelled like new cars. I love that smell.</p>
+<p class="calibre1">"Thanks," I managed, looking into the big eyes that were further magnified by her mannish, black-rimmed glasses. I couldn't tell what color they were in the dark, but I guessed something dark, based on her dark hair and olive complexion. She looked Mediterranean, maybe Greek or Spanish or Italian.</p>
+<p class="calibre1">I crouched down and dipped the bag in the sea, letting it fill with salt water. I managed to slip a little and soak my shoe, and I swore and she laughed. We'd hardly said a word since we lit out for the ocean. There was something magical in our wordless silence.</p>
+<p class="calibre1">At that point, I had kissed a total of three girls in my life, not counting that moment when I went back to school and got a hero's welcome. That's not a gigantic number, but it's not a minuscule one, either. I have reasonable girl radar, and I think I could have kissed her. She wasn't h4wt in the traditional sense, but there's something about a girl and a night and a beach, plus she was smart and passionate and committed.</p>
+<p class="calibre1">But I didn't kiss her, or take her hand. Instead we had a moment that I can only describe as spiritual. The surf, the night, the sea and the rocks, and our breathing. The moment stretched. I sighed. This had been quite a ride. I had a lot of typing to do tonight, putting all those keys into my keychain, signing them and publishing the signed keys. Starting the web of trust.</p>
+<p class="calibre1">She sighed too.</p>
+<p class="calibre1">"Let's go," I said.</p>
+<p class="calibre1">"Yeah," she said.</p>
+<p class="calibre1">Back we went. It was a good night, that night.</p>
+<p class="western7">#</p>
+<p class="western7"/>
+<p class="calibre1">Jolu waited after for his brother's friend to come by and pick up his coolers. I walked with everyone else up the road to the nearest Muni stop and got on board. Of course, none of us was using an issued Muni pass. By that point, Xnetters habitually cloned someone else's Muni pass three or four times a day, assuming a new identity for every ride.</p>
+<p class="calibre1">It was hard to stay cool on the bus. We were all a little drunk, and looking at our faces under the bright bus lights was kind of hilarious. We got pretty loud and the driver used his intercom to tell us to keep it down twice, then told us to shut up right now or he'd call the cops.</p>
+<p class="calibre1">That set us to giggling again and we disembarked in a mass before he did call the cops. We were in North Beach now, and there were lots of buses, taxis, the BART at Market Street, neon-lit clubs and cafes to pull apart our grouping, so we drifted away.</p>
+<p class="calibre1">I got home and fired up my Xbox and started typing in keys from my phone's screen. It was dull, hypnotic work. I was a little drunk, and it lulled me into a half-sleep.</p>
+<p class="calibre1">I was about ready to nod off when a new IM window popped up.</p>
+<p class="western19">&gt; herro!</p>
+<p class="western20"/>
+<p class="calibre1">I didn't recognize the handle -- spexgril -- but I had an idea who might be behind it.</p>
+<p class="western19">&gt; hi</p>
+<p class="western20"/>
+<p class="calibre1">I typed, cautiously.</p>
+<p class="western19">&gt; it's me, from tonight</p>
+<p class="western20"/>
+<p class="calibre1">Then she paste-bombed a block of crypto. I'd already entered her public key into my keychain, so I told the IM client to try decrypting the code with the key.</p>
+<p class="western19">&gt; it's me, from tonight</p>
+<p class="western20"/>
+<p class="calibre1">It was her!</p>
+<p class="western19">&gt; Fancy meeting you here</p>
+<p class="western20"/>
+<p class="calibre1">I typed, then encrypted it to my public key and mailed it off.</p>
+<p class="western20"/>
+<p class="western19">&gt; It was great meeting you</p>
+<p class="western20"/>
+<p class="calibre1">I typed.</p>
+<p class="western19">&gt; You too. I don't meet too many smart guys who are also cute and also socially aware. Good god, man, you don't give a girl much of a chance.</p>
+<p class="western20"/>
+<p class="calibre1">My heart hammered in my chest.</p>
+<p class="western19">&gt; Hello? Tap tap? This thing on? I wasn't born here folks, but I'm sure dying here. Don't forget to tip your waitresses, they work hard. I'm here all week.</p>
+<p class="western20"/>
+<p class="calibre1">I laughed aloud.</p>
+<p class="western19">&gt; I'm here, I'm here. Laughing too hard to type is all</p>
+<p class="western20"/>
+<p class="western19">&gt; Well at least my IM comedy-fu is still mighty</p>
+<p class="western20"/>
+<p class="calibre1">Um.</p>
+<p class="western19">&gt; It was really great to meet you too</p>
+<p class="western20"/>
+<p class="western19">&gt; Yeah, it usually is. Where are you taking me?</p>
+<p class="western20"/>
+<p class="western19">&gt; Taking you?</p>
+<p class="western20"/>
+<p class="western19">&gt; On our next adventure?</p>
+<p class="western20"/>
+<p class="western19">&gt; I didn't really have anything planned</p>
+<p class="western20"/>
+<p class="western19">&gt; Oki -- then I'll take YOU. Saturday. Dolores Park. Illegal open air concert. Be there or be a dodecahedron</p>
+<p class="western20"/>
+<p class="western19">&gt; Wait what?</p>
+<p class="western20"/>
+<p class="western19">&gt; Don't you even read Xnet? It's all over the place. You ever hear of the Speedwhores?</p>
+<p class="western20"/>
+<p class="calibre1">I nearly choked. That was Trudy Doo's band -- as in Trudy Doo, the woman who had paid me and Jolu to update the indienet code.</p>
+<p class="western19">&gt; Yeah I've heard of them</p>
+<p class="western20"/>
+<p class="western19">&gt; They're putting on a huge show and they've got like fifty bands signed to play the bill, going to set up on the tennis courts and bring out their own amp trucks and rock out all night</p>
+<p class="western20"/>
+<p class="calibre1">I felt like I'd been living under a rock. How had I missed that? There was an anarchist bookstore on Valencia that I sometimes passed on the way to school that had a poster of an old revolutionary named Emma Goldman with the caption "If I can't dance, I don't want to be a part of your revolution." I'd been spending all my energies on figuring out how to use the Xnet to organize dedicated fighters so they could jam the DHS, but this was so much cooler. A big concert -- I had no idea how to do one of those, but I was glad someone did.</p>
+<p class="calibre1">And now that I thought of it, I was damned proud that they were using the Xnet to do it.</p>
+<p class="western7">#</p>
+<p class="western7"/>
+<p class="calibre1">The next day I was a zombie. Ange and I had chatted -- flirted -- until 4AM. Lucky for me, it was a Saturday and I was able to sleep in, but between the hangover and the sleep-dep, I could barely put two thoughts together.</p>
+<p class="calibre1">By lunchtime, I managed to get up and get my ass out onto the streets. I staggered down toward the Turk's to buy my coffee -- these days, if I was alone, I always bought my coffee there, like the Turk and I were part of a secret club.</p>
+<p class="calibre1">On the way, I passed a lot of fresh graffiti. I liked Mission graffiti; a lot of the times, it came in huge, luscious murals, or sarcastic art-student stencils. I liked that the Mission's taggers kept right on going, under the nose of the DHS. Another kind of Xnet, I supposed -- they must have all kinds of ways of knowing what was going on, where to get paint, what cameras worked. Some of the cameras had been spray-painted over, I noticed.</p>
+<p class="calibre1">Maybe they used Xnet!</p>
+<p class="calibre1">Painted in ten-foot-high letters on the side of an auto-yard's fence were the drippy words: DON'T TRUST ANYONE OVER 25.</p>
+<p class="calibre1">I stopped. Had someone left my "party" last night and come here with a can of paint? A lot of those people lived in the neighborhood.</p>
+<p class="calibre1">I got my coffee and had a little wander around town. I kept thinking I should be calling someone, seeing if they wanted to get a movie or something. That's how it used to be on a lazy Saturday like this. But who was I going to call? Van wasn't talking to me, I didn't think I was ready to talk to Jolu, and Darryl --</p>
+<p class="calibre1">Well, I couldn't call Darryl.</p>
+<p class="calibre1">I got my coffee and went home and did a little searching around on the Xnet's blogs. These anonablogs were untraceable to any author -- unless that author was stupid enough to put her name on it -- and there were a lot of them. Most of them were apolitical, but a lot of them weren't. They talked about schools and the unfairness there. They talked about the cops. Tagging.</p>
+<p class="calibre1">Turned out there'd been plans for the concert in the park for weeks. It had hopped from blog to blog, turning into a full-blown movement without my noticing. And the concert was called Don't Trust Anyone Over 25.</p>
+<p class="calibre1">Well, that explained where Ange got it. It was a good slogan.</p>
+<p class="western7">#</p>
+<p class="western7"/>
+<p class="calibre1">Monday morning, I decided I wanted to check out that anarchist bookstore again, see about getting one of those Emma Goldman posters. I needed the reminder.</p>
+<p class="calibre1">I detoured down to 16th and Mission on my way to school, then up to Valencia and across. The store was shut, but I got the hours off the door and made sure they still had that poster up.</p>
+<p class="calibre1">As I walked down Valencia, I was amazed to see how much of the DON'T TRUST ANYONE OVER 25 stuff there was. Half the shops had DON'T TRUST merch in the windows: lunchboxes, babydoll tees, pencil-boxes, trucker hats. The hipster stores have been getting faster and faster, of course. As new memes sweep the net in the course of a day or two, stores have gotten better at putting merch in the windows to match. Some funny little youtube of a guy launching himself with jet-packs made of carbonated water would land in your inbox on Monday and by Tuesday you'd be able to buy t-shirts with stills from the video on it.</p>
+<p class="calibre1">But it was amazing to see something make the leap from Xnet to the head shops. Distressed designer jeans with the slogan written in careful high school ball-point ink. Embroidered patches.</p>
+<p class="calibre1">Good news travels fast.</p>
+<p class="calibre1">It was written on the black-board when I got to Ms Galvez's Social Studies class. We all sat at our desks, smiling at it. It seemed to smile back. There was something profoundly cheering about the idea that we could all trust each other, that the enemy could be identified. I knew it wasn't entirely true, but it wasn't entirely false either.</p>
+<p class="calibre1">Ms Galvez came in and patted her hair and set down her SchoolBook on her desk and powered it up. She picked up her chalk and turned around to face the board. We all laughed. Good-naturedly, but we laughed.</p>
+<p class="calibre1">She turned around and was laughing too. "Inflation has hit the nation's slogan-writers, it seems. How many of you know where this phrase comes from?"</p>
+<p class="calibre1">We looked at each other. "Hippies?" someone said, and we laughed. Hippies are all over San Francisco, both the old stoner kinds with giant skanky beards and tie-dyes, and the new kind, who are more into dress-up and maybe playing hacky-sack than protesting anything.</p>
+<p class="calibre1">"Well, yes, hippies. But when we think of hippies these days, we just think of the clothes and the music. Clothes and music were incidental to the main part of what made that era, the sixties, important.</p>
+<p class="calibre1">"You've heard about the civil rights movement to end segregation, white and black kids like you riding buses into the South to sign up black voters and protest against official state racism. California was one of the main places where the civil rights leaders came from. We've always been a little more political than the rest of the country, and this is also a part of the country where black people have been able to get the same union factory jobs as white people, so they were a little better off than their cousins in the southland.</p>
+<p class="calibre1">"The students at Berkeley sent a steady stream of freedom riders south, and they recruited them from information tables on campus, at Bancroft and Telegraph Avenue. You've probably seen that there are still tables there to this day.</p>
+<p class="calibre1">"Well, the campus tried to shut them down. The president of the university banned political organizing on campus, but the civil rights kids wouldn't stop. The police tried to arrest a guy who was handing out literature from one of these tables, and they put him in a van, but 3,000 students surrounded the van and refused to let it budge. They wouldn't let them take this kid to jail. They stood on top of the van and gave speeches about the First Amendment and Free Speech.</p>
+<p class="calibre1">"That galvanized the Free Speech Movement. That was the start of the hippies, but it was also where more radical student movements came from. Black power groups like the Black Panthers -- and later gay rights groups like the Pink Panthers, too. Radical women's groups, even 'lesbian separatists' who wanted to abolish men altogether! And the Yippies. Anyone ever hear of the Yippies?"</p>
+<p class="calibre1">"Didn't they levitate the Pentagon?" I said. I'd once seen a documentary about this.</p>
+<p class="calibre1">She laughed. "I forgot about that, but yes, that was them! Yippies were like very political hippies, but they weren't serious the way we think of politics these days. They were very playful. Pranksters. They threw money into the New York Stock Exchange. They circled the Pentagon with hundreds of protestors and said a magic spell that was supposed to levitate it. They invented a fictional kind of LSD that you could spray onto people with squirt-guns and shot each other with it and pretended to be stoned. They were funny and they made great TV -- one Yippie, a clown called Wavy Gravy, used to get hundreds of protestors to dress up like Santa Claus so that the cameras would show police officers arresting and dragging away Santa on the news that night -- and they mobilized a lot of people.</p>
+<p class="calibre1">"Their big moment was the Democratic National Convention in 1968, where they called for demonstrations to protest the Vietnam War. Thousands of demonstrators poured into Chicago, slept in the parks, and picketed every day. They had lots of bizarre stunts that year, like running a pig called Pigasus for the presidential nomination. The police and the demonstrators fought in the streets -- they'd done that many times before, but the Chicago cops didn't have the smarts to leave the reporters alone. They beat up the reporters, and the reporters retaliated by finally showing what really went on at these demonstrations, so the whole country watched their kids being really savagely beaten down by the Chicago police. They called it a 'police riot.'</p>
+<p class="calibre1">"The Yippies loved to say, 'Never trust anyone over 30.' They meant that people who were born before a certain time, when America had been fighting enemies like the Nazis, could never understand what it meant to love your country enough to refuse to fight the Vietnamese. They thought that by the time you hit 30, your attitudes would be frozen and you couldn't ever understand why the kids of the day were taking to the streets, dropping out, freaking out.</p>
+<p class="calibre1">"San Francisco was ground zero for this. Revolutionary armies were founded here. Some of them blew up buildings or robbed banks for their cause. A lot of those kids grew up to be more or less normal, while others ended up in jail. Some of the university dropouts did amazing things -- for example, Steve Jobs and Steve Wozniak, who founded Apple Computers and invented the PC."</p>
+<p class="calibre1">I was really getting into this. I knew a little of it, but I'd never heard it told like this. Or maybe it had never mattered as much as it did now. Suddenly, those lame, solemn, grown-up street demonstrations didn't seem so lame after all. Maybe there was room for that kind of action in the Xnet movement.</p>
+<p class="calibre1">I put my hand up. "Did they win? Did the Yippies win?"</p>
+<p class="calibre1">She gave me a long look, like she was thinking it over. No one said a word. We all wanted to hear the answer.</p>
+<p class="calibre1">"They didn't lose," she said. "They kind of imploded a little. Some of them went to jail for drugs or other things. Some of them changed their tunes and became yuppies and went on the lecture circuit telling everyone how stupid they'd been, talking about how good greed was and how dumb they'd been.</p>
+<p class="calibre1">"But they did change the world. The war in Vietnam ended, and the kind of conformity and unquestioning obedience that people had called patriotism went out of style in a big way. Black rights, women's rights and gay rights came a long way. Chicano rights, rights for disabled people, the whole tradition of civil liberties was created or strengthened by these people. Today's protest movement is the direct descendant of those struggles."</p>
+<p class="calibre1">"I can't believe you're talking about them like this," Charles said. He was leaning so far in his seat he was half standing, and his sharp, skinny face had gone red. He had wet, large eyes and big lips, and when he got excited he looked a little like a fish.</p>
+<p class="calibre1">Ms Galvez stiffened a little, then said, "Go on, Charles."</p>
+<p class="calibre1">"You've just described terrorists. Actual terrorists. They blew up buildings, you said. They tried to destroy the stock exchange. They beat up cops, and stopped cops from arresting people who were breaking the law. They attacked us!"</p>
+<p class="calibre1">Ms Galvez nodded slowly. I could tell she was trying to figure out how to handle Charles, who really seemed like he was ready to pop. "Charles raises a good point. The Yippies weren't foreign agents, they were American citizens. When you say 'They attacked us,' you need to figure out who 'they' and 'us' are. When it's your fellow countrymen --"</p>
+<p class="calibre1">"Crap!" he shouted. He was on his feet now. "We were at war then. These guys were giving aid and comfort to the enemy. It's easy to tell who's us and who's them: if you support America, you're us. If you support the people who are shooting at Americans, you're <i class="calibre6">them</i>."</p>
+<p class="calibre1">"Does anyone else want to comment on this?"</p>
+<p class="calibre1">Several hands shot up. Ms Galvez called on them. Some people pointed out that the reason that the Vietnamese were shooting at Americans is that the Americans had flown to Vietnam and started running around the jungle with guns. Others thought that Charles had a point, that people shouldn't be allowed to do illegal things.</p>
+<p class="calibre1">Everyone had a good debate except Charles, who just shouted at people, interrupting them when they tried to get their points out. Ms Galvez tried to get him to wait for his turn a couple times, but he wasn't having any of it.</p>
+<p class="calibre1">I was looking something up on my SchoolBook, something I knew I'd read.</p>
+<p class="calibre1">I found it. I stood up. Ms Galvez looked expectantly at me. The other people followed her gaze and went quiet. Even Charles looked at me after a while, his big wet eyes burning with hatred for me.</p>
+<p class="calibre1">"I wanted to read something," I said. "It's short. 'Governments are instituted among men, deriving their just powers from the consent of the governed, that whenever any form of government becomes destructive of these ends, it is the right of the people to alter or abolish it, and to institute new government, laying its foundation on such principles, and organizing its powers in such form, as to them shall seem most likely to effect their safety and happiness.'"</p>
+<p class="c3">Chapter 12</p>
+<p class="western21">This chapter is dedicated to Forbidden Planet, the British chain of science fiction and fantasy books, comics, toys and videos. Forbidden Planet has stores up and down the UK, and also sports outposts in Manhattan and Dublin, Ireland. It's dangerous to set foot in a Forbidden Planet -- rarely do I escape with my wallet intact. Forbidden Planet really leads the pack in bringing the gigantic audience for TV and movie science fiction into contact with science fiction books -- something that's absolutely critical to the future of the field.</p>
+<p class="western22"/>
+<p class="western22"/>
+<p class="western21"><a tag="{http://www.w3.org/1999/xhtml}a">Forbidden Planet, UK, Dublin and New York City</a></p>
+<p class="western22"/>
+<p class="calibre1">Ms Galvez's smile was wide.</p>
+<p class="calibre1">"Does anyone know what that comes from?"</p>
+<p class="calibre1">A bunch of people chorused, "The Declaration of Independence."</p>
+<p class="calibre1">I nodded.</p>
+<p class="calibre1">"Why did you read that to us, Marcus?"</p>
+<p class="calibre1">"Because it seems to me that the founders of this country said that governments should only last for so long as we believe that they're working for us, and if we stop believing in them, we should overthrow them. That's what it says, right?"</p>
+<p class="calibre1">Charles shook his head. "That was hundreds of years ago!" he said. "Things are different now!"</p>
+<p class="calibre1">"What's different?"</p>
+<p class="calibre1">"Well, for one thing, we don't have a king anymore. They were talking about a government that existed because some old jerk's great-great-great-grandfather believed that God put him in charge and killed everyone who disagreed with him. We have a democratically elected government --"</p>
+<p class="calibre1">"I didn't vote for them," I said.</p>
+<p class="calibre1">"So that gives you the right to blow up a building?"</p>
+<p class="calibre1">"What? Who said anything about blowing up a building? The Yippies and hippies and all those people believed that the government no longer listened to them -- look at the way people who tried to sign up voters in the South were treated! They were beaten up, arrested --"</p>
+<p class="calibre1">"Some of them were killed," Ms Galvez said. She held up her hands and waited for Charles and me to sit down. "We're almost out of time for today, but I want to commend you all on one of the most interesting classes I've ever taught. This has been an excellent discussion and I've learned much from you all. I hope you've learned from each other, too. Thank you all for your contributions.</p>
+<p class="calibre1">"I have an extra-credit assignment for those of you who want a little challenge. I'd like you to write up a paper comparing the political response to the anti-war and civil rights movements in the Bay Area to the present day civil rights responses to the War on Terror. Three pages minimum, but take as long as you'd like. I'm interested to see what you come up with."</p>
+<p class="calibre1">The bell rang a moment later and everyone filed out of the class. I hung back and waited for Ms Galvez to notice me.</p>
+<p class="calibre1">"Yes, Marcus?"</p>
+<p class="calibre1">"That was amazing," I said. "I never knew all that stuff about the sixties."</p>
+<p class="calibre1">"The seventies, too. This place has always been an exciting place to live in politically charged times. I really liked your reference to the Declaration -- that was very clever."</p>
+<p class="calibre1">"Thanks," I said. "It just came to me. I never really appreciated what those words all meant before today."</p>
+<p class="calibre1">"Well, those are the words every teacher loves to hear, Marcus," she said, and shook my hand. "I can't wait to read your paper."</p>
+<p class="western7">#</p>
+<p class="western7"/>
+<p class="calibre1">I bought the Emma Goldman poster on the way home and stuck it up over my desk, tacked over a vintage black-light poster. I also bought a NEVER TRUST t-shirt that had a photoshop of Grover and Elmo kicking the grownups Gordon and Susan off Sesame Street. It made me laugh. I later found out that there had already been about six photoshop contests for the slogan online in places like Fark and Worth1000 and B3ta and there were hundreds of ready-made pics floating around to go on whatever merch someone churned out.</p>
+<p class="calibre1">Mom raised an eyebrow at the shirt, and Dad shook his head and lectured me about not looking for trouble. I felt a little vindicated by his reaction.</p>
+<p class="calibre1">Ange found me online again and we IM-flirted until late at night again. The white van with the antennas came back and I switched off my Xbox until it had passed. We'd all gotten used to doing that.</p>
+<p class="calibre1">Ange was really excited by this party. It looked like it was going to be monster. There were so many bands signed up they were talking about setting up a B-stage for the secondary acts.</p>
+<p class="western23">&gt; How'd they get a permit to blast sound all night in that park? There's houses all around there</p>
+<p class="western24"/>
+<p class="western23">&gt; Per-mit? What is "per-mit"? Tell me more of your hu-man per-mit.</p>
+<p class="western24"/>
+<p class="western23">&gt; Woah, it's illegal?</p>
+<p class="western24"/>
+<p class="western24"><span class="c7">&gt; Um, hello?</span> <span class="c8">You're</span><span class="c7">worried about breaking the law?</span></p>
+<p class="western24"/>
+<p class="western23">&gt; Fair point</p>
+<p class="western24"/>
+<p class="western23">&gt; LOL</p>
+<p class="western24"/>
+<p class="calibre1">I felt a little premonition of nervousness though. I mean, I was taking this perfectly awesome girl out on a date that weekend -- well, she was taking me, technically -- to an illegal rave being held in the middle of a busy neighborhood.</p>
+<p class="calibre1">It was bound to be interesting at least.</p>
+<p class="western25">#</p>
+<p class="western25"/>
+<p class="calibre1">Interesting.</p>
+<p class="calibre1">People started to drift into Dolores Park through the long Saturday afternoon, showing up among the ultimate frisbee players and the dog-walkers. Some of them played frisbee or walked dogs. It wasn't really clear how the concert was going to work, but there were a lot of cops and undercovers hanging around. You could tell the undercovers because, like Zit and Booger, they had Castro haircuts and Nebraska physiques: tubby guys with short hair and untidy mustaches. They drifted around, looking awkward and uncomfortable in their giant shorts and loose-fitting shirts that no-doubt hung down to cover the chandelier of gear hung around their midriffs.</p>
+<p class="calibre1">Dolores Park is pretty and sunny, with palm trees, tennis courts, and lots of hills and regular trees to run around on, or hang out on. Homeless people sleep there at night, but that's true everywhere in San Francisco.</p>
+<p class="calibre1">I met Ange down the street, at the anarchist bookstore. That had been my suggestion. In hindsight, it was a totally transparent move to seem cool and edgy to this girl, but at the time I would have sworn that I picked it because it was a convenient place to meet up. She was reading a book called <i class="calibre6">Up Against the Wall Motherfucker</i> when I got there.</p>
+<p class="calibre1">"Nice," I said. "You kiss your mother with that mouth?"</p>
+<p class="calibre1">"Your mama don't complain," she said. "Actually, it's a history of a group of people like the Yippies, but from New York. They all used that word as their last names, like 'Ben M-F.' The idea was to have a group out there, making news, but with a totally unprintable name. Just to screw around with the news-media. Pretty funny, really." She put the book back on the shelf and now I wondered if I should hug her. People in California hug to say hello and goodbye all the time. Except when they don't. And sometimes they kiss on the cheek. It's all very confusing.</p>
+<p class="calibre1">She settled it for me by grabbing me in a hug and tugging my head down to her, kissing me hard on the cheek, then blowing a fart on my neck. I laughed and pushed her away.</p>
+<p class="calibre1">"You want a burrito?" I asked.</p>
+<p class="calibre1">"Is that a question or a statement of the obvious?"</p>
+<p class="calibre1">"Neither. It's an order."</p>
+<p class="calibre1">I bought some funny stickers that said THIS PHONE IS TAPPED which were the right size to put on the receivers on the pay phones that still lined the streets of the Mission, it being the kind of neighborhood where you got people who couldn't necessarily afford a cellphone.</p>
+<p class="calibre1">We walked out into the night air. I told Ange about the scene at the park when I left.</p>
+<p class="calibre1">"I bet they have a hundred of those trucks parked around the block," she said. "The better to bust you with."</p>
+<p class="calibre1">"Um." I looked around. "I sort of hoped that you would say something like, 'Aw, there's no chance they'll do anything about it.'"</p>
+<p class="calibre1">"I don't think that's really the idea. The idea is to put a lot of civilians in a position where the cops have to decide, are we going to treat these ordinary people like terrorists? It's a little like the jamming, but with music instead of gadgets. You jam, right?"</p>
+<p class="calibre1">Sometimes I forget that all my friends don't know that Marcus and M1k3y are the same person. "Yeah, a little," I said.</p>
+<p class="calibre1">"This is like jamming with a bunch of awesome bands."</p>
+<p class="calibre1">"I see."</p>
+<p class="calibre1">Mission burritos are an institution. They are cheap, giant and delicious. Imagine a tube the size of a bazooka shell, filled with spicy grilled meat, guacamole, salsa, tomatoes, refried beans, rice, onions and cilantro. It has the same relationship to Taco Bell that a Lamborghini has to a Hot Wheels car.</p>
+<p class="calibre1">There are about two hundred Mission burrito joints. They're all heroically ugly, with uncomfortable seats, minimal decor -- faded Mexican tourist office posters and electrified framed Jesus and Mary holograms -- and loud mariachi music. The thing that distinguishes them, mostly, is what kind of exotic meat they fill their wares with. The really authentic places have brains and tongue, which I never order, but it's nice to know it's there.</p>
+<p class="calibre1">The place we went to had both brains and tongue, which we didn't order. I got carne asada and she got shredded chicken and we each got a big cup of horchata.</p>
+<p class="calibre1">As soon as we sat down, she unrolled her burrito and took a little bottle out of her purse. It was a little stainless-steel aerosol canister that looked for all the world like a pepper-spray self-defense unit. She aimed it at her burrito's exposed guts and misted them with a fine red oily spray. I caught a whiff of it and my throat closed and my eyes watered.</p>
+<p class="calibre1">"What the hell are you doing to that poor, defenseless burrito?"</p>
+<p class="calibre1">She gave me a wicked smile. "I'm a spicy food addict," she said. "This is capsaicin oil in a mister."</p>
+<p class="calibre1">"Capsaicin --"</p>
+<p class="calibre1">"Yeah, the stuff in pepper spray. This is like pepper spray but slightly more dilute. And way more delicious. Think of it as Spicy Cajun Visine if it helps."</p>
+<p class="calibre1">My eyes burned just thinking of it.</p>
+<p class="calibre1">"You're kidding," I said. "You are so not going to eat that."</p>
+<p class="calibre1">Her eyebrows shot up. "That sounds like a challenge, sonny. You just watch me."</p>
+<p class="calibre1">She rolled the burrito up as carefully as a stoner rolling up a joint, tucking the ends in, then re-wrapping it in tinfoil. She peeled off one end and brought it up to her mouth, poised with it just before her lips.</p>
+<p class="calibre1">Right up to the time she bit into it, I couldn't believe that she was going to do it. I mean, that was basically an anti-personnel weapon she'd just slathered on her dinner.</p>
+
+
+  </div>
+
+  
+  <div class="calibreToc">
+    <h2><a href="../../pg140768.html"> Table of contents</a></h2>
+     <div>
+  <ul>
+    <li>
+      <a href="part0000.html#0-d5d5ec8a3669480a944dbbba19da8536">Start</a>
+    </li>
+  </ul>
+</div>
+
+
+  </div>
+  
+
+  <div class="calibreEbNav">
+    
+      <a href="part0003.html" class="calibreAPrev">previous page</a>
+    
+
+    <a href="../../pg140768.html" class="calibreAHome"> start</a>
+
+    
+      <a href="part0005.html" class="calibreANext"> next page</a>
+    
+  </div>
+
+</div>
+
+</body>
+</html>

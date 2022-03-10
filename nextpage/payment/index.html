@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Process....</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://css.gg/shopping-bag.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="bs-example">
+	
+		<div class="row">
+		  <div class="col-sm-12"><h1>Book Payment Process......</h1></div>
+		 
+		</div>
+		<div class="row">
+		  <div class="col-sm-12"><a href="../../index.html">Home</a></div>
+		  
+		</div>
+		<div class="row">
+		  <div class="col-sm-8">
+			<form name="myform" action="" onsubmit="return validate()">
+				<p>Pay using Credit or Debit card</p>
+				<table>
+					<tr>
+						<td>Card Number:</td>
+						<td><input type="text" name="cardnum" placeholder="XXXX-XXXX-XXXX-XXXX">
+							<span id="cardnumlocation" style="color: rgb(255, 255, 255);">  </span></td>
+					</tr>
+					<tr>
+						<td>Expiry Date:</td>
+						<td><input type="text" name="expirydate" placeholder="Month/Year">
+							<span id="expirydatelocation" style="color: rgb(241, 241, 241);">  </span></td>
+					</tr>
+					<tr>
+						<td>CVV number:</td>
+						<td><input type="text" name="cvvnum" placeholder="XXX">
+							<span id="cvvnumlocation" placeholder="XXX" style="color: rgb(255, 255, 255);">  </span></td>
+					</tr>
+					<tr>
+						<td>Card Holder name:</td>
+						<td><input type="text" name="cardholder" placeholder="Card Holder name">
+							<span id="cardholderlocation" style="color: rgb(255, 255, 255);">  </span></td>
+					</tr>
+					
+					<tr>
+						<td colspan="2"><input type="submit" value="Pay"></td>
+						<td colspan="2"><input type="reset" value="Cancel"></td>
+					</tr>
+				</table>
+			</form>
+		  </div>
+		 
+		</div>
+	
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

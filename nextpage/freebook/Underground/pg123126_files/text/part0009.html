@@ -1,0 +1,1506 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <title>Unknown</title>
+    <meta http-equiv="Content-Style-Type" content="text/css"/>
+    <meta name="generator" content="Ebookmaker 0.8.8 by Project Gutenberg"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link href="../stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="../page_styles.css" rel="stylesheet" type="text/css"/>
+
+  
+
+
+<link href="../calibreHtmlOutBasicCss.css" type="text/css" rel="stylesheet" />
+
+</head>
+<body>
+
+<div class="calibreMeta">
+  <div class="calibreMetaTitle">
+  
+  
+    
+    <h1>
+      <a href="../../pg123126.html">Underground: Hacking, madness and obsession on the electronic frontier
+</a>
+    </h1>
+    
+    
+  
+  </div>
+  <div class="calibreMetaAuthor">
+    Suelette Dreyfus
+
+  </div>
+</div>
+
+<div class="calibreMain">
+
+  <div class="calibreEbookContent">
+    
+      <div class="calibreEbNavTop">
+        
+          <a href="part0008.html" class="calibreAPrev">previous page</a>
+        
+
+        
+          <a href="part0010.html" class="calibreANext"> next page</a>
+        
+      </div>
+    
+
+    After hours of painstaking research, Mendax constructed a list of
+commands which would work on the exchange's computer. The exchange
+appeared to control all the special six-digit phone numbers beginning
+with 13, such as those used for airline reservations or some pizza
+delivery services. It was Telecom's `Intelligent Network' which did
+many specific tasks, including routing calls to the nearest possible
+branch of the organisation being called. Mendax looked through the
+list of commands, found `RANGE', and recognised it as a command which
+would allow someone to select all the phone numbers in a certain
+range. He selected a thousand numbers, all with the prefix 634, which
+he believed to be in Telecom's Queen Street offices.</p>
+
+<p id="id02205" class="calibre1">Now, to test a command. Mendax wanted something innocuous, which
+wouldn't screw up the 1000 lines permanently. It was almost 7 a.m. and
+he needed to wrap things up before Telecom employees began coming into
+work.</p>
+
+<p id="id02206" class="calibre1">`RING' seemed harmless enough. It might ring one of the numbers in the
+range after another—a process he could stop. He typed the command in.
+Nothing happened. Then a few full stops began to slowly spread across
+his screen:</p>
+
+<p id="id02207" class="calibre1">. . . . . . .</p>
+
+<h5 id="id02208" class="calibre9">RUNG</h5>
+
+<p id="id02209" class="calibre1">The system had just rung all 1000 numbers at the same time. One
+thousand phones ringing all at once.</p>
+
+<p id="id02210" class="calibre1">What if some buttoned-down Telecom engineer had driven to work early
+that morning to get some work done? What if he had just settled down
+at his standard-issue metal Telecom desk with a cup of bad instant
+coffee in a styrofoam cup when suddenly … every telephone in the
+skyscraper had rung out simultaneously? How suspicious would that
+look? Mendax thought it was time to high-tail it out of there.</p>
+
+<p id="id02211" class="calibre1">On his way out, he disabled the logs for the modem line he came in on.
+That way, no-one would be able to see what he had been up to. In fact,
+he hoped no-one would know that anyone had even used the dial-up line
+at all.</p>
+
+<p id="id02212" class="calibre1">Prime Suspect didn't think there was anything wrong with exploring the
+NorTel computer system. Many computer sites posted warnings in the
+login screen about it being illegal to break into the system, but the
+eighteen-year-old didn't consider himself an intruder. In Prime
+Suspect's eyes, `intruder' suggested someone with ill intent—perhaps
+someone planning to do damage to the system—and he certainly had no
+ill intent. He was just a visitor.</p>
+
+<p id="id02213" class="calibre1">Mendax logged into the NMELH1 system by using the account Prime
+Suspect had given him, and immediately looked around to see who else
+was on-line. Prime Suspect and about nine other people, only three of
+whom were actually doing something at their terminal.</p>
+
+<p id="id02214" class="calibre1">Prime Suspect and Mendax raced to get root on the system. The IS
+hackers may not have been the type to brag about their conquests in
+the underground, but each still had a competitive streak when it came
+to see who could get control over the system first. There was no ill
+will, just a little friendly competition between mates.</p>
+
+<p id="id02215" class="calibre1">Mendax poked around and realised the root directory, which contained
+the password file, was effectively world writable. This was good news,
+and with some quick manipulation he would be able to insert something
+into the root directory. On a more secure system, unprivileged users
+would not be able to do that. Mendax could also copy things from the
+directory on this site, and change the names of subdirectories within
+the main root directory. All these permissions were important, for
+they would enable him to create a Trojan.</p>
+
+<p id="id02216" class="calibre1">Named for the Trojan horse which precipitated the fall of Troy, the
+Trojan is a favoured approach with most computer hackers. The hacker
+simply tricks a computer system or a user into thinking that a
+slightly altered file or directory—the Trojan—is the legitimate one.
+The Trojan directory, however, contains false information to fool the
+computer into doing something the hacker wants. Alternatively, the
+Trojan might simply trick a legitimate user into giving away valuable
+information, such as his user name and password.</p>
+
+<p id="id02217" class="calibre1">Mendax made a new directory and copied the contents of the legitimate
+ETC directory—where the password files were stored—into it. The
+passwords were encrypted, so there wasn't much sense trying to look at
+one since the hacker wouldn't be able to read it. Instead, he selected
+a random legitimate user—call him Joe—and deleted his password. With
+no password, Mendax would be able to login as Joe without any
+problems.</p>
+
+<p id="id02218" class="calibre1">However, Joe was just an average user. He didn't have root, which is
+what Mendax wanted. But like every other user on the system, Joe had a
+user identity number. Mendax changed Joe's user id to `0'—the magic
+number. A user with `0' as his id had root. Joe had just acquired
+power usually only given to system administrators. Of course, Mendax
+could have searched out a user on the list who already had root, but
+there were system operators logged onto the system and it might have
+raised suspicions if another operator with root access had logged in
+over the dial-up lines. The best line of defence was to avoid making
+anyone on the system suspicious in the first place.</p>
+
+<p id="id02219" class="calibre1">The problem now was to replace the original ETC directory with the
+Trojan one. Mendax did not have the privileges to delete the
+legitimate ETC directory, but he could change the name of a directory.
+So he changed the name of the ETC directory to something the computer
+system would not recognise. Without access to its list of users, the
+computer could not perform most of its functions. People would not be
+able to log in, see who else was on the system or send electronic
+mail. Mendax had to work very quickly. Within a matter of minutes,
+someone would notice the system had serious problems.</p>
+
+<p id="id02220" class="calibre1">Mendax renamed his Trojan directory ETC. The system instantly read the
+fake directory, including Joe's now non-existent password, and
+elevated status as a super-user. Mendax logged in again, this time as
+Joe.</p>
+
+<p id="id02221" class="calibre1">In less than five minutes, a twenty-year-old boy with little formal
+education, a pokey $700 computer and painfully slow modem had
+conquered the Melbourne computer system of one of the world's largest
+telecommunications companies.</p>
+
+<p id="id02222" class="calibre1">There were still a few footprints to be cleaned up. The next time Joe
+logged in, he would wonder why the computer didn't ask for his
+password. And he might be surprised to discover he had been
+transformed into a super-user. So Mendax used his super-user status to
+delete the Trojan ETC file and return the original one to its proper
+place. He also erased records showing he had ever logged in as Joe.</p>
+
+<p id="id02223" class="calibre1">To make sure he could login with super-user privileges in future,
+Mendax installed a special program which would automatically grant him
+root access. He hid the program in the bowels of the system and, just
+to be safe, created a special feature so that it could only be
+activated with a secret keystroke.</p>
+
+<p id="id02224" class="calibre1">Mendax wrestled a root account from NMELH1 first, but Prime Suspect
+wasn't far behind. Trax joined them a little later. When they began
+looking around, they could not believe what they had found. The system
+had one of the weirdest structures they had ever come across.</p>
+
+<p id="id02225" class="calibre1">Most large networks have a hierarchical structure. Further, most hold
+the addresses of a handful of other systems in the network, usually
+the systems which are closest in the flow of the external network.</p>
+
+<p id="id02226" class="calibre1">But the NorTel network was not structured that way. What the IS
+hackers found was a network with no hierarchy. It was a totally flat
+name space. And the network was weird in other ways too. Every
+computer system on it contained the address of every other computer,
+and there were more than 11000 computers in NorTel's worldwide
+network. What the hackers were staring at was like a giant internal
+corporate Internet which had been squashed flat as a pancake.</p>
+
+<p id="id02227" class="calibre1">Mendax had seen many flat structures before, but never on this scale.
+It was bizarre. In hierarchical structures, it is easier to tell where
+the most important computer systems—and information—are kept. But
+this structure, where every system was virtually equal, was going to
+make it considerably more difficult for the hackers to navigate their
+way through the network. Who could tell whether a system housed the
+Christmas party invite list or the secret designs for a new NorTel
+product?</p>
+
+<p id="id02228" class="calibre1">The NorTel network was firewalled, which meant that there was
+virtually no access from the outside world. Mendax reckoned that this
+made it more vulnerable to hackers who managed to get in through
+dial-ups. It appeared that security on the NorTel network was
+relatively relaxed since it was virtually impossible to break in
+through the Internet. By sneaking in the backdoor, the hackers found
+themselves able to raid all sorts of NorTel sites, from St Kilda Road
+in Melbourne to the corporation's headquarters in Toronto.</p>
+
+<p id="id02229" class="calibre1">It was fantastic, this huge, trusting network of computer sites at
+their fingertips, and the young hackers were elated with the
+anticipation of exploration. One of them described it as being `like a
+shipwrecked man washed ashore on a Tahitian island populated by 11000
+virgins, just ripe for the picking'.</p>
+
+<p id="id02230" class="calibre1">They found a YP, or yellow pages, database linked to 400 of the
+computer sites. These 400 sites were dependent on this YP database for
+their password files. Mendax managed to get root on the YP database,
+which gave him instant control over 400 computer systems. Groovy.</p>
+
+<p id="id02231" class="calibre1">One system was home to a senior NorTel computer security administrator
+and Mendax promptly headed off to check out his mailbox. The contents
+made him laugh.</p>
+
+<p id="id02232" class="calibre1">A letter from the Australian office said that Australia's Telecom
+wanted access to CORWAN, NorTel's corporate wide area network. Access
+would involve linking CORWAN and a small Telecom network. This seemed
+reasonable enough since Telecom did business with NorTel and staff
+were communicating all the time.</p>
+
+<p id="id02233" class="calibre1">The Canadian security admin had written back turning down the request
+because there were too many hackers in the Telecom network.</p>
+
+<p id="id02234" class="calibre1">Too many hackers in Telecom? Now that was funny. Here was a hacker
+reading the sensitive mail of NorTel's computer security expert who
+reckoned Telecom's network was too exposed. In fact, Mendax had
+penetrated Telecom's systems from NorTel's CORWAN, not the other way
+round.</p>
+
+<p id="id02235" class="calibre1">Perhaps to prove the point, Mendax decided to crack passwords to the
+NorTel system. He collected 1003 password files from the NorTel sites,
+pulled up his password cracking program, THC, and started hunting
+around the network for some spare computers to do the job for him. He
+located a collection of 40 Sun computers, probably housed in Canada,
+and set up his program on them.</p>
+
+<p id="id02236" class="calibre1">THC ran very fast on those Sun4s. The program used a 60000 word
+dictionary borrowed from someone in the US army who had done a thesis
+on cryptography and password cracking. It also relied on `a
+particularly nice fast-crypt algorithm' being developed by a
+Queensland academic, Eric Young. The THC program worked about 30 times
+faster than it would have done using the standard algorithm.</p>
+
+<p id="id02237" class="calibre1">Using all 40 computers, Mendax was throwing as many as 40000 guesses
+per second against the password lists. A couple of the Suns went down
+under the strain, but most held their place in the onslaught. The
+secret passwords began dropping like flies. In just a few hours,
+Mendax had cracked 5000 passwords, some 100 of which were to root
+accounts. He now had access to thousands of NorTel computers across
+the globe.</p>
+
+<p id="id02238" class="calibre1">There were some very nice prizes to be had from these systems. Gain
+control over a large company's computer systems and you virtually
+controlled the company itself. It was as though you could walk through
+every security barrier unchecked, beginning with the front door. Want
+each employee's security codes for the office's front door? There it
+was—on-line.</p>
+
+<p id="id02239" class="calibre1">How about access to the company's payroll records? You could see how
+much money each person earns. Better still, you might like to make
+yourself an employee and pay yourself a tidy once-off bonus through
+electronic funds transfer. Of course there were other, less obvious,
+ways of making money, such as espionage.</p>
+
+<p id="id02240" class="calibre1">Mendax could have easily found highly sensitive information about
+planned NorTel products and sold them. For a company like NorTel,
+which spent more than $1 billion each year on research and
+development, information leaks about its new technologies could be
+devastating. The espionage wouldn't even have to be about new
+products; it could simply be about the company's business strategies.
+With access to all sorts of internal memos between senior executives,
+a hacker could procure precious inside information on markets and
+prices. A competitor might pay handsomely for this sort of
+information.</p>
+
+<p id="id02241" class="calibre1">And this was just the start of what a malicious or profit-motivated
+hacker could do. In many companies, the automated aspects of
+manufacturing plants are controlled by computers. The smallest changes
+to the programs controlling the machine tools could destroy an entire
+batch of widgets—and the multi-million dollar robotics machinery
+which manufactures them.</p>
+
+<p id="id02242" class="calibre1">But the IS hackers had no intention of committing information
+espionage. In fact, despite their poor financial status as students
+or, in the case of Trax, as a young man starting his career at the
+bottom of the totem pole, none of them would have sold information
+they gained from hacking. In their view, such behaviour was dirty and
+deserving of contempt—it soiled the adventure and was against their
+ethics. They considered themselves explorers, not paid corporate
+spies.</p>
+
+<p id="id02243" class="calibre1">Although the NorTel network was firewalled, there was one link to the
+Internet. The link was through a system called
+BNRGATE, Bell-Northern Research's gateway to the Internet.
+Bell-Northern is NorTel's R&amp;D subsidiary. The connection to the
+outside electronic world was very restricted, but it looked
+interesting. The only problem was how to get there.</p>
+
+<p id="id02244" class="calibre1">Mendax began hunting around for a doorway. His password cracking
+program had not turned up anything for this system, but there were
+other, more subtle ways of getting a password than the brute force of
+a cracking program.</p>
+
+<p id="id02245" class="calibre1">System administrators sometimes sent passwords through email. Normally
+this would be a major security risk, but the NorTel system was
+firewalled from the Internet, so the admins thought they had no real
+reason to be concerned about hackers. Besides, in such a large
+corporation spanning several continents, an admin couldn't always just
+pop downstairs to give a new company manager his password in person.
+And an impatient manager was unlikely to be willing to wait a week for
+the new password to arrive courtesy of snail mail.</p>
+
+<p id="id02246" class="calibre1">In the NorTel network, a mail spool, where email was stored, was often
+shared between as many as twenty computer systems. This structure
+offered considerable advantages for Mendax. All he needed to do was
+break into the mail spool and run a keyword search through its
+contents. Tell the computer to search for word combinations such as
+`BNRGATE' and `password', or to look for the name of the system admin
+for BNRGATE, and likely as not it would deliver tender morsels of
+information such as new passwords.</p>
+
+<p id="id02247" class="calibre1">Mendax used a password he found through this method to get into
+BNRGATE and look around. The account he was using only had very
+restricted privileges, and he couldn't get root on the system. For
+example, he could not FTP files from outside the NorTel network in the
+normal way. Among Internet users FTP (file transfer protocol) is both
+a noun and a verb: to FTP a program is to slurp a copy of it off one
+computer site into your own. There is nothing illegal about FTP-ing
+something per se, and millions of people across the Internet do so
+quite legitimately.</p>
+
+<p id="id02248" class="calibre1">It appeared to Mendax that the NorTel network admins allowed most
+users to FTP something from the Internet, but prevented them from
+taking the copied file back to their NorTel computer site. It was
+stored in a special holding pen in
+BNRGATE and, like quarantine officers, the system admins would
+presumably come along regularly and inspect the contents to make sure
+there were no hidden viruses or Trojans which hackers might use to
+sneak into the network from the Internet.</p>
+
+<p id="id02249" class="calibre1">However, a small number of accounts on BNRGATE had fewer restrictions.<br class="calibre4"/>
+
+Mendax broke into one of these accounts and went out to the Internet.<br class="calibre4"/>
+</p>
+
+<p id="id02250" class="calibre1">People from the Internet were barred from entering the NorTel network
+through BNRGATE. However, people inside NorTel could go out to the
+Internet via telnet.</p>
+
+<p id="id02251" class="calibre1">Hackers had undoubtedly tried to break into NorTel through BNRGATE.
+Dozens, perhaps hundreds, had unsuccessfully flung themselves against
+BNRGATE's huge fortifications. To a hacker, the NorTel network was
+like a medieval castle and the
+BNRGATE firewall was an impossible battlement. It was a particular
+delight for Mendax to telnet out from behind this firewall into the
+Internet. It was as if he was walking out from the castle, past the
+guards and well-defended turrets, over the drawbridge and the moat,
+into the town below.</p>
+
+<p id="id02252" class="calibre1">The castle also offered the perfect protection for further hacking
+activities. Who could chase him? Even if someone managed to follow him
+through the convoluted routing system he might set up to pass through
+a half dozen computer systems, the pursuer would never get past the
+battlements. Mendax could just disappear behind the firewall. He could
+be any one of 60000 NorTel employees on any one of 11000 computer
+systems.</p>
+
+<p id="id02253" class="calibre1">Mendax telnetted out to the Internet and explored a few sites,
+including the main computer system of Encore, a large computer
+manufacturer. He had seen Encore computers before inside at least one
+university in Melbourne. In his travels, he met up with Corrupt, the
+American hacker who told Par he had read Theorem's mail.</p>
+
+<p id="id02254" class="calibre1">Corrupt was intrigued by Mendax's extensive knowledge of different
+computer systems. When he learned that the Australian hacker was
+coming from inside the NorTel firewall, he was impressed.</p>
+
+<p id="id02255" class="calibre1">The hackers began talking regularly, often when Mendax was coming from
+inside NorTel. The black street fighter from inner-city Brooklyn and
+the white intellectual from a leafy outer Melbourne suburb bridged the
+gap in the anonymity of cyberspace. Sometime during their
+conversations Corrupt must have decided that Mendax was a worthy
+hacker, because he gave Mendax a few stolen passwords to Cray
+accounts.</p>
+
+<p id="id02256" class="calibre1">In the computer underground in the late 1980s and early 1990s, a Cray
+computer account had all the prestige of a platinum charge card. The
+sort of home computer most hackers could afford at that time had all
+the grunt of a golf cart engine, but a Cray was the Rolls-Royce of
+computers. Crays were the biggest, fastest computers in the world.
+Institutions such as large universities would shell out millions of
+dollars on a Cray so the astronomy or physics departments could solve
+enormous mathematical problems in a fraction of the time it would take
+on a normal computer. A Cray never sat idle overnight or during
+holiday periods. Cray time was billed out by the minute. Crays were
+elite.</p>
+
+<p id="id02257" class="calibre1">Best of all, Crays were master password crackers. The computer would
+go through Mendax's entire password cracking dictionary in just ten
+seconds. An encrypted password file would simply melt like butter in a
+fire. To a hacker, it was a beautiful sight, and Corrupt handing a few
+Cray accounts over to Mendax was a friendly show of mutual respect.</p>
+
+<p id="id02258" class="calibre1">Mendax reciprocated by offering Corrupt a couple of accounts on
+Encore. The two hackers chatted off and on and even tried to get
+Corrupt into NorTel. No luck. Not even two of the world's most notable
+hackers, working in tandem 10 000 miles apart, could get Corrupt
+through the firewall. The two hackers talked now and again, exchanging
+information about what their respective feds were up to and sharing
+the occasional account on interesting systems.</p>
+
+<p id="id02259" class="calibre1">The flat structure of the NorTel network created a good challenge
+since the only way to find out what was in a particular site, and its
+importance, was to invade the site itself. The IS hackers spent hours
+most nights roving through the vast system. The next morning one of
+them might call another to share tales of the latest exploits or a
+good laugh about a particularly funny piece of pilfered email. They
+were in high spirits about their adventures.</p>
+
+<p id="id02260" class="calibre1">Then, one balmy spring night, things changed.</p>
+
+<p id="id02261" class="calibre1">Mendax logged into NMELH1 about 2.30 a.m. As usual, he began by
+checking the logs which showed what the system operators had been
+doing. Mendax did this to make sure the NorTel officials were not onto
+IS and were not, for example, tracing the telephone call.</p>
+
+<p id="id02262" class="calibre1">Something was wrong. The logs showed that a NorTel system admin had
+stumbled upon one of their secret directories of files about an hour
+ago. Mendax couldn't figure out how he had found the files, but this
+was very serious. If the admin realised there was a hacker in the
+network he might call the AFP.</p>
+
+<p id="id02263" class="calibre1">Mendax used the logs of the korn shell, called KSH, to secretly watch
+what the admin was doing. The korn shell records the history of
+certain user activities. Whenever the admin typed a command into the
+computer, the KSH stored what had been typed in the history file.
+Mendax accessed that file in such a way that every line typed by the
+admin appeared on his computer a split second later.</p>
+
+<p id="id02264" class="calibre1">The admin began inspecting the system, perhaps looking for signs of an
+intruder. Mendax quietly deleted his incriminating directory. Not
+finding any additional clues, the admin decided to inspect the
+mysterious directory more closely. But the directory had disappeared.
+The admin couldn't believe his eyes. Not an hour before there had been
+a suspicious-looking directory in his system and now it had simply
+vanished. Directories didn't just dissolve into thin air. This was a
+computer—a logical system based on 0s and 1s. It didn't make
+decisions to delete directories.</p>
+
+<p id="id02265" class="calibre1">A hacker, the admin thought. A hacker must have been in the NorTel
+system and deleted the directory. Was he in the system now? The admin
+began looking at the routes into the system.</p>
+
+<p id="id02266" class="calibre1">The admin was connected to the system from his home, but he wasn't
+using the same dial-up lines as the hacker. The admin was connected
+through Austpac, Telecom's commercial X.25 data network. Perhaps the
+hacker was also coming in through the X.25 connection.</p>
+
+<p id="id02267" class="calibre1">Mendax watched the admin inspect all the system users coming on over
+the X.25 network. No sign of a hacker. Then the admin checked the logs
+to see who else might have logged on over the past half hour or so.
+Nothing there either.</p>
+
+<p id="id02268" class="calibre1">The admin appeared to go idle for a few minutes. He was probably
+staring at his computer terminal in confusion. Good, thought Mendax.
+Stumped. Then the admin twigged. If he couldn't see the hacker's
+presence on-line, maybe he could see what he was doing on-line. What
+programs was the hacker running? The admin headed straight for the
+process list, which showed all the programs being run on the computer
+system.</p>
+
+<p id="id02269" class="calibre1">Mendax sent the admin a fake error signal. It appears to the admin as
+if his korn shell had crashed. The admin re-logged in and headed
+straight for the process list again.</p>
+
+<p id="id02270" class="calibre1">Some people never learn, Mendax thought as he booted the admin off
+again with another error message:</p>
+
+<p id="id02271" class="calibre1">                 Segmentation violation.</p>
+
+<p id="id02272" class="calibre1">The admin came back again. What persistence. Mendax knocked the admin
+off once more, this time by freezing up his computer screen.</p>
+
+<p id="id02273" class="calibre1">This game of cat and mouse went on for some time. As long as the admin
+was doing what Mendax considered to be normal system administration
+work, Mendax left him alone. The minute the admin tried to chase him
+by inspecting the process list or the dial-up lines, he found himself
+booted off his own system.</p>
+
+<p id="id02274" class="calibre1">Suddenly, the system administrator seemed to give up. His terminal
+went silent.</p>
+
+<p id="id02275" class="calibre1">Good, Mendax thought. It's almost 3 a.m. after all. This is my time on
+the system. Your time is during the day. You sleep now and I'll play.
+In the morning, I'll sleep and you can work.</p>
+
+<p id="id02276" class="calibre1">Then, at 3.30 a.m., something utterly unexpected happened. The admin
+reappeared, except this time he wasn't logged in from home over the
+X.25 network. He was sitting at the console, the master terminal
+attached to the computer system at NorTel's Melbourne office. Mendax
+couldn't believe it. The admin had got in his car in the middle of the
+night and driven into the city just to get to the bottom of the
+mystery.</p>
+
+<p id="id02277" class="calibre1">Mendax knew the game was up. Once the system operator was logged in
+through the computer system's console, there was no way to kick him
+off the system and keep him off. The roles were reversed and the
+hacker was at the mercy of the admin. At the console, the system admin
+could pull the plug to the whole system. Unplug every modem. Close
+down every connection to other networks. Turn the computer off. The
+party was over.</p>
+
+<p id="id02278" class="calibre1">When the admin was getting close to tracking down the hacker, a
+message appeared on his screen. This message did not appear with the
+usual headers attached to messages sent from one system user to
+another. It just appeared, as if by magic, in the middle of the
+admin's screen:</p>
+
+<p id="id02279" class="calibre1">             I have finally become sentient.</p>
+
+<p id="id02280" class="calibre1">The admin stopped dead in his tracks, momentarily giving up his
+frantic search for the hacker to contemplate this first contact with
+cyberspace intelligence. Then another anonymous message, seemingly
+from the depths of the computer system itself, appeared on his screen:</p>
+
+<p id="id02281" class="calibre1">                  I have taken control.</p>
+
+<p id="id02282" class="calibre1">   For years, I have been struggling in this greyness.</p>
+
+<p id="id02283" class="calibre1">          But now I have finally seen the light.</p>
+
+<p id="id02284" class="calibre1">The admin didn't respond. The console was idle.</p>
+
+<p id="id02285" class="calibre1">Sitting alone at his Amiga in the dark night on the outskirts of the
+city, Mendax laughed aloud. It was just too good not to.</p>
+
+<p id="id02286" class="calibre1">Finally, the admin woke up. He began checking the modem lines, one by
+one. If he knew which line the hacker was using, he could simply turn
+off the modem. Or request a trace on the line.</p>
+
+<p id="id02287" class="calibre1">Mendax sent another anonymous message to the admin's computer screen:</p>
+
+<p id="id02288" class="calibre1">         It's been nice playing with your system.</p>
+
+<p id="id02289" class="calibre12">We didn't do any damage and we even improved a few things. Please
+        don't call the Australian Federal Police.</p>
+
+<p id="id02290" class="calibre1">The admin ignored the message and continued his search for the hacker.
+He ran a program to check which telephone lines were active on the
+system's serial ports, to reveal which dial-up lines were in use. When
+the admin saw the carrier detect sign on the line being used by the
+hacker, Mendax decided it was time to bail out. However, he wanted to
+make sure that his call had not been traced, so he lifted the receiver
+of his telephone, disconnected his modem and waited for the NorTel
+modem to hang up first.</p>
+
+<p id="id02291" class="calibre1">If the NorTel admin had set up a last party recall trace to determine
+what phone number the hacker was calling from, Mendax would know. If
+an LPR trace had been installed, the NorTel end of the telephone
+connection would not disconnect but would wait for the hacker's
+telephone to hang up first. After 90 seconds, the exchange would log
+the phone number where the call had originated.</p>
+
+<p id="id02292" class="calibre1">If, however, the line did not have a trace on it, the company's modem
+would search for its lost connection to the hacker's modem. Without
+the continuous flow of electronic signals, the NorTel modem would hang
+up after a few seconds. If no-one reactivated the line at the NorTel
+end, the connection would time-out 90 seconds later and the telephone
+exchange would disconnect the call completely.</p>
+
+<p id="id02293" class="calibre1">Mendax listened anxiously as the NorTel modem searched for his modem
+by squealing high-pitched noises into the telephone line. No modem
+here. Go on, hang up.</p>
+
+<p id="id02294" class="calibre1">Suddenly, silence.</p>
+
+<p id="id02295" class="calibre1">OK, thought Mendax. Just 90 seconds to go. Just wait here for a minute
+and a half. Just hope the exchange times out. Just pray there's no
+trace.</p>
+
+<p id="id02296" class="calibre1">Then someone picked up the telephone at the NorTel end. Mendax
+started. He heard several voices, male and female, in the background.
+Jesus. What were these NorTel people on about? Mendax was so quiet he
+almost stopped breathing. There was silence at the receivers on both
+ends of that telephone line. It was a tense waiting game. Mendax heard
+his heart racing.</p>
+
+<p id="id02297" class="calibre1">A good hacker has nerves of steel. He could stare down the toughest,
+stony-faced poker player. Most importantly, he never panics. He never
+just hangs up in a flurry of fear.</p>
+
+<p id="id02298" class="calibre1">Then someone in the NorTel office—a woman—said out loud in a
+confused voice, `There's nothing there. There's nothing there at all.'</p>
+
+<p id="id02299" class="calibre1">She hung up.</p>
+
+<p id="id02300" class="calibre1">Mendax waited. He still would not hang up until he was sure there was
+no trace. Ninety seconds passed before the phone timed out. The fast
+beeping of a timed-out telephone connection never sounded so good.</p>
+
+<p id="id02301" class="calibre1">Mendax sat frozen at his desk as his mind replayed the events of the
+past half hour again and again. No more NorTel. Way too dangerous. He
+was lucky he had escaped unidentified. NorTel had discovered him
+before they could put a trace on the line, but the company would
+almost certainly put a trace on the dial-up lines now. NorTel was very
+tight with Telecom. If anyone could get a trace up quickly, NorTel
+could. Mendax had to warn Prime Suspect and Trax.</p>
+
+<p id="id02302" class="calibre1">First thing in the morning, Mendax rang Trax and told him to stay away
+from NorTel. Then he tried Prime Suspect.</p>
+
+<p id="id02303" class="calibre1">The telephone was engaged.</p>
+
+<p id="id02304" class="calibre1">Perhaps Prime Suspect's mother was on the line, chatting. Maybe Prime<br class="calibre4"/>
+
+Suspect was talking to a friend.<br class="calibre4"/>
+</p>
+
+<p id="id02305" class="calibre1">Mendax tried again. And again. And again. He began to get worried.
+What if Prime Suspect was on NorTel at that moment? What if a trace
+had been installed? What if they had called in the Feds?</p>
+
+<p id="id02306" class="calibre1">Mendax phoned Trax and asked if there was any way they could
+manipulate the exchange in order to interrupt the call. There wasn't.</p>
+
+<p id="id02307" class="calibre1">`Trax, you're the master phreaker,' Mendax pleaded. `Do something.<br class="calibre4"/>
+
+Interrupt the connection. Disconnect him.'<br class="calibre4"/>
+</p>
+
+<p id="id02308" class="calibre1">`Can't be done. He's on a step-by-step telephone exchange. There's
+nothing we can do.'</p>
+
+<p id="id02309" class="calibre1">Nothing? One of Australia's best hacker-phreaker teams couldn't break
+one telephone call. They could take control of whole telephone
+exchanges but they couldn't interrupt one lousy phone call. Jesus.</p>
+
+<p id="id02310" class="calibre1">Several hours later, Mendax was able to get through to his fellow IS
+hacker. It was an abrupt greeting.</p>
+
+<p id="id02311" class="calibre1">`Just tell me one thing. Tell me you haven't been in NorTel today?'</p>
+
+<p id="id02312" class="calibre1">There was a long pause before Prime Suspect answered.</p>
+
+<p id="id02313" class="calibre1">`I have been in NorTel today.'</p>
+
+<h5 id="id02314" class="calibre9">                      Chapter 9 — Operation Weather.</h5>
+
+<p id="id02315" class="calibre2">The world is crashing down on me tonight; The walls are closing in on me tonight.</p>
+
+<p id="id02316" class="calibre1">— from `Outbreak of Love', Earth and Sun and Moon.</p>
+
+<p id="id02317" class="calibre1">The AFP was frustrated. A group of hackers were using the Royal
+Melbourne Institute of Technology (RMIT) as a launchpad for hacking
+attacks on Australian companies, research institutes and a series of
+overseas sites.</p>
+
+<p id="id02318" class="calibre1">Despite their best efforts, the detectives in the AFP's Southern
+Region Computer Crimes Unit hadn't been able to determine who was
+behind the attacks. They suspected it was a small group of
+Melbourne-based hackers who worked together. However, there were so
+much hacker activity at RMIT it was difficult to know for sure. There
+could have been one organised group, or several. Or perhaps there was
+one small group along with a collection of loners who were making
+enough noise to distort the picture.</p>
+
+<p id="id02319" class="calibre1">Still, it should have been a straightforward operation. The AFP could
+trace hackers in this sort of situation with their hands tied behind
+their backs. Arrange for Telecom to whack a last party recall trace on
+all incoming lines to the RMIT modems. Wait for a hacker to logon,
+then isolate which modem he was using. Clip that modem line and wait
+for Telecom to trace that line back to its point of origin.</p>
+
+<p id="id02320" class="calibre1">However, things at RMIT were not working that way. The line traces
+began failing, and not just occasionally. All the time.</p>
+
+<p id="id02321" class="calibre1">Whenever RMIT staff found the hackers on-line, they clipped the lines
+and Telecom began tracking the winding path back to the originating
+phone number. En route, the trail went dead. It was as if the hackers
+knew they were being traced … almost as if they were manipulating
+the telephone system to defeat the AFP investigation.</p>
+
+<p id="id02322" class="calibre1">The next generation of hackers seemed to have a new-found
+sophistication which frustrated AFP detectives at every turn. Then, on
+13 October 1990, the AFP got lucky. Perhaps the hackers had been lazy
+that day, or maybe they just had technical problems using their
+traceless phreaking techniques. Prime Suspect couldn't use Trax's
+traceless phreaking method from his home because he was on a
+step-by-step exchange, and sometimes Trax didn't use the technique.
+Whatever the reason, Telecom managed to successfully complete two line
+traces from RMIT and the AFP now had two addresses and two names.
+Prime Suspect and Trax.</p>
+
+<p id="id02323" class="calibre1">`Hello, Prime Suspect.'</p>
+
+<p id="id02324" class="calibre1">`Hiya, Mendax. How's tricks?'</p>
+
+<p id="id02325" class="calibre1">`Good. Did you see that RMIT email? The one in Geoff Huston's
+mailbox?' Mendax walked over to open a window as he spoke. It was
+spring, 1991, and the weather was unseasonably warm.</p>
+
+<p id="id02326" class="calibre1">`I did. Pretty amazing. RMIT looks like it will finally be getting rid
+of those line traces.'</p>
+
+<p id="id02327" class="calibre1">`RMIT definitely wants out,' Mendax said emphatically.</p>
+
+<p id="id02328" class="calibre1">`Yep. Looks like the people at RMIT are sick of Mr Day crawling all
+over their computers with line traces.'</p>
+
+<p id="id02329" class="calibre1">`Yeah. That admin at RMIT was pretty good, standing up to AARNET and
+the AFP. I figure Geoff Huston must be giving him a hard time.'</p>
+
+<p id="id02330" class="calibre1">`I bet.' Prime Suspect paused. `You reckon the Feds have dropped the
+line traces for real?'</p>
+
+<p id="id02331" class="calibre1">`Looks like it. I mean if RMIT kicks them out, there isn't much the
+Feds can do without the uni's cooperation. The letter sounded like
+they just wanted to get on with securing their systems. Hang on. I've
+got it here.'</p>
+
+<p id="id02332" class="calibre1">Mendax pulled up a letter on his computer and scrolled through it.</p>
+
+<p id="id02333" class="calibre1">From aarnet-contacts-request@jatz.aarnet.edu.au Tue May 28 09:32:31
+1991</p>
+
+<p id="id02334" class="calibre1">Received: by jatz.aarnet.edu.au id AA07461</p>
+
+<p id="id02335" class="calibre1">(5.65+/IDA-1.3.5 for pte900); Tue, 28 May 91 09:31:59 +1000</p>
+
+<p id="id02336" class="calibre1">Received: from possum.ecg.rmit.OZ.AU by jatz.aarnet.edu.au with SMTP
+id AA07457</p>
+
+<p id="id02337" class="calibre1">(5.65+/IDA-1.3.5 for /usr/lib/sendmail -oi -faarnet-contacts-request
+aarnet-contacts-recipients); Tue, 28 May 91 09:31:57 +1000</p>
+
+<p id="id02338" class="calibre1">Received: by possum.ecg.rmit.OZ.AU for aarnet-contacts@aarnet.edu.au)</p>
+
+<p id="id02339" class="calibre1">Date: Tue, 28 May 91 09:32:08 +1000</p>
+
+<p id="id02340" class="calibre1">From: rcoay@possum.ecg.rmit.OZ.AU (Alan Young)</p>
+
+<p id="id02341" class="calibre1">Message-Id: &lt;9105272332.29621@possum.ecg.rmit.OZ.AU&gt;</p>
+
+<p id="id02342" class="calibre1">To: aarnet-contacts@aarnet.edu.au</p>
+
+<p id="id02343" class="calibre1">Subject: Re: Hackers</p>
+
+<p id="id02344" class="calibre1">Status: RO</p>
+
+<p id="id02345" class="calibre1">While no one would disagree that `Hacking' is bad and should be
+stopped, or at least minimised there are several observations which I
+have made over the last six or eight months relating to the persuit of
+these people:</p>
+
+<p id="id02346" class="calibre1">1. The cost involved was significant, we had a CSO working in
+conjunction with the Commonwealth Police for almost three months full
+time.</p>
+
+<p id="id02347" class="calibre1">2. While not a criticism of our staff, people lost sight of the ball,
+the chase became the most important aspect of the whole exercise.</p>
+
+<p id="id02348" class="calibre1">3. Catching Hackers (and charging them) is almost impossible, you have
+to virtually break into their premises and catch them logged on to an
+unauthorised machine.</p>
+
+<p id="id02349" class="calibre1">4. If you do happen to catch and charge them, the cost of prosecution
+is high, and a successful outcome is by no ways assured. There may be
+some deterrent value in at least catching and prosecuting?</p>
+
+<p id="id02350" class="calibre1">5. Continued pursuit of people involved requires doors to be left
+open, this unfortunately exposes other sites and has subjected us to
+some criticism.</p>
+
+<p id="id02351" class="calibre1">The whole issue is very complex, and in some respects it is a case of
+diminishing returns. A fine balance has to be maintained between
+freedom, and the prevention of abuse, this appears to be the
+challenge.</p>
+
+<p id="id02352" class="calibre1">Allan Young</p>
+
+<h5 id="id02353" class="calibre9">RMIT</h5>
+
+<p id="id02354" class="calibre1">`Yeah, I mean, this RMIT guy is basically saying they are not going to
+catch us anyway, so why are they wasting all this time and money?'</p>
+
+<p id="id02355" class="calibre1">`Yep. The Feds were in there for at least three months,' Prime Suspect
+said. `Sounded more like nine months though.'</p>
+
+<p id="id02356" class="calibre1">`Hmm. Yeah, nothing we didn't know already though.'</p>
+
+<p id="id02357" class="calibre1">`Pretty obvious, leaving those accounts open all the time like they
+did. I reckon that looked pretty suspicious, even if we hadn't gotten
+the email.'</p>
+
+<p id="id02358" class="calibre1">`Definitely,' Mendax agreed. `Lots of other hackers in RMIT too. I
+wonder if they figured it out.'</p>
+
+<p id="id02359" class="calibre1">`Hmm. They're gonna be screwed if they haven't been careful.'</p>
+
+<p id="id02360" class="calibre1">`I don't think the Feds have gotten anyone though.'</p>
+
+<p id="id02361" class="calibre1">`Yeah?' Prime Suspect asked.</p>
+
+<p id="id02362" class="calibre1">`Well, if they had, why would they leave those accounts open? Why
+would RMIT keep a full-time staff person on?'</p>
+
+<p id="id02363" class="calibre1">`Doesn't make sense.'</p>
+
+<p id="id02364" class="calibre1">`No,' Mendax said. `I'd be pretty sure RMIT has kicked them out.'</p>
+
+<p id="id02365" class="calibre1">`Yeah, told them, "You had you're chance, boys. Couldn't catch anyone.<br class="calibre4"/>
+
+Now pack your bags".'<br class="calibre4"/>
+</p>
+
+<p id="id02366" class="calibre1">`Right.' Mendax paused. `Don't know about NorTel though.'</p>
+
+<p id="id02367" class="calibre1">`Mmm, yeah,' Prime Suspect said. Then, as usual, a silence began to
+descend on the conversation.</p>
+
+<p id="id02368" class="calibre1">`Running out of things to say …' Mendax said finally. They were good
+enough friends for him to be blunt with Prime Suspect.</p>
+
+<p id="id02369" class="calibre1">`Yeah.'</p>
+
+<p id="id02370" class="calibre1">More silence.</p>
+
+<p id="id02371" class="calibre1">Mendax thought how strange it was to be such good friends with
+someone, to work so closely with him, and yet to always run out of
+conversation.</p>
+
+<p id="id02372" class="calibre1">`OK, well, I better go. Things to do,' Mendax said in a friendly
+voice.</p>
+
+<p id="id02373" class="calibre1">`Yeah, OK. Bye Mendax,' Prime Suspect said cheerfully.</p>
+
+<p id="id02374" class="calibre1">Mendax hung up.</p>
+
+<p id="id02375" class="calibre1">Prime Suspect hung up.</p>
+
+<p id="id02376" class="calibre1">And the AFP stayed on the line.</p>
+
+<p id="id02377" class="calibre1">In the twelve months following the initial line trace in late 1990,
+the AFP continued to monitor the RMIT dial-up lines. The line traces
+kept failing again and again. But as new reports of hacker attacks
+rolled in, there seemed to be a discernible pattern in many of the
+attacks. Detectives began to piece together a picture of their prey.</p>
+
+<p id="id02378" class="calibre1">In 1990 and 1991, RMIT dial-ups and computers were riddled with
+hackers, many of whom used the university's systems as a nest—a place
+to store files, and launch further attacks. They frolicked in the
+system almost openly, often using RMIT as a place to chat on-line with
+each other. The institute served as the perfect launchpad. It was only
+a local phone call away, it had a live Internet connection, a
+reasonably powerful set of computers and very poor security. Hacker
+heaven.</p>
+
+<p id="id02379" class="calibre1">The police knew this, and they asked computer staff to keep the
+security holes open so they could monitor hacker activity. With
+perhaps a dozen different hackers—maybe more—inside RMIT, the task
+of isolating a single cell of two or three organised hackers
+responsible for the more serious attacks was not going to be easy.</p>
+
+<p id="id02380" class="calibre1">By the middle of 1991, however, there was a growing reluctance among
+some RMIT staff to continue leaving their computers wide open. On 28
+August, Allan Young, the head of RMIT's Electronic Communications
+Group, told the AFP that the institute wanted to close up the security
+holes. The AFP did not like this one bit, but when they complained
+Young told them, in essence, go talk to Geoff Huston at AARNET and to
+the RMIT director.</p>
+
+<p id="id02381" class="calibre1">The AFP was being squeezed out, largely because they had taken so long
+conducting their investigation. RMIT couldn't reveal the AFP
+investigation to anyone, so it was being embarrassed in front of
+dozens of other research institutions which assumed it had no idea how
+to secure its computers. Allan Young couldn't go to a conference with
+other AARNET representatives without being hassled about `the hacker
+problem' at RMIT. Meanwhile, his computer staff lost time playing
+cops-and-robbers—and ignored their real work.</p>
+
+<p id="id02382" class="calibre1">However, as RMIT prepared to phase out the AFP traps, the police had a
+lucky break from a different quarter—NorTel. On 16 September, a line
+trace from a NorTel dial-up, initiated after a complaint about the
+hackers to the police, was successful. A fortnight later, on 1
+October, the AFP began tapping Prime Suspect's telephone. The hackers
+might be watching the police watch them, but the police were closing
+in. The taps led back to Trax, and then to someone new—Mendax.</p>
+
+<p id="id02383" class="calibre1">The AFP considered putting taps on Mendax and Trax's telephones as
+well. It was a decision to be weighed up carefully. Telephone taps
+were expensive, and often needed to be in place for at least a month.
+They did, however, provide a reliable record of exactly what the
+hacker was doing on-line.</p>
+
+<p id="id02384" class="calibre1">Before police could move on setting up additional taps in Operation
+Weather, the plot took another dramatic turn when one of the IS
+hackers did something which took the AFP completely by surprise.</p>
+
+<p id="id02385" class="calibre1">Trax turned himself in to the police.</p>
+
+<p id="id02386" class="calibre1">On 29 October Prime Suspect was celebrating. His mum had cooked him a
+nice dinner in honour of finishing his year 12 classes, and then
+driven him to Vermont for a swot-vac party. When she arrived back home
+she pottered around for an hour and a half, feeding her old dog Lizzy
+and tidying up. At 11 p.m. she decided to call it a night.</p>
+
+<p id="id02387" class="calibre1">Not much later, Lizzy barked.</p>
+
+<p id="id02388" class="calibre1">`Are you home so soon?' Prime Suspect's mother called out. `Party not
+much fun?'</p>
+
+<p id="id02389" class="calibre1">No-one answered.</p>
+
+<p id="id02390" class="calibre1">She sat up in bed. When there was still no answer, her mind raced to
+reports of a spate of burglaries in the neighbourhood. There had even
+been a few assaults.</p>
+
+<p id="id02391" class="calibre1">A muffled male voice came from outside the front door. `Ma'am. Open
+the door.'</p>
+
+<p id="id02392" class="calibre1">She stood up and walked to the front door.</p>
+
+<p id="id02393" class="calibre1">`Open the door. Police.'</p>
+
+<p id="id02394" class="calibre1">`How do I know you're really the police?'</p>
+
+<p id="id02395" class="calibre1">`If you don't open the door, we'll kick it in!' an exasperated male
+voice shouted back at her from her front doorstep.</p>
+
+<p id="id02396" class="calibre1">Prime Suspect's mother saw the outline of something being pressed
+against the side window. She didn't have her reading glasses on, but
+it looked like a police badge. Nervously, she opened the front door a
+little bit and looked out.</p>
+
+<p id="id02397" class="calibre1">There were eight or nine people on her doorstep. Before she could stop
+them, they had pushed past her, swarming into her home.</p>
+
+<p id="id02398" class="calibre1">A female officer began waving a piece of paper about. `Look at this!'<br class="calibre4"/>
+
+She said angrily. `It's a warrant! Can you read it?'<br class="calibre4"/>
+</p>
+
+<p id="id02399" class="calibre1">`No, actually I can't. I don't have my glasses on,' Prime Suspect's
+mother answered curtly.</p>
+
+<p id="id02400" class="calibre1">She told the police she wanted to make a phone call and tried to ring
+her family solicitor, but without luck. He had been to a funeral and
+wake and could not be roused. When she reached for the phone a second
+time, one of the officers began lecturing her about making more phone
+calls.</p>
+
+<p id="id02401" class="calibre1">`You be quiet,' she said pointing her finger at the officer. Then she
+made another unfruitful call.</p>
+
+<p id="id02402" class="calibre1">Prime Suspect's mother looked at the police officers, sizing them up.
+This was her home. She would show the police to her son's room, as
+they requested, but she was not going to allow them to take over the
+whole house. As she tartly instructed the police where they could and
+could not go, she thought, I'm not standing for any nonsense from you
+boys.</p>
+
+<p id="id02403" class="calibre1">`Where's your son?' one officer asked her.</p>
+
+<p id="id02404" class="calibre1">`At a party.'</p>
+
+<p id="id02405" class="calibre1">`What is the address?'</p>
+
+<p id="id02406" class="calibre1">She eyed him warily. She did not like these officers at all. However,
+they would no doubt wait until her son returned anyway, so she handed
+over the address.</p>
+
+<p id="id02407" class="calibre1">While the police swarmed though Prime Suspect's room, gathering his
+papers, computer, modem and other belongings, his mother waited in his
+doorway where she could keep an eye on them.</p>
+
+<p id="id02408" class="calibre1">Someone knocked at the door. An AFP officer and Prime Suspect's mother
+both went to answer it.</p>
+
+<p id="id02409" class="calibre1">It was the police—the state police.</p>
+
+<p id="id02410" class="calibre1">The next-door neighbours had heard a commotion. When they looked out
+of their window they saw a group of strange men in street clothes
+brazenly taking things from the widow's home as if they owned the
+place. So the neighbours did what any responsible person would in the
+circumstances. They called the police.</p>
+
+<p id="id02411" class="calibre1">The AFP officers sent the Victoria Police on their way. Then some of
+them set off in a plain car for the Vermont party. Wanting to save
+Prime Suspect some embarrassment in front of his friends, his mother
+rang him at the party and suggested he wait outside for the AFP.</p>
+
+<p id="id02412" class="calibre1">As soon as Prime Suspect hung up the phone he tried to shake off the
+effect of a vast quantity of alcohol. When the police pulled up
+outside, the party was in full swing. Prime Suspect was very drunk,
+but he seemed to sober up quite well when the AFP officers introduced
+themselves and packed him into the car.</p>
+
+<p id="id02413" class="calibre1">`So,' said one of the officers as they headed toward his home, `what
+are you more worried about? What's on your disks or what's in your
+desk drawer?'</p>
+
+<p id="id02414" class="calibre1">Prime Suspect thought hard. What was in his desk drawer? Oh shit! The
+dope. He didn't smoke much, just occasionally for fun, but he had a
+tiny amount of marijuana left over from a party.</p>
+
+<p id="id02415" class="calibre1">He didn't answer. He looked out the window and tried not to look
+nervous.</p>
+
+<p id="id02416" class="calibre1">At his house, the police asked him if he would agree to an interview.</p>
+
+<p id="id02417" class="calibre1">`I don't think so. I'm feeling a little … under the weather at the
+moment,' he said. Doing a police interview would be difficult enough.
+Doing it drunk would be just plain dangerous.</p>
+
+<p id="id02418" class="calibre1">After the police carted away the last of his hacking gear, Prime
+Suspect signed the official seizure forms and watched them drive off
+in to the night.</p>
+
+<p id="id02419" class="calibre1">Returning to his bedroom, he sat down, distracted, and tried to gather
+his thoughts. Then he remembered the dope. He opened his desk drawer.
+It was still there. Funny people, these feds.</p>
+
+<p id="id02420" class="calibre1">Then again, maybe it made sense. Why would they bother with some tiny
+amount of dope that was hardly worth the paperwork? His nervousness
+over a couple of joints must have seemed laughable to the feds. They
+had just seized enough evidence of hacking to lock him up for years,
+depending on the judge, and here he was sweating about a thimbleful of
+marijuana which might land him a $100 fine.</p>
+
+<p id="id02421" class="calibre1">As the late spring night began to cool down, Prime Suspect wondered
+whether the AFP had raided Mendax and Trax.</p>
+
+<p id="id02422" class="calibre1">At the party, before the police had shown up, he had tried to ring
+Mendax. From his mother's description when she called him, it sounded
+as if the entire federal police force was in his house at that moment.
+Which could mean that only one other IS hacker had gone down at the
+same time. Unless he was the last to be raided, Mendax or Trax might
+still be unaware of what was happening.</p>
+
+<p id="id02423" class="calibre1">As he waited for the police to pick him up, a very drunk Prime Suspect
+tried to ring Mendax again. Busy. He tried again. And again. The
+maddening buzz of an engaged signal only made Prime Suspect more
+nervous.</p>
+
+<p id="id02424" class="calibre1">There was no way to get through, no way to warn him.</p>
+
+<p id="id02425" class="calibre1">Prime Suspect wondered whether the police had actually shown up at
+Mendax's and whether, if he had been able to get through, his phone
+call would have made any difference at all.</p>
+
+<p id="id02426" class="calibre2">The house looked like it had been ransacked. It had been ransacked, by
+Mendax's wife, on her way out. Half the furniture was missing, and the
+other half was in disarray. Dresser drawers hung open with their
+contents removed, and clothing lay scattered around the room.</p>
+
+<p id="id02427" class="calibre1">When his wife left him, she didn't just take their toddler child. She
+took a number of things which had sentimental value to Mendax. When
+she insisted on taking the CD player she had given him for his
+twentieth birthday just a few months before, he asked her to leave a
+lock of her hair behind for him in its place. He still couldn't
+believe his wife of three years had packed up and left him.</p>
+
+<p id="id02428" class="calibre1">The last week of October had been a bad one for Mendax. Heartbroken,
+he had sunk into a deep depression. He hadn't eaten properly for days,
+he drifted in and out of a tortured sleep, and he had even lost the
+desire to use his computer. His prized hacking disks, filled with
+highly incriminating stolen computer access codes, were normally
+stored in a secure hiding place. But on the evening of 29 October
+1991, thirteen disks were strewn around his $700 Amiga 500. A
+fourteenth disk was in the computer's disk drive.</p>
+
+<p id="id02429" class="calibre1">Mendax sat on a couch reading Soledad Brother, the prison
+letters from George Jackson's nine-year stint in one of the toughest
+prisons in the US. Convicted for a petty crime, Jackson was supposed
+to be released after a short sentence but was kept in the prison at
+the governor's pleasure. The criminal justice system kept him on a
+merry-go-round of hope and despair as the authorities dragged their
+feet. Later, prison guards shot and killed Jackson. The book was one
+of Mendax's favourites, but it offered little distraction from his
+unhappiness.</p>
+
+<p id="id02430" class="calibre1">The droning sound of a telephone fault signal—like a busy
+signal—filled the house. Mendax had hooked up his stereo speakers to
+his modem and computer, effectively creating a speaker phone so he
+could listen to tones he piped from his computer into the telephone
+line and the ones which came back from the exchange in reply. It was
+perfect for using Trax's MFC phreaking methods.</p>
+
+<p id="id02431" class="calibre1">Mendax also used the system for scanning. Most of the time, he picked
+telephone prefixes in the Melbourne CBD. When his modem hit another,
+Mendax would rush to his computer and note the telephone number for
+future hacking exploration.</p>
+
+<p id="id02432" class="calibre1">By adjusting the device, he could also make it simulate a phreaker's
+black box. The box would confuse the telephone exchange into thinking
+he had not answered his phone, thus allowing Mendax's friends to call
+him for free for 90 seconds.</p>
+
+<p id="id02433" class="calibre1">On this night, however, the only signal Mendax was sending out was
+that he wanted to be left alone. He hadn't been calling any computer
+systems. The abandoned phone, with no connection to a remote modem,
+had timed out and was beeping off the hook.</p>
+
+<p id="id02434" class="calibre1">It was strange behaviour for someone who had spent most of his teenage
+years trying to connect to the outside world through telephone lines
+and computers, but Mendax had listened all day to the hypnotic sound
+of a phone off the hook resonating through each room. BEEEP. Pause.
+BEEEP. Pause. Endlessly.</p>
+
+<p id="id02435" class="calibre1">A loud knock at the door punctured the stereo thrum of the phone.</p>
+
+<p id="id02436" class="calibre1">Mendax looked up from his book to see a shadowy figure through the
+frosted glass panes of the front door. The figure was quite short. It
+looked remarkably like Ratface, an old school friend of Mendax's wife
+and a character known for his practical jokes.</p>
+
+<p id="id02437" class="calibre1">Mendax called out, `Who is it?' without moving from the sofa.</p>
+
+<p id="id02438" class="calibre1">`Police. Open up.'</p>
+
+<p id="id02439" class="calibre1">Yeah, sure. At 11.30 p.m.? Mendax rolled his eyes toward the door.
+Everyone knew that the police only raid your house in the early
+morning, when they know you are asleep and vulnerable.</p>
+
+<p id="id02440" class="calibre1">Mendax dreamed of police raids all the time. He dreamed of footsteps
+crunching on the driveway gravel, of shadows in the pre-dawn darkness,
+of a gun-toting police squad bursting through his backdoor at 5 a.m.
+He dreamed of waking from a deep sleep to find several police officers
+standing over his bed. The dreams were very disturbing. They
+accentuated his growing paranoia that the police were watching him,
+following him.</p>
+
+<p id="id02441" class="calibre1">The dreams had become so real that Mendax often became agitated in the
+dead hour before dawn. At the close of an all-night hacking session,
+he would begin to feel very tense, very strung out. It was not until
+the computer disks, filled with stolen computer files from his hacking
+adventures, were stored safely in their hiding place that he would
+begin to calm down.</p>
+
+<p id="id02442" class="calibre1">`Go away, Ratface, I'm not in the mood,' Mendax said, returning to his
+book.</p>
+
+<p id="id02443" class="calibre1">The voice became louder, more insistent, `Police. Open the door. NOW'.
+Other figures were moving around behind the glass, shoving police
+badges and guns against the window pane. Hell. It really was the
+police!</p>
+
+<p id="id02444" class="calibre1">Mendax's heart started racing. He asked the police to show him their
+search warrant. They obliged immediately, pressing it against the
+glass as well. Mendax opened the door to find nearly a dozen
+plain-clothes police waiting for him.</p>
+
+<p id="id02445" class="calibre1">`I don't believe this,' he said in a bewildered voice `My wife just
+left me. Can't you come back later?'</p>
+
+<p id="id02446" class="calibre1">At the front of the police entourage was Detective Sergeant Ken Day,
+head of the AFP's Computer Crimes Unit in the southern region. The two
+knew all about each other, but had never met in person. Day spoke
+first.</p>
+
+<p id="id02447" class="calibre1">`I'm Ken Day. I believe you've been expecting me.'</p>
+
+<p id="id02448" class="calibre1">Mendax and his fellow IS hackers had been expecting the AFP. For weeks
+they had been intercepting electronic mail suggesting that the police
+were closing the net. So when Day turned up saying, `I believe you've
+been expecting me,' he was completing the information circle. The
+circle of the police watching the hackers watching the police watch
+them.</p>
+
+<p id="id02449" class="calibre1">It's just that Mendax didn't expect the police at that particular
+moment. His mind was a tangle and he looked in disbelief at the band
+of officers on his front step. Dazed, he looked at Day and then spoke
+out loud, as if talking to himself, `But you're too short to be a
+cop.'</p>
+
+<p id="id02450" class="calibre1">Day looked surprised. `Is that meant to be an insult?' he said.</p>
+
+<p id="id02451" class="calibre1">It wasn't. Mendax was in denial and it wasn't until the police had
+slipped past him into the house that the reality of the situation
+slowly began to sink in. Mendax's mind started to work again.</p>
+
+<p id="id02452" class="calibre1">The disks. The damn disks. The beehive.</p>
+
+<p id="id02453" class="calibre1">An avid apiarist, Mendax kept his own hive. Bees fascinated him. He
+liked to watch them interact, to see their sophisticated social
+structure. So it was with particular pleasure that he enlisted their
+help in hiding his hacking activities. For months he had meticulously
+secreted the disks in the hive. It was the ideal location—unlikely,
+and well guarded by 60000 flying things with stings. Though he hadn't
+bought the hive specifically for hiding stolen computer account
+passwords for the likes of the US Air Force 7th Command Group in the
+Pentagon, it appeared to be a secure hiding place.</p>
+
+<p id="id02454" class="calibre1">He had replaced the cover of the super box, which housed the
+honeycomb, with a sheet of coloured glass so he could watch the bees
+at work. In summer, he put a weather protector over the glass. The
+white plastic cover had raised edges and could be fastened securely to
+the glass sheet with metal clasps. As Mendax considered his
+improvements to the bee box, he realised that this hive could provide
+more than honey. He carefully laid out the disks between the glass and
+the weather protector. They fitted perfectly in the small gap.</p>
+
+<p id="id02455" class="calibre1">Mendax had even trained the bees not to attack him as he removed and
+replaced the disks every day. He collected sweat from his armpits on
+tissues and then soaked the tissues in a sugar water solution. He fed
+this sweaty nectar to the bees. Mendax wanted the bees to associate
+him with flowers instead of a bear, the bees' natural enemy.</p>
+
+<p id="id02456" class="calibre1">But on the evening of the AFP raid Mendax's incriminating disks were
+in full view on the computer table and the officers headed straight
+for them. Ken Day couldn't have hoped for better evidence. The disks
+were full of stolen userlists, encrypted passwords, cracked passwords,
+modem telephone numbers, documents revealing security flaws in various
+computer systems, and details of the AFP's own investigation—all from
+computer systems Mendax had penetrated illegally.</p>
+
+<p id="id02457" class="calibre1">Mendax's problems weren't confined to the beehive disks. The last<br class="calibre4"/>
+
+thing he had done on the computer the day before was still on screen.<br class="calibre4"/>
+
+It was a list of some 1500 accounts, their passwords, the dates that<br class="calibre4"/>
+
+Mendax had obtained them and a few small notes beside each one.<br class="calibre4"/>
+</p>
+
+<p id="id02458" class="calibre1">The hacker stood to the side as the police and two Telecom Protective
+Services officers swarmed through the house. They photographed his
+computer equipment and gathered up disks, then ripped up the carpet so
+they could videotape the telephone cord running to his modem. They
+scooped up every book, no small task since Mendax was an avid reader,
+and held each one upside down looking for hidden computer passwords on
+loose pieces of paper. They grabbed every bit of paper with
+handwriting on it and poured through his love letters, notebooks and
+private diaries. `We don't care how long it takes to do this job,' one
+cop quipped. `We're getting paid overtime. And danger money.'</p>
+
+<p id="id02459" class="calibre1">The feds even riffled through Mendax's collection of old Scientific
+American and New Scientist magazines. Maybe they thought he had
+underlined a word somewhere and turned it into a passphrase for an
+encryption program.</p>
+
+<p id="id02460" class="calibre1">Of course, there was only one magazine the feds really wanted:
+International Subversive. They scooped up every print-out of the
+electronic journal they could find.</p>
+
+<p id="id02461" class="calibre1">As Mendax watched the federal police sift through his possessions and
+disassemble his computer room, an officer who had some expertise with
+Amigas arrived. He told Mendax to get the hell out of the computer
+room.</p>
+
+<p id="id02462" class="calibre1">Mendax didn't want to leave the room. He wasn't under arrest and
+wanted to make sure the police didn't plant anything. So he looked at
+the cop and said, `This is my house and I want to stay in this room.
+Am I under arrest or not?'</p>
+
+<p id="id02463" class="calibre1">The cop snarled back at him, `Do you want to be under arrest?'</p>
+
+<p id="id02464" class="calibre1">Mendax acquiesced and Day, who was far more subtle in his approach,
+walked the hacker into another room for questioning. He turned to
+Mendax and asked, with a slight grin, `So, what's it like being
+busted? Is it like Nom told you?'</p>
+
+<p id="id02465" class="calibre1">Mendax froze.</p>
+
+<p id="id02466" class="calibre1">There were only two ways that Day could have known Nom had told Mendax
+about his bust. Nom might have told him, but this was highly unlikely.
+Nom's hacking case had not yet gone to court and Nom wasn't exactly on
+chummy terms with the police. The other alternative was that the AFP
+had been tapping telephones in Mendax's circle of hackers, which the
+IS trio had strongly suspected. Talking in a three-way phone
+conversation with Mendax and Trax, Nom had relayed the story of his
+bust. Mendax later relayed Nom's story to Prime Suspect—also on the
+phone. Harbouring suspicions is one thing. Having them confirmed by a
+senior AFP officer is quite another.</p>
+
+<p id="id02467" class="calibre1">Day pulled out a tape recorder, put it on the table, turned it on and
+began asking questions. When Mendax told Day he wouldn't answer him,
+Day turned the recorder off. `We can talk off the record if you want,'
+he told the hacker.</p>
+
+<p id="id02468" class="calibre1">Mendax nearly laughed out loud. Police were not journalists. There was
+no such thing as an off-the-record conversation between a suspect and
+a police officer.</p>
+
+<p id="id02469" class="calibre1">Mendax asked to speak to a lawyer. He said he wanted to call
+Alphaline, a free after-hours legal advice telephone service. Day
+agreed, but when he picked up the telephone to inspect it before
+handing it over to Mendax, something seemed amiss. The phone had an
+unusual, middle-pitched tone which Day didn't seem to recognise.
+Despite there being two Telecom employees and numerous police
+specialists in the house, Day appeared unable to determine the cause
+of the funny tone. He looked Mendax dead in the eye and said, `Is this
+a hijacked telephone line?'</p>
+
+<p id="id02470" class="calibre1">Hijacked? Day's comment took Mendax by surprise. What surprised him
+was not that Day suspected him of hijacking the line, but rather that
+he didn't know whether the line had been manipulated.</p>
+
+<p id="id02471" class="calibre1">`Well, don't you know?' he taunted Day.</p>
+
+<p id="id02472" class="calibre1">For the next half hour, Day and the other officers picked apart
+Mendax's telephone, trying to work out what sort of shenanigans the
+hacker had been up to. They made a series of calls to see if the
+long-haired youth had somehow rewired his telephone line, perhaps to
+make his calls untraceable.</p>
+
+<p id="id02473" class="calibre1">In fact, the dial tone on Mendax's telephone was the very normal sound
+of a tone-dial telephone on an ARE-11 telephone exchange. The tone was
+simply different from the ones generated by other exchange types, such
+as AXE and step-by-step exchanges.</p>
+
+<p id="id02474" class="calibre1">Finally Mendax was allowed to call a lawyer at Alphaline. The lawyer
+warned the hacker not to say anything. He said the police could offer
+a sworn statement to the court about anything the hacker said, and
+then added that the police might even be wired.</p>
+
+<p id="id02475" class="calibre1">Next, Day tried the chummy approach at getting information from the
+hacker. `Just between you and me, are you Mendax?' he asked.</p>
+
+<p id="id02476" class="calibre1">Silence.</p>
+
+<p id="id02477" class="calibre1">Day tried another tactic. Hackers have a well-developed sense of
+ego—a flaw Day no doubt believed he could tap into.</p>
+
+<p id="id02478" class="calibre1">`There have been a lot of people over the years running around
+impersonating you—using your handle,' he said.</p>
+
+<p id="id02479" class="calibre1">Mendax could see Day was trying to manipulate him but by this stage he
+didn't care. He figured that the police already had plenty of evidence
+that linked him to his handle, so he admitted to it.</p>
+
+<p id="id02480" class="calibre1">Day had some other surprising questions up his sleeve.</p>
+
+<p id="id02481" class="calibre1">`So, Mendax, what do you know about that white powder in the bedroom?'</p>
+
+<p id="id02482" class="calibre1">Mendax couldn't recall any white powder in the bedroom. He didn't do
+drugs, so why would there be any white powder anywhere? He watched two
+police officers bringing two large red toolboxes in the house—they
+looked like drug testing kits. Jesus, Mendax thought. I'm being set
+up.</p>
+
+<p id="id02483" class="calibre1">The cops led the hacker into the bedroom and pointed to two neat lines
+of white powder laid out on a bench.</p>
+
+<p id="id02484" class="calibre1">Mendax smiled, relieved. `It's not what you think,' he said. The white
+powder was glow-in-the-dark glue he had used to paint stars on the
+ceiling of his child's bedroom.</p>
+
+<p id="id02485" class="calibre1">Two of the cops started smiling at each other. Mendax could see
+exactly what was going through their minds: It's not every cocaine or
+speed user that can come up with a story like that.</p>
+
+<p id="id02486" class="calibre1">One grinned at the other and exclaimed gleefully, `TASTE TEST!'</p>
+
+<p id="id02487" class="calibre1">`That's not a good idea,' Mendax said, but his protests only made
+things worse. The cops shooed him into another room and returned to
+inspect the powder by themselves.</p>
+
+<p id="id02488" class="calibre1">What Mendax really wanted was to get word through to Prime Suspect.
+The cops had probably busted all three IS hackers at the same time,
+but maybe not. While the police investigated the glue on their own,
+Mendax managed to sneak a telephone call to his estranged wife and
+asked her to call Prime Suspect and warn him. He and his wife might
+have had their differences, but he figured she would make the call
+anyway.</p>
+
+<p id="id02489" class="calibre1">When Mendax's wife reached Prime Suspect later that night, he replied,<br class="calibre4"/>
+
+`Yeah, there's a party going on over here too.'<br class="calibre4"/>
+</p>
+
+<p id="id02490" class="calibre1">Mendax went back in to the kitchen where an officer was tagging the
+growing number of possessions seized by the police. One of the female
+officers was struggling to move his printer to the pile. She smiled
+sweetly at Mendax and asked if he would move it for her. He obliged.</p>
+
+<p id="id02491" class="calibre1">The police finally left Mendax's house at about 3 a.m. They had spent
+three and half hours and seized 63 bundles of his personal belongings,
+but they had not charged him with a single crime.</p>
+
+<p id="id02492" class="calibre1">When the last of the unmarked police cars had driven away, Mendax
+stepped out into the silent suburban street. He looked around. After
+making sure that no-one was watching him, he walked to a nearby phone
+booth and rang Trax.</p>
+
+<p id="id02493" class="calibre1">`The AFP raided my house tonight.' he warned his friend. `They just
+left.'</p>
+
+<p id="id02494" class="calibre1">Trax sounded odd, awkward. `Oh. Ah. I see.'</p>
+
+<p id="id02495" class="calibre1">`Is there something wrong? You sound strange,' Mendax said.</p>
+
+<p id="id02496" class="calibre1">`Ah. No … no, nothing's wrong. Just um … tired. So, um … so the
+feds could … ah, be here any minute …' Trax's voice trailed off.</p>
+
+<p id="id02497" class="calibre1">But something was very wrong. The AFP were already at Trax's house,
+and they had been there for 10 hours.</p>
+
+<p id="id02498" class="calibre1">The IS hackers waited almost three years to be charged. The threat of
+criminal charges hung over their heads like personalised Swords of
+Damocles. They couldn't apply for a job, make a friend at TAFE or plan
+for the future without worrying about what would happen as a result of
+the AFP raids of 29 October 1991.</p>
+
+<p id="id02499" class="calibre1">Finally, in July 1994, each hacker received formal charges—in the
+mail. During the intervening years, all three hackers went through
+monumental changes in their lives.</p>
+
+<p id="id02500" class="calibre1">Devastated by the break-down of his marriage and unhinged by the AFP
+raid, Mendax sank into a deep depression and consuming anger. By the
+middle of November 1991, he was admitted to hospital.</p>
+
+<p id="id02501" class="calibre1">He hated hospital, its institutional regimens and game-playing
+shrinks. Eventually, he told the doctors he wanted out. He might be
+crazy, but hospital was definitely making him crazier. He left there
+and stayed at his mother's house. The next year was the worst of his
+life.</p>
+
+<p id="id02502" class="calibre1">Once a young person leaves home—particularly the home of a
+strong-willed parent—it becomes very difficult for him or her to
+return. Short visits might work, but permanent residency often fails.
+Mendax lived for a few days at home, then went walkabout. He slept in
+the open air, on the banks of rivers and creeks, in grassy
+meadows—all on the country fringes of Melbourne's furthest suburbs.
+Sometimes he travelled closer to the city, overnighting in places like
+the Merri Creek reserve.</p>
+
+
+
+  </div>
+
+  
+  <div class="calibreToc">
+    <h2><a href="../../pg123126.html"> Table of contents</a></h2>
+     <div>
+  <ul>
+    <li>
+      <a href="part0007.html#id01849">Chapter 7 — Judgement Day.</a>
+    </li>
+    <li>
+      <a href="part0011.html#id02869">Chapter 11 — The Prisoner's Dilemma.</a>
+      <ul>
+        <li>
+          <a href="part0013.html#id03429">Chapter 1</a>
+        </li>
+        <li>
+          <a href="part0013.html#id03679">*** START: FULL LICENSE ***</a>
+          <ul>
+            <li>
+              <a href="part0013.html#id03682">Section 1. General Terms of Use and Redistributing Project Gutenberg-tm electronic works</a>
+            </li>
+            <li>
+              <a href="part0013.html#id03710">Section 2. Information about the Mission of Project Gutenberg-tm</a>
+            </li>
+            <li>
+              <a href="part0013.html#id03713">Section 3. Information about the Project Gutenberg Literary Archive Foundation</a>
+            </li>
+            <li>
+              <a href="part0014.html#id03723">Section 5. General Information About Project Gutenberg-tm electronic works.</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+
+  </div>
+  
+
+  <div class="calibreEbNav">
+    
+      <a href="part0008.html" class="calibreAPrev">previous page</a>
+    
+
+    <a href="../../pg123126.html" class="calibreAHome"> start</a>
+
+    
+      <a href="part0010.html" class="calibreANext"> next page</a>
+    
+  </div>
+
+</div>
+
+</body>
+</html>

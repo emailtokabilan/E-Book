@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Book</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://css.gg/shopping-bag.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    
+    <header  class="container-lg head">
+        <div class="container-lg">
+            <ul class="nav justify-content-center">
+                <h1>Read Book
+                    <lord-icon src="https://cdn.lordicon.com/wxnxiano.json" trigger="loop"
+                        style="width:100px;height:50px">
+                    </lord-icon>
+                </h1>
+            </ul>
+            <ul class="nav justify-content-center">
+                <a class="nav-link active text-info" href="#home">Home</a>
+            
+                <div class="dropdown">
+                    <a  role="button" data-toggle="dropdown" class=" nav-link text-info" data-target="#" href="#">
+                              books 
+                          </a>
+                    <ul class="dropdown-menu text-info " >
+                      <li><a href="./nextpage/free.html">Free books </a></li>
+                      <li><a href="./nextpage/paid..html">paid books</a></li>
+                    
+                    </ul>
+                  </div>
+                
+                <a class="nav-link text-info" href="#">About</a>
+              
+               
+                <form action="#">
+                    <input type="text" class="btn btn-light" name="search"  placeholder="Search Here" id="searchbar" onkeyup="search_books()">
+                    <button type="button" id="searchbar" class="btn btn-success">Search</button>
+                    <ol id='list'>
+                      <li class="books_search">The Mysterious Affair at Styles</li>
+                      <li class="books_search">Alice in Wonderland</li>
+                      <li class="books_search">Helga Out of Hedgelands</li>
+                      <li class="books_search"><a href="./book/The-Lost-World/pg123098.html" >The Lost World</a></li>
+                      <li class="books_search">Adventures of Pinocchio</li>
+                      <li class="books_search"></li>
+                      <li class="books_search"></li>
+                      <li class="books_search"></li>
+                      <li class="books_search"></li>
+                      <li class="books_search"></li>
+                      <li class="books_search"></li>
+                      <li class="books_search"></li>
+                      <li class="books_search"></li>
+                      <li class="books_search"></li>
+                      <li class="books_search"></li>
+                      <li class="books_search"></li>  
+                       <li class="books_search"></li>
+                    </ol>
+                </form>
+                
+            </ul>
+
+        </div>
+    </header>
+<div  class="container-lg head">
+        <div class="bs-example container-lg ">
+
+            <div id="color" class="row">
+                <div class="col-md-12">
+                    <div id="slideshow">
+                        <div id="black" class="slide-wrapper">
+
+
+
+                            <div class="slide">
+                                <img src="./images/s-1.jpg">
+                            </div>
+                            <div class="slide">
+                                <img src="./images/s-2.jpg">
+                            </div>
+                            <div class="slide">
+                                <img src="./images/s-3.jpg">
+                            </div>
+                            <div class="slide">
+                                <img src="./images/s-4.jpg">
+                            </div>
+                            <div class="slide">
+                                <img src="./images/s-5.jpg">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-12">
+                    <ul class="nav justify-content-center book">
+                        <h3  id="freetitle" class="nav-link active "> Books For Free</h3>
+                    </ul>
+                </div>
+                <div  class="col-md-2 book-poster ho">
+                    <a id="lost" href="./book/The-Mysterious-Affair-at-Styles/pg122533.html"><img src="./images/b-1.jpg">
+                        <h2>The Mysterious Affair at Styles</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a>
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a href="./book/Alice-in-Wonderland/pg134558.html"><img src="./images/b-2.jpg">
+                        <h2>Alice in Wonderland</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a></a>
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a href="./book/Helga-Out-of-Hedgelands/pg151700.html"><img src="./images/b-3.jpg">
+                        <h2>Helga Out of Hedgelands</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a></a>
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a href="./book/The-Lost-World/pg123098.html"><img src="./images/b-4.jpg">
+                        <h2>The Lost World</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a></a>
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a href="./book/Adventures-of-Pinocchio/pg132848.html"><img src="./images/b-5.jpg">
+                        <h2>Adventures of Pinocchio</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a></a>
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a href="./book/Beauty-and-the-Beast (1)/pg135651.html"><img src="./images/b-6.jpg">
+                        <h2>Beauty and the Beast</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+                    </a></a>
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a href="./book/The-Adventures-of-Buster-Bear/138488.html"><img src="./images/b-7.jpg">
+                        <h2>The-Adventures of Buster Bear</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a></a>
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a href="./book/The-Birds/121506.html"><img src="./images/b-8.jpg">
+                        <h2>The Birds</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a></a>
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a href="./book/Science-of-Trapping/pg149009.html"><img src="./images/b-9.jpg">
+                        <h2>Science of Trapping</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a></a>
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a href="./book/The-Man-Eaters-of-Tsavo/pg126138.html"><img src="./images/b-10.jpg">
+                        <h2>The Man Eaters of Tsavo</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                            style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a>
+                </div>
+            </div>
+            <h2 class="morebook" style="text-align: center;"><a href="./nextpage/free.html"
+                    style="color:yellowgreen; text-align: center;">More Books...</a> </h2>
+            <div id="reader" class="row ">
+                <div class="col-md-4  book-poster bookreader"> <a href="https://www.oberlo.in/blog/must-read-books-of-all-time"><img src="./images/story.jpg">
+                        <h2>top Book Readers</h2>
+                    </a></div>
+                <div class="col-md-7  book-poster book-img">
+
+                    <div id="slideshows">
+                        <div class="slide-wrappers">
+
+
+                            <div class="slides">
+                                <img src="./images/slides/1 (1).jpg">
+                            </div>
+                            <div class="slides">
+                                <img src="./images/slides/1 (1).png">>
+                            </div>
+                            <div class="slides">
+                                <img src="./images/slides/1 (2).jpg">
+                            </div>
+                            <div class="slides">
+                                <img src="./images/slides/1 (3).jpg">
+                            </div>
+
+                        </div>
+                        <p class="fas fa-arrow-alt-down" >Books have the power to transport us to new worlds and different times, but they can also take us back to the important moments in our own lives. From building your vocabulary to reducing stress, preventing age-related cognitive decline and increasing your ability to empathize, reading books is an easy way to look after your mind and body. </p>
+
+                    </div>
+                </div>
+            </div>
+            <div id="reader" class="card card-body more">
+                <h4 class="card-title">Books </h4>
+                <p class="card-text">Recommended Reading List. The page is a reading list sharing the best books to read
+                    in various categories based on many hours of reading and research. You’ll find more than 100 good
+                    books to read, organized by category. This is a reading list for people who don’t have time for
+                    unimportant books..</p>
+                <a href="https://manybooks.net/" class="btn btn-primary">More</a>
+            </div>
+            
+        </div>
+
+        <div id="black" class="col-md-12">
+            <ul class="nav justify-content-center book">
+                <h3 class="nav-link active "> Books Paid</h3>
+            </ul>
+        </div>
+        
+            <div class="row" id="black">
+                <div class="col-md-2 book-poster">
+                    <a href="./nextpage/payment/index.html"><img src="./images/buy/buy-3.jpg">
+                        <h2 id="title">Bully Of Asia</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <p class="price" id="price">$39.99</p>
+                        <p><button>Pay</button></p>
+                    </a>
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a href="./nextpage/payment/index.html"><img src="./images/buy/buy-4.jpg">
+                        <h2>The Pig Of Providence</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <p class="price">$13.99</p>
+                        <p><button>Pay</button></p>
+                    </a>
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a href="./nextpage/payment/index.html"><img src="./images/buy/buy-5.jpg">
+                        <h2>The Book Thief</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <p class="price">$16.99</p>
+                        <p><button>Pay</button></p>
+                    </a>
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a href="./nextpage/payment/index.html"><img src="./images/buy/buy-6.jpg">
+                        <h2>The Hobbit</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <p class="price">$49.99</p>
+                        <p><button>Pay</button></p>
+
+                    </a>
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a href="./nextpage/payment/index.html"><img src="./images/buy/buy-7.jpg">
+                        <h2>Pride And Prejudice</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <p class="price">$29.99</p>
+                        <p><button>Pay</button></p>
+
+                    </a>
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a href="./nextpage/payment/index.html"><img src="./images/buy/buy-8.jpg">
+                        <h2>The Lord of The Rings</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <p class="price">$11.99</p>
+                        <p><button>Pay</button></p>
+                    </a>
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a href="./nextpage/payment/index.html"><img src="./images/buy/buy-9.jpg">
+                        <h2>Twilight</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"  ></span>
+                        <p class="price">$9.99</p>
+                        <p><button>Pay</button></p>
+
+                    </a>
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a href="./nextpage/payment/index.html"><img src="./images/buy/buy-10.jpg">
+                        <h2>A Thousand Splendid Suns</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <p class="price">$39.99</p>
+                        <p><button>Pay</button></p>
+
+                    </a>
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a href="./nextpage/payment/index.html"><img src="./images/buy/buy-11.jpg">
+                        <h2>Watbering Heights</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star "></span>
+                        <span class="fa fa-star"></span>
+                        <p class="price">$14.99</p>
+                        <p><button>Pay</button></p>
+                    </a>
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a href="./nextpage/payment/index.html"><img src="./images/buy/buy-12.jpg">
+                        <h2>Harry Potter</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <p class="price">$29.99</p>
+                        <p><button>Pay</button></p>
+                    </a>
+                </div>
+               
+            </div>
+            <h2 id="black" class="morebook" style="text-align: center;"><a href="./nextpage/paid.html"
+                style="color:yellowgreen; text-align: center;">More Books...</a> </h2>
+       
+            <h5>Register & Login </h5>
+            <div id="register" class="row">
+
+                <div class="col-md-3">
+                    <form name="myform" action="">
+                        <div class="mb-3">
+                            <h5>Regiter</h5>
+                            <label for="user_name" class="form-label">User Name</label>
+                            <input type="text" class="form-control" name="user_name" required onkeyup="validate">
+                            <span id="user_name" style="color: aqua;">  </span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email_addr" class="form-label">Email address</label>
+                            <input type="email" class="form-control" name="email_addr" required onkeyup="validate">
+                            <span id="email_addr" style="color: aqua;">  </span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="pwd" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" required="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="con_pwd" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="con_password" name="con_password"required onkeyup="validate">
+                        </div>
+                        <span id="wrong_pass_alert"></span>
+                       <input id="create" type="submit" class="btn btn-primary" onclick="wrong_pass_alert()" value="Submit">
+                        <button  type="reset" class="btn btn-primary"  value="reset">Reset</button>
+                    </form>
+                </div>
+
+
+                <div class="col-md-3">
+                    <form name="myForm" action="" onsubmit="validate_login()" >
+                        <div class="mb-3">
+                            <h5>Login</h5>
+                            <label for="email_addr" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email-addr" name="email">
+                            <span id="email_location" style="color: aqua;">  </span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="pwd" class="form-label">Password</label>
+                            <input type="password" class="form-control" name="pass">
+                            <span id="password_location" style="color: aqua;"></span>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="remember_me">
+                            <label class="form-check-label" for="remember_me">Remember me</label>
+                        </div>
+                        <input type="submit" class="btn btn-primary" value="Submit">
+                        <button type="reset" class="btn btn-primary" value="reset">Reset</button>
+                    </form>
+                </div>
+                <div class="col-md-3">
+                    <div id="cover" class="mb-3">
+                       <img src="./images/coverimage.jpg" alt="">
+                     
+                    </div>
+                </div>
+              
+            </div>
+           
+            <div class="row">
+                <div id="footer" class="col-md-12 footer">
+                    <button id="scroll" onclick="scrollToTop()">
+                        <img  src="./images/up.png" width="10px" height="10px">
+                    </button>
+                    <p> <a href="">Disclaimer</a> | <a href=""> Forms </a> | <a href=""> DownLoad </a> | <a href="">
+                            FAQs</a> | <a href="">Terms and Conditions </a> | <a href="">Website Policies </a> | <a
+                            href=""> Feedback </a> | <a href=""> Help </a> | <a href=""> Site Map </a> | <a href="">
+                            Articles </a> | <a href=""> Tenders </a> </p>
+                        <P id="copyright"><h2>ⓒ Kabilan Enterprise</h2></P>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+
+    <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+    <script src="./script.js"></script>
+   
+</body>
+
+</html>

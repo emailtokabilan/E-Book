@@ -1,0 +1,1475 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <title>Unknown</title>
+    <meta http-equiv="Content-Style-Type" content="text/css"/>
+    <meta name="generator" content="Ebookmaker 0.8.8 by Project Gutenberg"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link href="../stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="../page_styles.css" rel="stylesheet" type="text/css"/>
+
+  
+
+
+<link href="../calibreHtmlOutBasicCss.css" type="text/css" rel="stylesheet" />
+
+</head>
+<body>
+
+<div class="calibreMeta">
+  <div class="calibreMetaTitle">
+  
+  
+    
+    <h1>
+      <a href="../../pg123126.html">Underground: Hacking, madness and obsession on the electronic frontier
+</a>
+    </h1>
+    
+    
+  
+  </div>
+  <div class="calibreMetaAuthor">
+    Suelette Dreyfus
+
+  </div>
+</div>
+
+<div class="calibreMain">
+
+  <div class="calibreEbookContent">
+    
+      <div class="calibreEbNavTop">
+        
+          <a href="part0002.html" class="calibreAPrev">previous page</a>
+        
+
+        
+          <a href="part0004.html" class="calibreANext"> next page</a>
+        
+      </div>
+    
+
+    `I've just found a bizarre address. It is one strange system. When I
+connected, it just started shooting off numbers at me. Check these
+out.'</p>
+
+<p id="id00636" class="calibre1">Force didn't know what the numbers were, but Par sure did. `Those look
+like credit cards,' he typed back.</p>
+
+<p id="id00637" class="calibre1">`Oh.' Force went quiet.</p>
+
+<p id="id00638" class="calibre1">Par thought the normally chatty Australian hacker seemed astonished.
+After a short silence, the now curious Par nudged the conversation
+forward. `I have a way I can check out whether they really are valid
+cards,' he volunteered. `It'll take some time, but I should be able to
+do it and get back to you.'</p>
+
+<p id="id00639" class="calibre1">`Yes.' Force seemed hesitant. `OK.'</p>
+
+<p id="id00640" class="calibre1">On the other side of the Pacific from Par, Force thought about this
+turn of events. If they were valid credit cards, that was very cool.
+Not because he intended to use them for credit card fraud in the way
+Ivan Trotsky might have done. But Force could use them for making
+long-distance phone calls to hack overseas. And the sheer number of
+cards was astonishing. Thousand and thousands of them. Maybe 10000.
+All he could think was, Shit! Free connections for the rest of my
+life.</p>
+
+<p id="id00641" class="calibre1">Hackers such as Force considered using cards to call overseas computer
+systems a little distasteful, but certainly acceptable. The card owner
+would never end up paying the bill anyway. The hackers figured that
+Telecom, which they despised, would probably have to wear the cost in
+the end, and that was fine by them. Using cards to hack was nothing
+like ordering consumer goods. That was real credit card fraud. And
+Force would never sully his hands with that sort of behaviour.</p>
+
+<p id="id00642" class="calibre1">Force scrolled back over his capture of the numbers which had been
+injected into his machine. After closer inspection, he saw there were
+headers which appeared periodically through the list. One said,
+`CitiSaudi'.</p>
+
+<p id="id00643" class="calibre1">He checked the prefix of the mystery machine's network address again.
+He knew from previous scans that it belonged to one of the world's
+largest banks. Citibank.</p>
+
+<p id="id00644" class="calibre1">The data dump continued for almost three hours. After that, the
+Citibank machine seemed to go dead. Force saw nothing but a blank
+screen, but he kept the connection open. There was no way he was going
+to hang up from this conversation. He figured this had to be a freak
+connection—that he accidentally connected to this machine somehow,
+that it wasn't really at the address he had tried based on the DEFCON
+scan of Citibank's network.</p>
+
+<p id="id00645" class="calibre1">How else could it have happened? Surely Citibank wouldn't have a
+computer full of credit cards which spilled its guts every time
+someone rang up to say `hello'? There would be tonnes of security on a
+machine like that. This machine didn't even have a password. It didn't
+even need a special character command, like a secret handshake.</p>
+
+<p id="id00646" class="calibre1">Freak connections happened now and then on X.25
+networks. They had the same effect as a missed voice phone
+connection. You dial a friend's number—and you dial it correctly—but
+somehow the call gets screwed up in the tangle of wires and exchanges
+and your call gets put through to another number entirely. Of course,
+once something like that happens to an X.25 hacker, he immediately
+tries to figure out what the hell is going on, to search every shred
+of data from the machine looking for the system's real address.
+Because it was an accident, he suspects he will never find the machine
+again.</p>
+
+<p id="id00647" class="calibre1">Force stayed home from school for two days to keep the connection
+alive and to piece together how he landed on the doorstep of this
+computer. During this time, the Citibank computer woke up a few times,
+dumped a bit more information, and then went back to sleep. Keeping
+the connection alive meant running a small risk of discovery by an
+admin at his launch point, but the rewards in this case far exceeded
+the risk.</p>
+
+<p id="id00648" class="calibre1">It wasn't all that unusual for Force to skip school to hack. His
+parents used to tell him, `You better stop it, or you'll have to wear
+glasses one day'. Still, they didn't seem to worry too much, since
+their son had always excelled in school without much effort. At the
+start of his secondary school career he had tried to convince his
+teachers he should skip year 9. Some objected. It was a hassle, but he
+finally arranged it by quietly doing the coursework for year 9 while
+he was in year 8.</p>
+
+<p id="id00649" class="calibre1">After Force had finally disconnected from the CitiSaudi computer and
+had a good sleep, he decided to check on whether he could reconnect to
+the machine. At first, no-one answered, but when he tried a little
+later, someone answered all right. And it was the same talkative
+resident who answered the door the first time. Although it only seemed
+to work at certain hours of the day, the Citibank network address was
+the right one. He was in again.</p>
+
+<p id="id00650" class="calibre1">As Force looked over the captures from his Citibank hack, he noticed
+that the last section of the data dump didn't contain credit card
+numbers like the first part. It had people's names—Middle Eastern
+names—and a list of transactions. Dinner at a restaurant. A visit to
+a brothel. All sorts of transactions. There was also a number which
+looked like a credit limit, in come cases a very, very large limit,
+for each person. A sheik and his wife appeared to have credit limits
+of $1 million—each. Another name had a limit of $5 million.</p>
+
+<p id="id00651" class="calibre1">There was something strange about the data, Force thought. It was not
+structured in a way which suggested the Citibank machine was merely
+transmitting data to another machine. It looked more like a text file
+which was being dumped from a computer to a line printer.</p>
+
+<p id="id00652" class="calibre1">Force sat back and considered his exquisite discovery. He decided this
+was something he would share only with a very few close, trusted
+friends from The Realm. He would tell Phoenix and perhaps one other
+member, but no-one else.</p>
+
+<p id="id00653" class="calibre1">As he looked through the data once more, Force began to feel a little
+anxious. Citibank was a huge financial institution, dependent on the
+complete confidence of its customers. The corporation would lose a lot
+of face if news of Force's discovery got out. It might care enough to
+really come after him. Then, with the sudden clarity of the lightning
+strike photo which hung on his wall, a single thought filled his mind.</p>
+
+<p id="id00654" class="calibre1">I am playing with fire.</p>
+
+<p id="id00655" class="calibre2">`Where did you get those numbers?' Par asked Force next time they were
+both on Altos.</p>
+
+<p id="id00656" class="calibre1">Force hedged. Par leaped forward.</p>
+
+<p id="id00657" class="calibre1">`I checked those numbers for you. They're valid,' he told Force. The
+American was more than intrigued. He wanted that network address. It
+was lust. Next stop, mystery machine. `So, what's the address?'</p>
+
+<p id="id00658" class="calibre1">That was the one question Force didn't want to hear. He and Par had a
+good relationship, sharing information comfortably if occasionally.
+But that relationship only went so far. For all he knew, Par might
+have a less than desirable use for the information. Force didn't know
+if Par carded, but he felt sure Par had friends who might be into it.
+So Force refused to tell Par where to find the mystery machine.</p>
+
+<p id="id00659" class="calibre1">Par wasn't going to give up all that easily. Not that he would use the
+cards for free cash, but, hey, the mystery machine seemed like a very
+cool place to check out. There would be no peace for Force until Par
+got what he wanted. Nothing is so tempting to a hacker as the faintest
+whiff of information about a system he wants, and Par hounded Force
+until the Australian hacker relented just a bit.</p>
+
+<p id="id00660" class="calibre1">Finally Force told Par roughly where DEFCON had been scanning for
+addresses when it stumbled upon the CitiSaudi machine. Force wasn't
+handing over the street address, just the name of the suburb. DEFCON
+had been accessing the Citibank network through Telenet, a large
+American data network using X.25 communications protocols. The
+sub-prefixes for the Citibank portion of the network were 223 and 224.</p>
+
+<p id="id00661" class="calibre1">Par pestered Force some more for the rest of the numbers, but the<br class="calibre4"/>
+
+Australian had dug his heels in. Force was too careful a player, too<br class="calibre4"/>
+
+fastidious a hacker, to allow himself to get mixed up in the things<br class="calibre4"/>
+
+Par might get up to.<br class="calibre4"/>
+</p>
+
+<p id="id00662" class="calibre1">OK, thought the seventeen-year-old Par, I can do this without you. Par
+estimated there were 20000 possible addresses on that network, any one
+of which might be the home of the mystery machine. But he assumed the
+machine would be in the low end of the network, since the lower
+numbers were usually used first and the higher numbers were generally
+saved for other, special network functions. His assumptions narrowed
+the likely search field to about 2000 possible addresses.</p>
+
+<p id="id00663" class="calibre1">Par began hand-scanning on the Citibank Global Telecommunications
+Network (GTN) looking for the mystery machine. Using his knowledge of
+the X.25 network, he picked a number to start with. He typed 22301,
+22302, 22303. On and on, heading toward 22310000. Hour after hour,
+slowly, laboriously, working his way through all the options, Par
+scanned out a piece, or a range, within the network. When he got bored
+with the 223 prefix, he tried out the 224 one for a bit of variety.</p>
+
+<p id="id00664" class="calibre1">Bleary-eyed and exhausted after a long night at the computer, Par felt
+like calling it quits. The sun had splashed through the windows of his
+Salinas, California, apartment hours ago. His living room was a mess,
+with empty, upturned beer cans circling his Apple IIe. Par gave up for
+a while, caught some shut-eye. He had gone through the entire list of
+possible addresses, knocking at all the doors, and nothing had
+happened. But over the next few days he returned to scanning the
+network again. He decided to be more methodical about it and do the
+whole thing from scratch a second time.</p>
+
+<p id="id00665" class="calibre1">He was part way through the second scan when it happened. Par's
+computer connected to something. He sat up and peered toward the
+screen. What was going on? He checked the address. He was sure he had
+tried this one before and nothing had answered. Things were definitely
+getting strange. He stared at his computer.</p>
+
+<p id="id00666" class="calibre1">The screen was blank, with the cursor blinking silently at the top.<br class="calibre4"/>
+
+Now what? What had Force done to get the computer to sing its song?<br class="calibre4"/>
+</p>
+
+<p id="id00667" class="calibre1">Par tried pressing the control key and a few different letters.
+Nothing. Maybe this wasn't the right address after all. He
+disconnected from the machine and carefully wrote down the address,
+determined to try it again later.</p>
+
+<p id="id00668" class="calibre1">On his third attempt, he connected again but found the same irritating
+blank screen. This time he went through the entire alphabet with the
+control key.</p>
+
+<p id="id00669" class="calibre1">Control L.</p>
+
+<p id="id00670" class="calibre1">That was the magic keystroke. The one that made CitiSaudi give up its
+mysterious cache. The one that gave Par an adrenalin rush, along with
+thousands and thousands of cards. Instant cash, flooding his screen.
+He turned on the screen capture so he could collect all the
+information flowing past and analyse it later. Par had to keep feeding
+his little Apple IIe more disks to store all the data coming in
+through his 1200 baud modem.</p>
+
+<p id="id00671" class="calibre1">It was magnificent. Par savoured the moment, thinking about how much
+he was going to enjoy telling Force. It was going to be sweet. Hey,
+Aussie, you aren't the only show in town. See ya in Citibank.</p>
+
+<p id="id00672" class="calibre1">An hour or so later, when the CitiSaudi data dump had finally
+finished, Par was stunned at what he found in his capture. These
+weren't just any old cards. These were debit cards, and they were held
+by very rich Arabs. These people just plopped a few million in a bank
+account and linked a small, rectangular piece of plastic to that
+account. Every charge came directly out of the bank balance. One guy
+listed in the data dump bought a $330,000 Mercedes Benz in
+Istanbul—on his card. Par couldn't imagine being able to throw down a
+bit of plastic for that. Taking that plastic out for a spin around the
+block would bring a whole new meaning to the expression, `Charge it!'</p>
+
+<p id="id00673" class="calibre1">When someone wins the lottery, they often feel like sharing with their
+friends. Which is exactly what Par did. First, he showed his
+room-mates. They thought it was very cool. But not nearly so cool as
+the half dozen hackers and phreakers who happened to be on the
+telephone bridge Par frequented when the master of X.25 read off a
+bunch of the cards.</p>
+
+<p id="id00674" class="calibre1">Par was a popular guy after that day. Par was great, a sort of Robin<br class="calibre4"/>
+
+Hood of the underground. Soon, everyone wanted to talk to him. Hackers<br class="calibre4"/>
+
+in New York. Phreakers in Virginia. And the Secret Service in San<br class="calibre4"/>
+
+Francisco.<br class="calibre4"/>
+</p>
+
+<p id="id00675" class="calibre2">Par didn't mean to fall in love with Theorem. It was an accident, and
+he couldn't have picked a worse girl to fall for. For starters, she
+lived in Switzerland. She was 23 and he was only seventeen. She also
+happened to be in a relationship—and that relationship was with
+Electron, one of the best Australian hackers of the late 1980s. But
+Par couldn't help himself. She was irresistible, even though he had
+never met her in person. Theorem was different. She was smart and
+funny, but refined, as a European woman can be.</p>
+
+<p id="id00676" class="calibre1">They met on Altos in 1988.</p>
+
+<p id="id00677" class="calibre1">Theorem didn't hack computers. She didn't need to, since she could
+connect to Altos through her old university computer account. She had
+first found Altos on 23 December 1986. She remembered the date for two
+reasons. First, she was amazed
+at the power of Altos—that she could have a live conversation on-line
+with a dozen people in different countries at the same time. Altos was
+a whole new world for her. Second, that was the day she met Electron.</p>
+
+<p id="id00678" class="calibre1">Electron made Theorem laugh. His sardonic, irreverent humour hit a
+chord with her. Traditional Swiss society could be stifling and
+closed, but Electron was a breath of fresh air. Theorem was Swiss but
+she didn't always fit the mould. She hated skiing. She was six feet
+tall. She liked computers.</p>
+
+<p id="id00679" class="calibre1">When they met on-line, the 21-year-old Theorem was at a crossroad in
+her youth. She had spent a year and a half at university studying
+mathematics. Unfortunately, the studies had not gone well. The truth
+be told, her second year of university was in fact the first year all
+over again. A classmate had introduced her to Altos on the
+university's computers. Not long after she struck up a relationship
+with Electron, she dropped out of uni all together and enrolled in a
+secretarial course. After that, she found a secretarial job at a
+financial institution.</p>
+
+<p id="id00680" class="calibre1">Theorem and Electron talked on Altos for hours at a time. They talked
+about everything—life, family, movies, parties—but not much about
+what most people on Altos talked about—hacking. Eventually, Electron
+gathered up the courage to ask Theorem for her voice telephone number.
+She gave it to him happily and Electron called her at home in
+Lausanne. They talked. And talked. And talked. Soon they were on the
+telephone all the time.</p>
+
+<p id="id00681" class="calibre1">Seventeen-year-old Electron had never had a girlfriend. None of the
+girls in his middle-class high school would give him the time of day
+when it came to romance. Yet here was this bright, vibrant girl—a
+girl who studied maths—speaking to him intimately in a melting French
+accent. Best of all, she genuinely liked him. A few words from his
+lips could send her into silvery peals of laughter.</p>
+
+<p id="id00682" class="calibre1">When the phone bill arrived, it was $1000. Electron surreptitiously
+collected it and buried it at the bottom of a drawer in his bedroom.</p>
+
+<p id="id00683" class="calibre1">When he told Theorem, she offered to help pay for it. A cheque for
+$700 showed up not long after. It made the task of explaining
+Telecom's reminder notice to his father much easier.</p>
+
+<p id="id00684" class="calibre1">The romantic relationship progressed throughout 1987 and the first
+half of 1988. Electron and Theorem exchanged love letters and tender
+intimacies over 16000 kilometres of computer networks, but the
+long-distance relationship had some bumpy periods. Like when she had
+an affair over several months with Pengo. A well-known German hacker
+with links to the German hacking group called the Chaos Computer Club,
+Pengo was also a friend and mentor to Electron. Pengo was, however,
+only a short train ride away from Theorem. She became friends with
+Pengo on Altos and eventually visited him. Things progressed from
+there.</p>
+
+<p id="id00685" class="calibre1">Theorem was honest with Electron about the affair, but there was
+something unspoken, something below the surface. Even after the affair
+ended, Theorem was sweet on Pengo the way a girl remains fond of her
+first love regardless of how many other men she has slept with since
+then.</p>
+
+<p id="id00686" class="calibre1">Electron felt hurt and angry, but he swallowed his pride and forgave<br class="calibre4"/>
+
+Theorem her dalliance. Eventually, Pengo disappeared from the scene.<br class="calibre4"/>
+</p>
+
+<p id="id00687" class="calibre1">Pengo had been involved with people who sold US military
+secrets—taken from computers—to the KGB. Although his direct
+involvement in the ongoing international computer espionage had been
+limited, he began to worry about the risks. His real interest was in
+hacking, not spying. The Russian connection simply enabled him to get
+access to bigger and better computers. Beyond that, he felt no loyalty
+to the Russians.</p>
+
+<p id="id00688" class="calibre1">In the first half of 1988, he handed himself in to the German
+authorities. Under West German law at the time, a citizen-spy who
+surrendered himself before the state discovered the crime, and thus
+averted more damage to the state, acquired immunity from prosecution.
+Having already been busted in December 1986 for using a stolen NUI,
+Pengo decided that turning himself in would be his best hope of taking
+advantage of this legal largesse.</p>
+
+<p id="id00689" class="calibre1">By the end of the year, things had become somewhat hairy for Pengo and
+in March 1989 the twenty-year-old from Berlin was raided again, this
+time with the four others involved in the spy ring. The story broke
+and the media exposed Pengo's real name. He didn't know if he would
+eventually be tried and convicted of something related to the
+incident. Pengo had a few things on his mind other than the six-foot
+Swiss girl.</p>
+
+<p id="id00690" class="calibre1">With Pengo out of the way, the situation between Theorem and the<br class="calibre4"/>
+
+Australian hacker improved. Until Par came along.<br class="calibre4"/>
+</p>
+
+<p id="id00691" class="calibre1">Theorem and Par began innocently enough. Being one of only a few girls
+in the international hacking and phreaking scene and, more
+particularly, on Altos, she was treated differently. She had lots of
+male friends on the German chat system, and the boys told her things
+in confidence they would never tell each other. They sought out her
+advice. She often felt like she wore many hats—mother, girlfriend,
+psychiatrist—when she spoke with the boys on Altos.</p>
+
+<p id="id00692" class="calibre1">Par had been having trouble with his on-line girlfriend, Nora, and
+when he met Theorem he turned to her for a bit of support. He had
+travelled from California to meet Nora in person in New York. But when
+he arrived in the sweltering heat of a New York summer, without
+warning, her conservative Chinese parents didn't take kindly to his
+unannounced appearance. There were other frictions between Nora and
+Par. The relationship had been fine on Altos and on the phone, but
+things were just not clicking in person.</p>
+
+<p id="id00693" class="calibre1">He already knew that virtual relationships, forged over an electronic
+medium which denied the importance of physical chemistry, could
+sometimes be disappointing.</p>
+
+<p id="id00694" class="calibre1">Par used to hang out on a phone bridge with another Australian member
+of The Realm, named Phoenix, and with a fun girl from southern
+California. Tammi, a casual phreaker, had a great personality and a
+hilarious sense of humour. During those endless hours chatting, she
+and Phoenix seemed to be in the throes of a mutual crush. In the
+phreaking underground, they were known as a bit of a virtual item. She
+had even invited Phoenix to come visit her sometime. Then, one day,
+for the fun of it, Tammi decided to visit Par in Monterey. Her
+appearance was a shock.</p>
+
+<p id="id00695" class="calibre1">Tammi had described herself to Phoenix as being a blue-eyed, blonde
+California girl. Par knew that Phoenix visualised her as a
+stereotypical bikini-clad, beach bunny from LA. His perception rested
+on a foreigner's view of the southern California culture. The land of
+milk and honey. The home of the Beach Boys and TV series like
+`Charlie's Angels'.</p>
+
+<p id="id00696" class="calibre1">When Tammi arrived, Par knew instantly that she and Phoenix would
+never hit it off in person. Tammi did in fact have both blonde hair
+and blue eyes. She had neglected to mention, however, that she weighed
+about 300 pounds, had a rather homely face and a somewhat down-market
+style. Par really liked Tammi, but he couldn't get the ugly phrase
+`white trash' out of his thoughts. He pushed and shoved, but the
+phrase was wedged in his mind. It fell to Par to tell Phoenix the
+truth about Tammi.</p>
+
+<p id="id00697" class="calibre1">So Par knew all about how reality could burst the foundations of a
+virtual relationship.</p>
+
+<p id="id00698" class="calibre1">Leaving New York and Nora behind, Par moved across the river to New
+Jersey to stay with a friend, Byteman, who was one of a group of
+hackers who specialised in breaking into computer systems run by Bell
+Communications Research (Bellcore). Bellcore came into existence at
+the beginning of 1984 as a result of the break-up of the US telephone
+monopoly known as Bell Systems. Before the break-up, Bell Systems'
+paternalistic holding company, American Telephone and Telegraph
+(AT&amp;T), had
+fostered the best and brightest in Bell Labs, its research arm. Over
+the course of its history, Bell Labs boasted at least seven
+Nobel-prize winning researchers and numerous scientific achievements.
+All of which made Bellcore a good target for hackers trying to prove
+their prowess.</p>
+
+<p id="id00699" class="calibre1">Byteman used to chat with Theorem on Altos, and eventually he called
+her, voice. Par must have looked pretty inconsolable, because one day
+while Byteman was talking to Theorem, he suddenly said to her, `Hey,
+wanna talk to a friend of mine?' Theorem said `Sure' and Byteman
+handed the telephone to Par. They talked for about twenty minutes.</p>
+
+<p id="id00700" class="calibre1">After that they spoke regularly both on Altos and on the phone. For
+weeks after Par returned to California, Theorem tried to cheer him up
+after his unfortunate experience with Nora. By mid-1988, they had
+fallen utterly and passionately in love.</p>
+
+<p id="id00701" class="calibre1">Electron, an occasional member of Force's Realm group, took the news
+very badly. Not everyone on Altos liked Electron. He could be a little
+prickly, and very cutting when he chose to be, but he was an ace
+hacker, on an international scale, and everyone listened to him.
+Obsessive, creative and quick off the mark, Electron had respect,
+which is one reason Par felt so badly.</p>
+
+<p id="id00702" class="calibre1">When Theorem told Electron the bad news in a private conversation
+on-line, Electron had let fly in the public area, ripping into the
+American hacker on the main chat section of Altos, in front of
+everyone.</p>
+
+<p id="id00703" class="calibre1">Par took it on the chin and refused to fight back. What else could he
+do? He knew what it was like to hurt. He felt for the guy and knew how
+he would feel if he lost Theorem. And he knew that Electron must be
+suffering a terrible loss of face. Everyone saw Electron and Theorem
+as an item. They had been together for more than a year. So Par met
+Electron's fury with grace and quiet words of consolation.</p>
+
+<p id="id00704" class="calibre1">Par didn't hear much from Electron after that day. The Australian
+still visited Altos, but he seemed more withdrawn, at least whenever
+Par was around. After that day, Par ran into him once, on a phone
+bridge with a bunch of Australian hackers.</p>
+
+<p id="id00705" class="calibre1">Phoenix said on the bridge, `Hey, Electron. Par's on the bridge.'</p>
+
+<p id="id00706" class="calibre1">Electron paused. `Oh, really,' he answered coolly. Then he went
+silent.</p>
+
+<p id="id00707" class="calibre1">Par let Electron keep his distance. After all, Par had what really
+counted—the girl.</p>
+
+<p id="id00708" class="calibre1">Par called Theorem almost every day. Soon they began to make plans for
+her to fly to California so they could meet in person. Par tried not
+to expect too much, but he found it difficult to stop savouring the
+thought of finally seeing Theorem face to face. It gave him
+butterflies.</p>
+
+<p id="id00709" class="calibre1">Yeah, Par thought, things are really looking up.</p>
+
+<p id="id00710" class="calibre1">The beauty of Altos was that, like Pacific Island or any other local
+BBS, a hacker could take on any identity he wanted. And he could do it
+on an international scale. Visiting Altos was like attending a
+glittering masquerade ball. Anyone could recreate himself. A socially
+inept hacker could pose as a character of romance and adventure. And a
+security official could pose as a hacker.</p>
+
+<p id="id00711" class="calibre1">Which is exactly what Telenet security officer Steve Mathews did on 27
+October 1988. Par happened to be on-line, chatting away with his
+friends and hacker colleagues. At any given moment, there were always
+a few strays on Altos, a few people who weren't regulars. Naturally,
+Mathews didn't announce himself as being a Telenet guy. He just
+slipped quietly onto Altos looking like any other hacker. He might
+engage a hacker in conversation, but he let the hacker do most of the
+talking. He was there to listen.</p>
+
+<p id="id00712" class="calibre1">On that fateful day, Par happened to be in one of his magnanimous
+moods. Par had never had much money growing up, but he was always very
+generous with what he did have. He talked for a little while with the
+unknown hacker on Altos, and then gave him one of the debit cards
+taken from his visits to the CitiSaudi computer. Why not? On Altos, it
+was a bit like handing out your business card. `The
+Parmaster—Parameters Par Excellence'.</p>
+
+<p id="id00713" class="calibre1">Par had got his full name—The Parmaster—in his earliest hacking
+days. Back then, he belonged to a group of teenagers involved in
+breaking the copy protections on software programs for Apple IIes,
+particularly games. Par had a special gift for working out the copy
+protection parameters, which was a first step in bypassing the
+manufacturers' protection schemes. The ringleader of the group began
+calling him `the master of parameters'—The Parmaster—Par, for short.
+As he moved into serious hacking and developed his expertise in X.25
+networks, he kept the name because it fitted nicely in his new
+environment. `Par?' was a common command on an X.25 pad, the modem
+gateway to an X.25 network.</p>
+
+<p id="id00714" class="calibre1">`I've got lots more where that come from,' Par told the stranger on<br class="calibre4"/>
+
+Altos. `I've got like 4000 cards from a Citibank system.'<br class="calibre4"/>
+</p>
+
+<p id="id00715" class="calibre1">Not long after that, Steve Mathews was monitoring Altos again, when<br class="calibre4"/>
+
+Par showed up handing out cards to people once more.<br class="calibre4"/>
+</p>
+
+<p id="id00716" class="calibre1">`I've got an inside contact,' Par confided. `He's gonna make up a
+whole mess of new, plastic cards with all these valid numbers from the
+Citibank machine. Only the really big accounts, though. Nothing with a
+balance under $25000.'</p>
+
+<p id="id00717" class="calibre1">Was Par just making idle conversation, talking big on Altos? Or would
+he really have gone through with committing such a major fraud?
+Citibank, Telenet and the US Secret Service would never know, because
+their security guys began closing the net around Par before he had a
+chance to take his idea any further.</p>
+
+<p id="id00718" class="calibre1">Mathews contacted Larry Wallace, fraud investigator with Citibank in
+San Mateo, California. Wallace checked out the cards. They were valid
+all right. They belonged to the Saudi-American Bank in Saudi Arabia
+and were held on a Citibank database in Sioux Falls, South Dakota.
+Wallace determined that, with its affiliation to the Middle Eastern
+bank, Citibank had a custodial responsibility for the accounts. That
+meant he could open a major investigation.</p>
+
+<p id="id00719" class="calibre1">On 7 November, Wallace brought in the US Secret Service. Four days
+later, Wallace and Special Agent Thomas Holman got their first major
+lead when they interviewed Gerry Lyons of Pacific Bell's security
+office in San Francisco.</p>
+
+<p id="id00720" class="calibre1">Yes, Lyons told the investigators, she had some information they might
+find valuable. She knew all about hackers and phreakers. In fact, the
+San Jose Police had just busted two guys trying to phreak at a pay
+phone. The phreakers seemed to know something about a Citibank system.</p>
+
+<p id="id00721" class="calibre1">When the agents showed up at the San Jose Police Department for their
+appointment with Sergeant Dave Flory, they received another pleasant
+surprise. The sergeant had a book filled with hackers' names and
+numbers seized during the arrest of the two pay-phone phreakers. He
+also happened to be in possession of a tape recording of the phreakers
+talking to Par from a prison phone.</p>
+
+<p id="id00722" class="calibre1">The cheeky phreakers had used the prison pay phone to call up a
+telephone bridge located at the University of Virginia. Par, the
+Australian hackers and other assorted American phreakers and hackers
+visited the bridge frequently. At any one moment, there might be eight
+to ten people from the underground sitting on the bridge. The
+phreakers found Par hanging out there, as usual, and they warned him.
+His name and number were inside the book seized by police when they
+were busted.</p>
+
+<p id="id00723" class="calibre1">Par didn't seem worried at all.</p>
+
+<p id="id00724" class="calibre1">`Hey, don't worry. It's cool,' he reassured them. `I have just
+disconnected my phone number today—with no forwarding details.'</p>
+
+<p id="id00725" class="calibre1">Which wasn't quite true. His room-mate, Scott, had indeed disconnected
+the phone which was in his name because he had been getting prank
+calls. However, Scott opened a new telephone account at the same
+address with the same name on the same day—all of which made the job
+of tracking down the mysterious hacker named Par much easier for the
+law enforcement agencies.</p>
+
+<p id="id00726" class="calibre1">In the meantime, Larry Wallace had been ringing around his contacts in
+the security business and had come up with another lead. Wanda Gamble,
+supervisor for the Southeastern Region of MCI Investigations, in
+Atlanta, had a wealth of information on the hacker who called himself
+Par. She was well connected when it came to hackers, having acquired a
+collection of reliable informants during her investigations of
+hacker-related incidents. She gave the Citibank investigator two
+mailbox numbers for Par. She also handed them what she believed was
+his home phone number.</p>
+
+<p id="id00727" class="calibre1">The number checked out and on 25 November, the day after Thanksgiving,
+the Secret Service raided Par's house. The raid was terrifying. At
+least four law enforcement officers burst through the door with guns
+drawn and pointed. One of them had a shotgun. As is often the case in
+the US, investigators from private, commercial organisations—in this
+case Citibank and Pacific Bell—also took part in the raid.</p>
+
+<p id="id00728" class="calibre1">The agents tore the place apart looking for evidence. They dragged
+down the food from the kitchen cupboards. They emptied the box of
+cornflakes into the sink looking for hidden computer disks. They
+looked everywhere, even finding a ceiling cavity at the back of a
+closet which no-one even knew existed.</p>
+
+<p id="id00729" class="calibre1">They confiscated Par's Apple IIe, printer and modem. But, just to be
+sure, they also took the Yellow Pages, along with the telephone and
+the new Nintendo game paddles Scott had just bought. They scooped up
+the very large number of papers which had been piled under the coffee
+table, including the spiral notebook with Scott's airline bookings
+from his job as a travel agent. They even took the garbage.</p>
+
+<p id="id00730" class="calibre1">It wasn't long before they found the red shoebox full of disks peeping
+out from under the fish tank next to Par's computer.</p>
+
+<p id="id00731" class="calibre1">They found lots of evidence. What they didn't find was Par.</p>
+
+<p id="id00732" class="calibre1">Instead, they found Scott and Ed, two friends of Par. They were pretty
+shaken up by the raid. Not knowing Par's real identity, the Secret
+Service agents accused Scott of being Par. The phone was in his name,
+and Special Agent Holman had even conducted some surveillance more
+than a week before the raid, running the plates on Scott's 1965 black
+Ford Mustang parked in front of the house. The Secret Service was sure
+it had its man, and Scott had a hell of a time convincing them
+otherwise.</p>
+
+<p id="id00733" class="calibre1">Both Scott and Ed swore up and down that they weren't hackers or
+phreakers, and they certainly weren't Par. But they knew who Par was,
+and they told the agents his real name. After considerable pressure
+from the Secret Service, Scott and Ed agreed to make statements down
+at the police station.</p>
+
+<p id="id00734" class="calibre1">In Chicago, more than 2700 kilometres away from the crisis unfolding
+in northern California, Par and his mother watched his aunt walk down
+the aisle in her white gown.</p>
+
+<p id="id00735" class="calibre1">Par telephoned home once, to Scott, to say `hi' from the Midwest. The
+call came after the raid.</p>
+
+<p id="id00736" class="calibre1">`So,' a relaxed Par asked his room-mate, `How are things going at
+home?'</p>
+
+<p id="id00737" class="calibre1">`Fine,' Scott replied. `Nothing much happening here.'</p>
+
+<p id="id00738" class="calibre1">Par looked down at the red bag he was carrying with a momentary
+expression of horror. He realised he stood out in the San Jose bus
+terminal like a peacock among the pigeons …</p>
+
+<p id="id00739" class="calibre1">Blissfully ignorant of the raid which had occurred three days before,
+Par and his mother had flown into San Jose airport. They had gone to
+the bus terminal to pick up a Greyhound home to the Monterey area.
+While waiting for the bus, Par called his friend Tammi to say he was
+back in California.</p>
+
+<p id="id00740" class="calibre1">Any casual bystander waiting to use the pay phones at that moment
+would have seen a remarkable transformation in the brown-haired boy at
+the row of phones. The smiling face suddenly dropped in a spasm of
+shock. His skin turned ash white as the blood fled south. His deep-set
+chocolate brown eyes, with their long, graceful lashes curving upward
+and their soft, shy expression, seemed impossibly large.</p>
+
+<p id="id00741" class="calibre1">For at that moment Tammi told Par that his house had been raided by
+the Secret Service. That Scott and Ed had been pretty upset about
+having guns shoved in their faces, and had made statements about him
+to the police. That they thought their phone was tapped. That the
+Secret Service guys were still hunting for Par, they knew his real
+name, and she thought there was an all points bulletin out for him.
+Scott had told the Secret Service about Par's red bag, the one with
+all his hacking notes that he always carried around. The one with the
+print-out of all the Citibank credit card numbers.</p>
+
+<p id="id00742" class="calibre1">And so it was that Par came to gaze down at his bag with a look of
+alarm. He realised instantly that the Secret Service would be looking
+for that red bag. If they didn't know what he looked like, they would
+simply watch for the bag.</p>
+
+<p id="id00743" class="calibre1">That bag was not something Par could hide easily. The Citibank
+print-out was the size of a phone book. He also had dozens of disks
+loaded with the cards and other sensitive hacking information.</p>
+
+<p id="id00744" class="calibre1">Par had used the cards to make a few free calls, but he hadn't been
+charging up any jet skis. He fought temptation valiantly, and in the
+end he had won, but others might not have been so victorious in the
+same battle. Par figured that some less scrupulous hackers had
+probably been charging up a storm. He was right. Someone had, for
+example, tried to send a $367 bouquet of flowers to a woman in El Paso
+using one of the stolen cards. The carder had unwittingly chosen a
+debit card belonging to a senior Saudi bank executive who happened to
+be in his office at the time the flower order was placed. Citibank
+investigator Larry Wallace added notes on that incident to his growing
+file.</p>
+
+<p id="id00745" class="calibre1">Par figured that Citibank would probably try to pin every single
+attempt at carding on him. Why not? What kind of credibility would a
+seventeen-year-old hacker have in denying those sorts of allegations?
+Zero. Par made a snap decision. He sidled up to a trash bin in a dark
+corner. Scanning the scene warily, Par casually reached into the red
+bag, pulled out the thick wad of Citibank card print-outs and stuffed
+it into the bin. He fluffed a few stray pieces of garbage over the
+top.</p>
+
+<p id="id00746" class="calibre1">He worried about the computer disks with all his other valuable
+hacking information. They represented thousands of hours of work and
+he couldn't bring himself to throw it all away. The 10 megabyte
+trophy. More than 4000 cards. 130000 different transactions. In the
+end, he decided to hold on to the disks, regardless of the risk. At
+least, without the print-out, he could crumple the bag up a bit and
+make it a little less conspicuous. As Par slowly moved away from the
+bin, he glanced back to check how nondescript the burial site appeared
+from a distance. It looked like a pile of garbage. Trash worth
+millions of dollars, headed for the dump.</p>
+
+<p id="id00747" class="calibre1">As he boarded the bus to Salinas with his mother, Par's mind was
+instantly flooded with images of a homeless person fishing the
+print-out from the bin and asking someone about it. He tried to push
+the idea from his head.</p>
+
+<p id="id00748" class="calibre1">During the bus ride, Par attempted to figure out what he was going to
+do. He didn't tell his mother anything. She couldn't even begin to
+comprehend his world of computers and networks, let alone his current
+predicament. Further, Par and his mother had suffered from a somewhat
+strained relationship since he ran away from home not long after his
+seventeenth birthday. He had been kicked out of school for
+non-attendance, but had found a job tutoring students in computers at
+the local college. Before the trip to Chicago, he had seen her just
+once in six months. No, he couldn't turn to her for help.</p>
+
+<p id="id00749" class="calibre1">The bus rolled toward the Salinas station. En route, it travelled down
+the street where Par lived. He saw a jogger, a thin black man wearing
+a walkman. What the hell is a jogger doing here, Par thought. No-one
+jogged in the semi-industrial neighbourhood. Par's house was about the
+only residence amid all the light-industrial buildings. As soon as the
+jogger was out of sight of the house, he suddenly broke away from his
+path, turned off to one side and hit the ground. As he lay on his
+stomach on some grass, facing the house, he seemed to begin talking
+into the walkman.</p>
+
+<p id="id00750" class="calibre1">Sitting watching this on the bus, Par flipped out. They were out to
+get him, no doubt about it. When the bus finally arrived at the depot
+and his mother began sorting out their luggage, Par tucked the red bag
+under his arm and disappeared. He found a pay phone and called Scott
+to find out the status of things. Scott handed the phone to Chris,
+another friend who lived in the house. Chris had been away at his
+parents' home during the Thanksgiving raid.</p>
+
+<p id="id00751" class="calibre1">`Hold tight and lay low,' Chris told Par.</p>
+
+<p id="id00752" class="calibre1">`I'm on my way over to pick you up and take you to a lawyer's office
+where you can get some sort of protection.'</p>
+
+<p id="id00753" class="calibre1">A specialist in criminal law, Richard Rosen was born in New York but
+raised in his later childhood in California. He had a personality
+which reflected the steely stubbornness of a New Yorker, tempered with
+the laid-back friendliness of the west coast. Rosen also harboured a
+strong anti-authoritarian streak. He represented the local chapter of
+Hell's Angels in the middle-class County of Monterey. He also caused a
+splash representing the growing midwifery movement, which promoted
+home-births. The doctors of California didn't like him much as a
+result.</p>
+
+<p id="id00754" class="calibre1">Par's room-mates met with Rosen after the raid to set things up for
+Par's return. They told him about the terrifying ordeal of the Secret
+Service raid, and how they were interrogated for an hour and a half
+before being pressured to give statements. Scott, in particular, felt
+that he had been forced to give a statement against Par under duress.</p>
+
+<p id="id00755" class="calibre1">While Par talked to Chris on the phone, he noticed a man standing at
+the end of the row of pay phones. This man was also wearing a walkman.
+He didn't look Par in the eye. Instead, he faced the wall, glancing
+furtively off to the side toward where Par was standing. Who was that
+guy? Fear welled up inside Par and all sorts of doubts flooded his
+mind. Who could he trust?</p>
+
+<p id="id00756" class="calibre1">Scott hadn't told him about the raid. Were his room-mates in cahoots
+the Secret Service? Were they just buying time so they could turn him
+in? There was no-one else Par could turn to. His mother wouldn't
+understand. Besides, she had problems of her own. And he didn't have a
+father. As far as Par was concerned, his father was as good as dead.
+He had never met the man, but he heard he was a prison officer in
+Florida. Not a likely candidate for helping Par in this situation. He
+was close to his grandparents—they had bought his computer for him as
+a present—but they lived in a tiny Mid-Western town and they simply
+wouldn't understand either.</p>
+
+<p id="id00757" class="calibre1">Par didn't know what to do, but he didn't seem to have many options at
+the moment, so he told Chris he would wait at the station for him.
+Then he ducked around a corner and tried to hide.</p>
+
+<p id="id00758" class="calibre1">A few minutes later, Chris pulled into the depot. Par dove into the
+Toyota Landcruiser and Chris tore out of the station toward Rosen's
+office. They noticed a white car race out of the bus station after
+them.</p>
+
+<p id="id00759" class="calibre1">While they drove, Par pieced together the story from Chris. No-one had
+warned him about the raid because everyone in the house believed the
+phone line was tapped. Telling Par while he was in Chicago might have
+meant another visit from the Secret Service. All they had been able to
+do was line up Rosen to help him.</p>
+
+<p id="id00760" class="calibre1">Par checked the rear-view mirror. The white car was still following
+them. Chris made a hard turn at the next intersection and accelerated
+down the California speedway. The white car tore around the corner in
+pursuit. No matter what Chris did, he couldn't shake the tail. Par sat
+in the seat next to Chris, quietly freaking out.</p>
+
+<p id="id00761" class="calibre1">Just 24 hours before, he had been safe and sound in Chicago. How did
+he end up back here in California being chased by a mysterious driver
+in a white car?</p>
+
+<p id="id00762" class="calibre1">Chris tried his best to break free, swerving and racing. The white car
+wouldn't budge. But Chris and Par had one advantage over the white
+car; they were in a four-wheel drive. In a split-second decision,
+Chris jerked the steering wheel to one side. The Landcruiser veered
+off the road onto a lettuce field. Par gripped the inside of the door
+as the 4WD bounced through the dirt over the neat crop rows. Near-ripe
+heads of lettuce went flying out from under the tires. Half-shredded
+lettuce leaves filled the air. A cloud of dirt enveloped the car. The
+vehicle skidded and jerked, but finally made its way to a highway at
+the far end of the field. Chris hit the highway running, swerving into
+the lane at high speed.</p>
+
+<p id="id00763" class="calibre1">When Par looked back, the white car had disappeared. Chris kept his
+foot on the accelerator and Par barely breathed until the Landcruiser
+pulled up in front of Richard Rosen's building.</p>
+
+<p id="id00764" class="calibre1">Par leaped out, the red bag still clutched tightly under his arm, and
+high-tailed it into the lawyer's office. The receptionist looked a bit
+shocked when he said his name. Someone must have filled her in on the
+details.</p>
+
+<p id="id00765" class="calibre1">Rosen quickly ushered him into his office. Introductions were brief
+and Par cut to the story of the chase. Rosen listened intently,
+occasionally asking a well-pointed question, and then took control of
+the situation.</p>
+
+<p id="id00766" class="calibre1">The first thing they needed to do was call off the Secret Service
+chase, Rosen said, so Par didn't have to spend any more time ducking
+around corners and hiding in bus depots. He called the Secret
+Service's San Francisco office and asked Special Agent Thomas J.
+Holman to kill the Secret Service pursuit in exchange for an agreement
+that Par would turn himself in to be formally charged.</p>
+
+<p id="id00767" class="calibre1">Holman insisted that they had to talk to Par.</p>
+
+<p id="id00768" class="calibre1">No, Rosen said. There would be no interviews for Par by law
+enforcement agents until a deal had been worked out.</p>
+
+<p id="id00769" class="calibre1">But the Secret Service needed to talk to Par, Holman insisted. They
+could only discuss all the other matters after the Secret Service had
+had a chance to talk with Par.</p>
+
+<p id="id00770" class="calibre1">Rosen politely warned Holman not to attempt to contact his client. You
+have something to say to Par, you go through me, he said. Holman did
+not like that at all. When the Secret Service wanted to talk to
+someone, they were used to getting their way. He pushed Rosen, but the
+answer was still no. No no no and no again. Holman had made a mistake.
+He had assumed that everyone wanted to do business with the United
+States Secret Service.</p>
+
+<p id="id00771" class="calibre1">When he finally realised Rosen wouldn't budge, Holman gave up. Rosen
+then negotiated with the federal prosecutor, US Attorney Joe Burton,
+who was effectively Holman's boss in the case, to call off the pursuit
+in exchange for Par handing himself in to be formally charged.</p>
+
+<p id="id00772" class="calibre1">Then Par gave Rosen his red bag, for safekeeping.</p>
+
+<p id="id00773" class="calibre1">At about the same time, Citibank investigator Wallace and Detective
+Porter of the Salinas Police interviewed Par's mother as she returned
+home from the bus depot. She said that her son had moved out of her
+home some six months before, leaving her with a $2000 phone bill she
+couldn't pay. They asked if they could search her home. Privately, she
+worried about what would happen if she refused. Would they tell the
+office where she worked as a clerk? Could they get her fired? A simple
+woman who had little experience dealing with law enforcement agents,
+Par's mother agreed. The investigators took Par's disks and papers.</p>
+
+<p id="id00774" class="calibre1">Par turned himself in to the Salinas Police in the early afternoon of
+12 December. The police photographed and fingerprinted him before
+handing him a citation—a small yellow slip headed `502 (c) (1) PC'.
+It looked like a traffic ticket, but the two charges Par faced were
+felonies, and each carried a maximum term of three years for a minor.
+Count 1, for hacking into Citicorp Credit Services, also carried a
+fine of up to $10000. Count 2, for `defrauding a telephone service',
+had no fine: the charges were for a continuing course of conduct,
+meaning that they applied to the same activity over an extended period
+of time.</p>
+
+<p id="id00775" class="calibre1">Federal investigators had been astonished to find Par was so young.
+Dealing with a minor in the federal court system was a big hassle, so
+the prosecutor decided to ask the state authorities to prosecute the
+case. Par was ordered to appear in Monterey County Juvenile Court on
+10 July 1989.</p>
+
+<p id="id00776" class="calibre1">Over the next few months, Par worked closely with Rosen. Though Rosen
+was a very adept lawyer, the situation looked pretty depressing.
+Citibank claimed it had spent $30000 on securing its systems and Par
+believed that the corporation might be looking for up to $3 million in
+total damages. While they couldn't prove Par had made any money from
+the cards himself, the prosecution would argue that his generous
+distribution of them had led to serious financial losses. And that was
+just the financial institutions.</p>
+
+<p id="id00777" class="calibre1">Much more worrying was what might come out about Par's visits to TRW's
+computers. The Secret Service had seized at least one disk with TRW
+material on it.</p>
+
+<p id="id00778" class="calibre1">TRW was a large, diverse company, with assets of $2.1 billion and
+sales of almost $7 billion in 1989, nearly half of which came from the
+US government. It employed more than 73000 people, many of who worked
+with the company's credit ratings business. TRW's vast databases held
+private details of millions of people—addresses, phone numbers,
+financial data.</p>
+
+<p id="id00779" class="calibre1">That, however, was just one of the company's many businesses. TRW also
+did defence work—very secret defence work. Its Space and Defense
+division, based in Redondo Beach, California, was widely believed to
+be a major beneficiary of the Reagan Government's Star Wars budget.
+More than 10 per cent of the company's employees worked in this
+division, designing spacecraft systems, communications systems,
+satellites and other, unspecified, space `instruments'.</p>
+
+<p id="id00780" class="calibre1">The siezed disk had some mail from the company's TRWMAIL systems. It
+wasn't particularly sensitive, mostly just company propaganda sent to
+employees, but the Secret Service might think that where there was
+smoke, there was bound to be fire. TRW did the kind of work that makes
+governments very nervous when it comes to unauthorised access. And Par
+had visited certain TRW machines; he knew that company had a missiles
+research section, and even a space weapons section.</p>
+
+<p id="id00781" class="calibre1">With so many people out to get him—Citibank, the Secret Service, the
+local police, even his own mother had helped the other side—it was
+only a matter of time before they unearthed the really secret things
+he had seen while hacking. Par began to wonder if was such a good idea
+for him to stay around for the trial.</p>
+
+<p id="id00782" class="calibre2">In early 1989, when Theorem stepped off the plane which carried her
+from Switzerland to San Francisco, she was pleased that she had
+managed to keep a promise to herself. It wasn't always an easy
+promise. There were times of intimacy, of perfect connection, between
+the two voices on opposite sides of the globe, when it seemed so
+breakable.</p>
+
+<p id="id00783" class="calibre1">Meanwhile, Par braced himself. Theorem had described herself in such
+disparaging terms. He had even heard from others on Altos that she was
+homely. But that description had ultimately come from her anyway, so
+it didn't really count.</p>
+
+<p id="id00784" class="calibre1">Finally, as he watched the stream of passengers snake out to the
+waiting area, he told himself it didn't matter anyway. After all, he
+had fallen in love with her—her being, her essence—not her image as
+it appeared in flesh. And he had told her so. She had said the same
+back to him.</p>
+
+<p id="id00785" class="calibre1">Suddenly she was there, in front of him. Par had to look up slightly
+to reach her eyes, since she was a little more than an inch taller.
+She was quite pretty, with straight, brown shoulder-length hair and
+brown eyes. He was just thinking how much more attractive she was than
+he had expected, when it happened.</p>
+
+<p id="id00786" class="calibre1">Theorem smiled.</p>
+
+<p id="id00787" class="calibre1">Par almost lost his balance. It was a devastating smile, big and
+toothy, warm and genuine. Her whole face lit up with a fire of
+animation. That smile sealed it.</p>
+
+<p id="id00788" class="calibre1">She had kept her promise to herself. There was no clear image of Par
+in her mind before meeting him in person. After meeting a few people
+from Altos at a party in Munich the year before, she had tried not to
+create images of people based on their on-line personalities. That way
+she would never suffer disappointment.</p>
+
+<p id="id00789" class="calibre1">Par and Theorem picked up her bags and got into Brian's car. Brian, a
+friend who offered to play airport taxi because Par didn't have a car,
+thought Theorem was pretty cool. A six-foot-tall French-speaking Swiss
+woman. It was definitely cool. They drove back to Par's house. Then
+Brian came in for a chat.</p>
+
+<p id="id00790" class="calibre1">Brian asked Theorem all sorts of questions. He was really curious,
+because he had never met anyone from Europe before. Par kept trying to
+encourage his friend to leave but Brian wanted to know all about life
+in Switzerland. What was the weather like? Did people ski all the
+time?</p>
+
+<p id="id00791" class="calibre1">Par kept looking Brian in the eye and then staring hard at the door.</p>
+
+<p id="id00792" class="calibre1">Did most Swiss speak English? What other languages did she know? A lot
+of people skied in California. It was so cool talking to someone from
+halfway around the world.</p>
+
+<p id="id00793" class="calibre1">Par did the silent chin-nudge toward the door and, at last, Brian got
+the hint. Par ushered his friend out of the house. Brian was only
+there for about ten minutes, but it felt like a year. When Par and
+Theorem were alone, they talked a bit, then Par suggested they go for
+a walk.</p>
+
+<p id="id00794" class="calibre1">Halfway down the block, Par tentatively reached for her hand and took
+it in his own. She seemed to like it. Her hand was warm. They talked a
+bit more, then Par stopped. He turned to face her. He paused, and then
+told her something he had told her before over the telephone,
+something they both knew already.</p>
+
+<p id="id00795" class="calibre1">Theorem kissed him. It startled Par. He was completely unprepared.<br class="calibre4"/>
+
+Then Theorem said the same words back to him.<br class="calibre4"/>
+</p>
+
+<p id="id00796" class="calibre1">When they returned to the house, things progressed from there. They
+spent two and a half weeks in each other's arms—and they were
+glorious, sun-drenched weeks. The relationship proved to be far, far
+better in person than it had ever been on-line or on the telephone.
+Theorem had captivated Par, and Par, in turn, created a state of bliss
+in Theorem.</p>
+
+<p id="id00797" class="calibre1">Par showed her around his little world in northern California. They
+visited a few tourist sites, but mostly they just spent a lot of time
+at home. They talked, day and night, about everything.</p>
+
+<p id="id00798" class="calibre1">Then it was time for Theorem to leave, to return to her job and her
+life in Switzerland. Her departure was hard—driving to the airport,
+seeing her board the plane—it was heart-wrenching. Theorem looked
+very upset. Par just managed to hold it together until the plane took
+off.</p>
+
+<p id="id00799" class="calibre1">For two and a half weeks, Theorem had blotted out Par's approaching
+court case. As she flew away, the dark reality of the case descended
+on him.</p>
+
+<p id="id00800" class="calibre2">The fish liked to watch.</p>
+
+<p id="id00801" class="calibre1">Par sat at the borrowed computer all night in the dark, with only the
+dull glow of his monitor lighting the room, and the fish would all
+swim over to the side of their tank and peer out at him. When things
+were quiet on-line, Par's attention wandered to the eel and the lion
+fish. Maybe they were attracted to the phosphorescence of the computer
+screen. Whatever the reason, they certainly liked to hover there. It
+was eerie.</p>
+
+<p id="id00802" class="calibre1">Par took a few more drags of his joint, watched the fish some more,
+drank his Coke and then turned his attention back to his computer.</p>
+
+<p id="id00803" class="calibre1">That night, Par saw something he shouldn't have. Not the usual hacker
+stuff. Not the inside of a university. Not even the inside of an
+international bank containing private financial information about
+Middle Eastern sheiks.</p>
+
+<p id="id00804" class="calibre1">What he saw was information about some sort of killer spy
+satellite—those are the words Par used to describe it to other
+hackers. He said the satellite was capable of shooting down other
+satellites caught spying, and he saw it inside a machine connected to
+TRW's Space and Defense division network. He stumbled upon it much the
+same way Force had accidentally found the CitiSaudi machine—through
+scanning. Par didn't say much else about it because the discovery
+scared the hell out of him.</p>
+
+<p id="id00805" class="calibre1">Suddenly, he felt like the man who knew too much. He'd been in and out
+of so many military systems, seen so much sensitive material, that he
+had become a little blasé about the whole thing. The information was
+cool to read but, God knows, he never intended to actually do anything
+with it. It was just a prize, a glittering trophy testifying to his
+prowess as a hacker. But this discovery shook him up, slapped him in
+the face, made him realise he was exposed.</p>
+
+<p id="id00806" class="calibre1">What would the Secret Service do to him when they found out? Hand him
+another little traffic ticket titled `502C'? No way. Let him tell the
+jury at his trial everything he knew? Let the newspapers print it? Not
+a snowball's chance in hell.</p>
+
+<p id="id00807" class="calibre1">This was the era of Ronald Reagan and George Bush, of space defence
+initiatives, of huge defence budgets and very paranoid military
+commanders who viewed the world as one giant battlefield with the evil
+empire of the Soviet Union.</p>
+
+<p id="id00808" class="calibre1">Would the US government just lock him up and throw away the key? Would
+it want to risk him talking to other prisoners—hardened criminals who
+knew how to make a dollar from that sort of information? Definitely
+not.</p>
+
+<p id="id00809" class="calibre1">That left just one option. Elimination.</p>
+
+<p id="id00810" class="calibre1">It was not a pretty thought. But to the seventeen-year-old hacker it
+was a very plausible one. Par considered what he could do and came up
+with what seemed to be the only solution.</p>
+
+<p id="id00811" class="calibre1">Run.</p>
+
+<h5 id="id00812" class="calibre9">                         Chapter 4 — The Fugitive.</h5>
+
+<p id="id00813" class="calibre2">There's one gun, probably more; and the others are pointing at our backdoor.</p>
+
+<p id="id00814" class="calibre1">— from `Knife's Edge', Bird Noises.</p>
+
+<p id="id00815" class="calibre1">When Par failed to show up for his hearing on 10 July 1989 in the
+Monterey County Juvenile Court in Salinas, he officially became a
+fugitive. He had, in fact, already been on the run for some weeks. But
+no-one knew. Not even his lawyer.</p>
+
+<p id="id00816" class="calibre1">Richard Rosen had an idea something was wrong when Par didn't show up
+for a meeting some ten days before the hearing, but he kept hoping his
+client would come good. Rosen had negotiated a deal for Par:
+reparations plus fifteen days or less in juvenile prison in exchange
+for Par's full cooperation with the Secret Service.</p>
+
+<p id="id00817" class="calibre1">Par had appeared deeply troubled over the matter for weeks. He didn't
+seem to mind telling the Feds how he had broken into various
+computers, but that's not what they were really looking for. They
+wanted him to rat. And to rat on everyone. They knew Par was a kingpin
+and, as such, he knew all the important players in the underground.
+The perfect stooge. But Par couldn't bring himself to narc. Even if he
+did spill his guts, there was still the question of what the
+authorities would do to him in prison. The question of elimination
+loomed large in his mind.</p>
+
+<p id="id00818" class="calibre1">So, one morning, Par simply disappeared. He had planned it carefully,
+packed his bags discreetly and made arrangements with a trusted friend
+outside the circle which included his room-mates. The friend drove
+around to pick Par up when the
+room-mates were out. They never had an inkling that the now
+eighteen-year-old Par was about to vanish for a very long time.</p>
+
+<p id="id00819" class="calibre1">First, Par headed to San Diego. Then LA. Then he made his way to New<br class="calibre4"/>
+
+Jersey. After that, he disappeared from the radar screen completely.<br class="calibre4"/>
+</p>
+
+<p id="id00820" class="calibre1">Life on the run was hard. For the first few months, Par carried around
+two prized possessions; an inexpensive laptop computer and photos of
+Theorem taken during her visit. They were his lifeline to a different
+world and he clutched them in his bag as he moved from one city to
+another, often staying with his friends from the computer underground.
+The loose-knit network of hackers worked a bit like the
+nineteenth-century American `underground railroad' used by escaped
+slaves to flee from the South to the safety of the northern states.
+Except that, for Par, there was never a safe haven.</p>
+
+<p id="id00821" class="calibre1">Par crisscrossed the continent, always on the move. A week in one
+place. A few nights in another. Sometimes there were breaks in the
+electronic underground railroad, spaces between the place where one
+line ended and another began. Those breaks were the hardest. They
+meant sleeping out in the open, sometimes in the cold, going without
+food and being without anyone to talk to.</p>
+
+<p id="id00822" class="calibre1">He continued hacking, with new-found frenzy, because he was
+invincible. What were the law enforcement agencies going to do? Come
+and arrest him? He was already a fugitive and he figured things
+couldn't get much worse. He felt as though he would be on the run
+forever, and as if he had already been on the run for a lifetime,
+though it was only a few months.</p>
+
+<p id="id00823" class="calibre1">When he was staying with people from the computer underground, Par was
+careful. But when he was alone in a dingy motel room, or with people
+completely outside that world, he hacked without fear. Blatant,
+in-your-face feats. Things he knew the Secret Service would see. Even
+his illicit voice mailbox had words for his pursuers:</p>
+
+<p id="id00824" class="calibre1">Yeah, this is Par. And to all those faggots from the Secret Service
+who keep calling and hanging up, well, lots of luck. 'Cause, I mean,
+you're so fucking stupid, it's not even funny.</p>
+
+<p id="id00825" class="calibre1">I mean, if you had to send my shit to Apple Computers [for analysis],
+you must be so stupid, it's pitiful. You also thought I had
+blue-boxing equipment [for phreaking]. I'm just laughing trying to
+think what you thought was a blue box. You are so lame.</p>
+
+<p id="id00826" class="calibre1">Oh well. And anyone else who needs to leave me a message, go ahead.<br class="calibre4"/>
+
+And everyone take it easy and leave me some shit. Alright. Later.<br class="calibre4"/>
+</p>
+
+<p id="id00827" class="calibre1">Despite the bravado, paranoia took hold of Par as it never had before.
+If he saw a cop across the street, his breath would quicken and he
+would turn and walk in the opposite direction. If the cop was heading
+toward him, Par crossed the street and turned down the nearest alley.
+Police of any type made him very nervous.</p>
+
+<p id="id00828" class="calibre1">By the autumn of 1989, Par had made his way to a small town in North
+Carolina. He found a place to stop and rest with a friend who used the
+handle The Nibbler and whose family owned a motel. A couple of weeks
+in one place, in one bed, was paradise. It was also free, which meant
+he didn't have to borrow money from Theorem, who helped him out while
+he was on the run.</p>
+
+<p id="id00829" class="calibre1">Par slept in whatever room happened to be available that night, but he
+spent most of his time in one of the motel chalets Nibbler used in the
+off-season as a computer room. They spent days hacking from Nibbler's
+computer. The fugitive had been forced to sell off his inexpensive
+laptop before arriving in North Carolina.</p>
+
+<p id="id00830" class="calibre1">After a few weeks at the motel, however, he couldn't shake the feeling
+that he was being watched. There were too many strangers coming and
+going. He wondered if the hotel guests waiting in their cars were
+spying on him, and he soon began jumping at shadows. Perhaps, he
+thought, the Secret Service had found him after all.</p>
+
+<p id="id00831" class="calibre1">Par thought about how he could investigate the matter in more depth.</p>
+
+<p id="id00832" class="calibre1">One of The Atlanta Three hackers, The Prophet, called Nibbler
+occasionally to exchange hacking information, particularly security
+bugs in Unix systems. During one of their talks, Prophet told Par
+about a new security flaw he'd been experimenting with on a network
+that belonged to the phone company.</p>
+
+<p id="id00833" class="calibre1">The Atlanta Three, a Georgia-based wing of The Legion of Doom, spent a
+good deal of time weaving their way through BellSouth, the phone
+company covering the south-eastern US. They knew about phone switching
+stations the way Par knew about Tymnet. The Secret Service had raided
+the hackers in July 1989 but had not arrested them yet, so in
+September The Prophet continued to maintain an interest in his
+favourite target.</p>
+
+<p id="id00834" class="calibre1">Par thought the flaw in BellSouth's network sounded very cool and
+began playing around in the company's systems. Dial up the company's
+computer network, poke around, look at things. The usual stuff.</p>
+
+<p id="id00835" class="calibre1">It occurred to Par that he could check out the phone company's records
+of the motel to see if there was anything unusual going on. He typed
+in the motel's main phone number and the system fed back the motel's
+address, name and some detailed technical information, such as the
+exact cable and pair attached to the phone number. Then he looked up
+the phone line of the computer chalet. Things looked odd on that line.</p>
+
+<p id="id00836" class="calibre1">The line which he and Nibbler used for most of their hacking showed a
+special status: `maintenance unit on line'.</p>
+
+<p id="id00837" class="calibre1">What maintenance unit? Nibbler hadn't mentioned any problems with any
+of the motel's lines, but Par checked with him. No problems with the
+telephones.</p>
+
+<p id="id00838" class="calibre1">Par felt nervous. In addition to messing around with the phone
+company's networks, he had been hacking into a Russian computer
+network from the computer chalet. The Soviet network was a shiny new
+toy. It had only been connected to the rest of the world's global
+packet-switched network for about a month, which made it particularly
+attractive virgin territory.</p>
+
+<p id="id00839" class="calibre1">Nibbler called in a friend to check the motel's phones. The friend, a
+former telephone company technician turned freelancer, came over to
+look at the equipment. He told Nibbler and Par that something weird
+was happening in the motel's phone system. The line voltages were way
+off.</p>
+
+<p id="id00840" class="calibre1">Par realised instantly what was going on. The system was being
+monitored. Every line coming in and going out was probably being
+tapped, which meant only one thing. Someone—the phone company, the
+local police, the FBI or the Secret Service—was onto him.</p>
+
+<p id="id00841" class="calibre1">Nibbler and Par quickly packed up all Nibbler's computer gear, along
+with Par's hacking notes, and moved to another motel across town. They
+had to shut down all their hacking activities and cover their tracks.</p>
+
+<p id="id00842" class="calibre1">Par had left programs running which sniffed people's passwords and
+login names on a continual basis as they logged in, then dumped all
+the information into a file on the hacked machine. He checked that
+file every day or so. If he didn't shut the programs down, the log
+file would grow until it was so big the system administrator would
+become curious and have a look. When he discovered that his system had
+been hacked he would close the security holes. Par would have problems
+getting back into that system.</p>
+
+<p id="id00843" class="calibre1">After they finished tidying up the hacked systems, they gathered up
+all Par's notes and Nibbler's computer equipment once again and
+stashed them in a rented storage space. Then they drove back to the
+motel.</p>
+
+<p id="id00844" class="calibre1">Par couldn't afford to move on just yet. Besides, maybe only the
+telephone company had taken an interest in the motel's phone system.
+Par had done a lot of poking and prodding of the telecommunications
+companies' computer systems from the motel phone, but he had done it
+anonymously. Perhaps BellSouth felt a little curious and just wanted
+to sniff about for more information. If that was the case, the law
+enforcement agencies probably didn't know that Par, the fugitive, was
+hiding in the motel.</p>
+
+<p id="id00845" class="calibre1">The atmosphere was becoming oppressive in the motel. Par became even
+more watchful of the people coming and going. He glanced out the front
+window a little more often, and he listened a little more carefully to
+the footsteps coming and going. How many of the guests were really
+just tourists? Par went through the guest list and found a man
+registered as being from New Jersey. He was from one of the AT&amp;T
+corporations left after the break-up of Bell Systems. Why on earth
+would an AT&amp;T guy be staying in a tiny hick town in North Carolina?
+Maybe a few Secret Service agents had snuck into the motel and were
+watching the chalet.</p>
+
+<p id="id00846" class="calibre1">Par needed to bring the paranoia under control. He needed some fresh
+air, so he went out for a walk. The weather was bad and the wind blew
+hard, whipping up small tornadoes of autumn leaves. Soon it began
+raining and Par sought cover in the pay phone across the street.</p>
+
+<p id="id00847" class="calibre1">Despite having been on the run for a few months, Par still called
+Theorem almost every day, mostly by phreaking calls through bulk
+telecommunications companies. He dialled her number and they talked
+for a bit. He told her about how the voltage was way off on the
+motel's PABX and how the phone might be tapped. She asked how he was
+holding up. Then they spoke softly about when they might see each
+other again.</p>
+
+<p id="id00848" class="calibre1">Outside the phone box, the storm worsened. The rain hammered the roof
+from one side and then another as the wind jammed it in at strange
+angles. The darkened street was deserted. Tree branches creaked under
+the strain of the wind. Rivulets rushed down the leeward side of the
+booth and formed a wall of water outside the glass. Then a trash bin
+toppled over and its contents flew onto the road.</p>
+
+<p id="id00849" class="calibre1">Trying to ignore to the havoc around him, Par curled the phone handset
+into a small protected space, cupped between his hand, his chest and a
+corner of the phone booth. He reminded Theorem of their time together
+in California, of two and a half weeks, and they laughed gently over
+intimate secrets.</p>
+
+<p id="id00850" class="calibre1">A tree branch groaned and then broke under the force of the wind. When
+it crashed on the pavement near the phone booth, Theorem asked Par
+what the noise was.</p>
+
+<p id="id00851" class="calibre1">`There's a hurricane coming,' he told her. `Hurricane Hugo. It was
+supposed to hit tonight. I guess it's arrived.'</p>
+
+<p id="id00852" class="calibre1">Theorem sounded horrified and insisted Par go back to the safety of
+the motel immediately.</p>
+
+<p id="id00853" class="calibre1">When Par opened the booth door, he was deluged by water. He dashed
+across the road, fighting the wind of the hurricane, staggered into his
+motel room and jumped into bed to warm up. He fell asleep listening to
+the storm, and he dreamed of Theorem.</p>
+
+<p id="id00854" class="calibre1">Hurricane Hugo lasted more than three days, but they felt like the
+safest three days Par had spent in weeks. It was a good bet that the
+Secret Service wouldn't be conducting any raids during a hurricane.
+South Carolina took the brunt of Hugo but North Carolina also suffered
+massive damage. It was one of the worst hurricanes to hit the area in
+decades. Winds near its centre reached more than 240 kilometres per
+hour, causing 60 deaths and $7 billion in damages as it made its way
+up the coast from the West Indies to the Carolinas.</p>
+
+<p id="id00855" class="calibre1">When Par stepped outside his motel room one afternoon a few days after
+the storm, the air was fresh and clean. He walked to the railing
+outside his second-storey perch and found himself looking down on a
+hive of activity in the car park. There were cars. There was a van.
+There was a collection of spectators.</p>
+
+<p id="id00856" class="calibre1">And there was the Secret Service.</p>
+
+<p id="id00857" class="calibre1">At least eight agents wearing blue jackets with the Secret Service
+emblem on the back.</p>
+
+<p id="id00858" class="calibre1">Par froze. He stopped breathing. Everything began to move in slow
+motion. A few of the agents formed a circle around one of the guys
+from the motel, a maintenance worker named John, who looked vaguely
+like Par. They seemed to be hauling John over the coals, searching his
+wallet for identification and quizzing him. Then they escorted him to
+the van, presumably to run his prints.</p>
+
+<p id="id00859" class="calibre1">Par's mind began moving again. He tried to think clearly. What was the
+best way out? He had to get back into his room. It would give him some
+cover while he figured out what to do next. The photos of Theorem
+flashed through his mind. No way was he going to let the Secret
+Service get hold of those. He needed to stash them and fast.</p>
+
+<p id="id00860" class="calibre1">He could see the Secret Service agents searching the computer chalet.
+Thank God he and Nibbler had moved all the equipment. At least there
+was nothing incriminating in there and they wouldn't be able to seize
+all their gear.</p>
+
+<p id="id00861" class="calibre1">Par breathed deeply, deliberately, and forced himself to back away
+from the railing toward the door to his room. He resisted the urge to
+dash into his room, to recoil from the scene being played out below
+him. Abrupt movements would draw the agents' attention.</p>
+
+<p id="id00862" class="calibre1">Just as Par began to move, one of the agents turned around. He scanned
+the two-storey motel complex and his gaze quickly came to rest on Par.
+He looked Par dead in the eye.</p>
+
+
+
+  </div>
+
+  
+  <div class="calibreToc">
+    <h2><a href="../../pg123126.html"> Table of contents</a></h2>
+     <div>
+  <ul>
+    <li>
+      <a href="part0007.html#id01849">Chapter 7 — Judgement Day.</a>
+    </li>
+    <li>
+      <a href="part0011.html#id02869">Chapter 11 — The Prisoner's Dilemma.</a>
+      <ul>
+        <li>
+          <a href="part0013.html#id03429">Chapter 1</a>
+        </li>
+        <li>
+          <a href="part0013.html#id03679">*** START: FULL LICENSE ***</a>
+          <ul>
+            <li>
+              <a href="part0013.html#id03682">Section 1. General Terms of Use and Redistributing Project Gutenberg-tm electronic works</a>
+            </li>
+            <li>
+              <a href="part0013.html#id03710">Section 2. Information about the Mission of Project Gutenberg-tm</a>
+            </li>
+            <li>
+              <a href="part0013.html#id03713">Section 3. Information about the Project Gutenberg Literary Archive Foundation</a>
+            </li>
+            <li>
+              <a href="part0014.html#id03723">Section 5. General Information About Project Gutenberg-tm electronic works.</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+
+  </div>
+  
+
+  <div class="calibreEbNav">
+    
+      <a href="part0002.html" class="calibreAPrev">previous page</a>
+    
+
+    <a href="../../pg123126.html" class="calibreAHome"> start</a>
+
+    
+      <a href="part0004.html" class="calibreANext"> next page</a>
+    
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+
+body{
+    background-color: rgba(222, 184, 135, 0.644);
+    height: 100rem;
+    
+    
+}
+
+#titlehead{
+    font-size: 60px;
+    font-weight: 500;
+}
+.checked {
+    color: orange;
+  }
+ 
+header{
+    background-color: rgb(28, 100, 28);
+    height: 150px;
+    box-shadow: 0 .5rem 1rem rgba(66, 61, 61, 0.651);
+}
+
+#footer{
+   
+    margin-bottom: 10px;
+    height: 150px;
+    background-color: burlywood;
+    text-align: center ;
+    box-shadow: 0 .5rem 1rem rgba(66, 61, 61, 0.651);
+    padding: 20px;
+}
+#list li{
+    visibility:hidden;
+}
+
+.book-poster{
+    position: relative;
+    display: block;
+    border-radius: 7px;
+    overflow: hidden;
+       transition: all ease 0.4s;
+    margin-left: 60px;
+    height: 500px;
+    text-transform: capitalize;
+}
+.book-poster img{
+    width: 310px;
+    height: 310px;
+    justify-content: center;
+    margin-left: -10px;
+  
+}
+a:link {
+    text-decoration: none;
+   
+    }
+.book-poster:hover{
+    box-shadow: none;
+    transition: scale(0.98) translateY(5px);
+}
+.bs-example  div[class^="col"] {
+
+    border: 1px solid white;
+    background: #f5f5f5;
+    text-align: center;
+  
+    padding-bottom: 20px;
+    margin-top: 30px;
+    box-shadow: 0 .5rem 1rem rgba(66, 61, 61, 0.651);
+   
+    }
+    .col-md-2{
+        margin-bottom: 40px;
+        margin-top: 10px;
+        border-radius: 20px;
+        
+
+
+    }
+
+
+
+
+    #freepage{
+        justify-content: center;
+        margin-left: 90rem;
+       
+        
+    }
+    #paidfreepage{
+        justify-content: center;
+        margin-left: 55rem;
+       
+        
+    }
+    .col-md-2 button{
+        background: #ff96ad;
+        border: none;
+      outline: 0;
+      padding: 12px;
+      color: white;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+      border-radius: 10px;
+    }
+    .col-md-2 button:hover{
+        background: #ff96ad;
+        box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad, 0 0 200px #ff96ad ;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    
+#footer a:link{
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+
+#footer h2{
+    color: darkolivegreen;
+}
+
+.dropdown{
+    color: black;
+    text-transform: capitalize;
+    background-color: none;
+
+}
+.dropdown ul{
+    margin-top: -330px;
+    
+}
+.dropdown-menu:hover{
+    box-shadow: 0 0 5px #046127, 0 0 25px #08703c;
+    background-color: #046127;
+  
+
+}
+
+
+#copyright{
+    padding-top: 35px;
+}
+#scroll{
+    float: right;
+    border-radius: 10px;
+    background-color: burlywood;
+}
+
+#scroll img{
+    justify-content: right;
+    width: 60px;
+    height: 60px;
+   
+    
+}

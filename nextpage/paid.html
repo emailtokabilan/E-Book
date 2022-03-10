@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Paid</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://css.gg/shopping-bag.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="container-lg head">
+        <div class="container-lg">
+            <ul class="nav justify-content-center">
+                <h1 id="titlehead" class="text-info">Read Book
+                    <lord-icon src="https://cdn.lordicon.com/wxnxiano.json" trigger="loop"
+                        style="width:100px;height:50px">
+                    </lord-icon>
+                </h1>
+            </ul>
+            <ul class="nav justify-content-center">
+                <a class="nav-link active text-info" href="../index.html">Home</a>
+            
+                <div class="dropdown">
+                    <a  role="button" data-toggle="dropdown" class=" nav-link text-info" data-target="#" href="#">
+                              books 
+                          </a>
+                    <ul class="dropdown-menu text-info " >
+                      <li><a href="./free.html">Free books </a></li>
+                      <li><a href="./paid..html">paid books</a></li>
+                    
+                    </ul>
+                  </div>
+                
+                <a class="nav-link text-info" href="#">About</a>
+                <form action="#">
+                    <input type="text" class="btn btn-light" name="search" placeholder="Search Here" id="searchbar"
+                        onkeyup="search_books()">
+                    <button type="button" id="searchbar" class="btn btn-success">Search</button>
+                    <ol id='list'>
+                        <li class="books_search">The Mysterious Affair at Styles</li>
+                        <li class="books_search">Alice in Wonderland</li>
+                        <li class="books_search">Helga Out of Hedgelands</li>
+                        <li class="books_search"><a href="./book/The-Lost-World/pg123098.html">The Lost World</a></li>
+                        <li class="books_search">Adventures of Pinocchio</li>
+                        <li class="books_search"></li>
+                        <li class="books_search"></li>
+                        <li class="books_search"></li>
+                        <li class="books_search"></li>
+                        <li class="books_search"></li>
+                        <li class="books_search"></li>
+                        <li class="books_search"></li>
+                        <li class="books_search"></li>
+                        <li class="books_search"></li>
+                        <li class="books_search"></li>
+                        <li class="books_search"></li>
+                        <li class="books_search"></li>
+                    </ol>
+                </form>
+            </ul>
+
+        </div>
+    </header>
+    <div class="container-lg head">
+        <div class="bs-example container-lg ">
+            <div class="row">
+                
+                    <div class="col-md-2 book-poster">
+                        <a href="./payment/index.html"><img src="./images/buy/buy-3.jpg">
+                            <h2 id="title">Bully Of Asia</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <p class="price" id="price">$39.99</p>
+                            <p><button>Pay</button></p>
+                        </a>
+                    </div>
+                    <div class="col-md-2 book-poster">
+                        <a href="./payment/index.html"><img src="./images/buy/buy-4.jpg">
+                            <h2>The Pig Of Providence</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <p class="price">$13.99</p>
+                            <p><button>Pay</button></p>
+                        </a>
+                    </div>
+                    <div class="col-md-2 book-poster">
+                        <a href="./payment/index.html"><img src="./images/buy/buy-5.jpg">
+                            <h2>The Book Thief</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <p class="price">$16.99</p>
+                            <p><button>Pay</button></p>
+                        </a>
+                    </div>
+                    <div class="col-md-2 book-poster">
+                        <a href="./payment/index.html"><img src="./images/buy/buy-6.jpg">
+                            <h2>The Hobbit</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <p class="price">$49.99</p>
+                            <p><button>Pay</button></p>
+    
+                        </a>
+                    </div>
+                    <div class="col-md-2 book-poster">
+                        <a href="./payment/index.html"><img src="./images/buy/buy-7.jpg">
+                            <h2>Pride And Prejudice</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <p class="price">$29.99</p>
+                            <p><button>Pay</button></p>
+    
+                        </a>
+                    </div>
+                    <div class="col-md-2 book-poster">
+                        <a href="./payment/index.html"><img src="./images/buy/buy-8.jpg">
+                            <h2>The Lord of The Rings</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <p class="price">$11.99</p>
+                            <p><button>Pay</button></p>
+                        </a>
+                    </div>
+                    <div class="col-md-2 book-poster">
+                        <a href="./payment/index.html"><img src="./images/buy/buy-9.jpg">
+                            <h2>Twilight</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"  ></span>
+                            <p class="price">$9.99</p>
+                            <p><button>Pay</button></p>
+    
+                        </a>
+                    </div>
+                    <div class="col-md-2 book-poster">
+                        <a href="./payment/index.html"><img src="./images/buy/buy-10.jpg">
+                            <h2>A Thousand Splendid Suns</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <p class="price">$39.99</p>
+                            <p><button>Pay</button></p>
+    
+                        </a>
+                    </div>
+                    <div class="col-md-2 book-poster">
+                        <a href="./payment/index.html"><img src="./images/buy/buy-11.jpg">
+                            <h2>Watbering Heights</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star"></span>
+                            <p class="price">$14.99</p>
+                            <p><button>Pay</button></p>
+                        </a>
+                    </div>
+                    <div class="col-md-2 book-poster">
+                        <a href="./payment/index.html"><img src="./images/buy/buy-12.jpg">
+                            <h2>Harry Potter</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <p class="price">$29.99</p>
+                            <p><button>Pay</button></p>
+                        </a>
+                    </div>
+                    <div class="col-md-2 book-poster">
+                        <a href="./payment/index.html"><img src="./images/paidbookimage/1.jpg">
+                            <h2 id="title">
+                                Percy Jackson's Greek Gods</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <p class="price" id="price">$39.99</p>
+                            <p><button>Pay</button></p>
+                        </a>
+                    </div>
+                    <div class="col-md-2 book-poster">
+                        <a href="./payment/index.html"><img src="./images/paidbookimage/2.jpg">
+                            <h2>Interpreter Of Maladies</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <p class="price">$13.99</p>
+                            <p><button>Pay</button></p>
+                        </a>
+                    </div>
+                    <div class="col-md-2 book-poster">
+                        <a href="./payment/index.html"><img src="./images/paidbookimage/3.jpg">
+                            <h2>The Adventures of Sherlock Holmes</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <p class="price">$16.99</p>
+                            <p><button>Pay</button></p>
+                        </a>
+                    </div>
+                    <div class="col-md-2 book-poster">
+                        <a href="./payment/index.html"><img src="./images/paidbookimage/4.jpg">
+                            <h2>The Demigod Files</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <p class="price">$49.99</p>
+                            <p><button>Pay</button></p>
+    
+                        </a>
+                    </div>
+                    <div class="col-md-2 book-poster">
+                        <a href="./payment/index.html"><img src="./images/paidbookimage/5.jpg">
+                            <h2>Things We Lost in the Fire</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <p class="price">$29.99</p>
+                            <p><button>Pay</button></p>
+    
+                        </a>
+                    </div>
+                    <div class="col-md-2 book-poster">
+                        <a href="./payment/index.html"><img src="./images/paidbookimage/6.jpg">
+                            <h2>Rebati</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <p class="price">$11.99</p>
+                            <p><button>Pay</button></p>
+                        </a>
+                    </div>
+                    <div class="col-md-2 book-poster">
+                        <a href="./payment/index.html"><img src="./images/paidbookimage/7.jpg">
+                            <h2>The Demigod Diaries</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"  ></span>
+                            <p class="price">$9.99</p>
+                            <p><button>Pay</button></p>
+    
+                        </a>
+                    </div>
+                    <div class="col-md-2 book-poster">
+                        <a href="./payment/index.html"><img src="./images/paidbookimage/8.jpg">
+                            <h2>The Return of Sherlock Holmes</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <p class="price">$39.99</p>
+                            <p><button>Pay</button></p>
+    
+                        </a>
+                    </div>
+                    <div class="col-md-2 book-poster">
+                        <a href="./payment/index.html"><img src="./images/paidbookimage/9.jpg">
+                            <h2>The Boat</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star"></span>
+                            <p class="price">$14.99</p>
+                            <p><button>Pay</button></p>
+                        </a>
+                    </div>
+                    <div class="col-md-2 book-poster">
+                        <a href="./payment/index.html"><img src="./images/paidbookimage/10.jpg">
+                            <h2> Sherlock Holmes</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <p class="price">$29.99</p>
+                            <p><button>Pay</button></p>
+                        </a>
+                    </div>
+                    <div class="col-md-2 book-poster">
+                        <a href="./payment/index.html"><img src="./images/paidbookimage/11.jpg">
+                            <h2 id="title">The Thirteen Problems</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <p class="price" id="price">$39.99</p>
+                            <p><button>Pay</button></p>
+                        </a>
+                    </div>
+                    <div class="col-md-2 book-poster">
+                        <a href="./payment/index.html"><img src="./images/paidbookimage/12.jpg">
+                            <h2>The Tale of the Unknown Island</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <p class="price">$13.99</p>
+                            <p><button>Pay</button></p>
+                        </a>
+                    </div>
+                    <div class="col-md-2 book-poster">
+                        <a href="./payment/index.html"><img src="./images/paidbookimage/13.jpg">
+                            <h2>
+                                The Secret Sharer</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <p class="price">$16.99</p>
+                            <p><button>Pay</button></p>
+                        </a>
+                    </div>
+                    <div class="col-md-2 book-poster">
+                        <a href="./payment/index.html"><img src="./images/paidbookimage/14.jpg">
+                            <h2>The Million Pound Bank Note</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <p class="price">$49.99</p>
+                            <p><button>Pay</button></p>
+    
+                        </a>
+                    </div>
+                    <div class="col-md-2 book-poster">
+                        <a href="./payment/index.html"><img src="./images/paidbookimage/15.jpg">
+                            <h2>Sing to the Dawn</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <p class="price">$29.99</p>
+                            <p><button>Pay</button></p>
+    
+                        </a>
+                    </div>
+                    <div class="col-md-2 book-poster">
+                        <a href="./payment/index.html"><img src="./images/paidbookimage/16.jpg">
+                            <h2>The Hound of Death</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <p class="price">$11.99</p>
+                            <p><button>Pay</button></p>
+                        </a>
+                    </div>
+                    <div class="col-md-2 book-poster">
+                        <a href="./payment/index.html"><img src="./images/paidbookimage/17.jpg">
+                            <h2>Dubliners</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"  ></span>
+                            <p class="price">$9.99</p>
+                            <p><button>Pay</button></p>
+    
+                        </a>
+                    </div>
+                    <div class="col-md-2 book-poster">
+                        <a href="./payment/index.html"><img src="./images/paidbookimage/18.jpg">
+                            <h2>The Complete Stories</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <p class="price">$39.99</p>
+                            <p><button>Pay</button></p>
+    
+                        </a>
+                    </div>
+                    <div class="col-md-2 book-poster">
+                        <a href="./payment/index.html"><img src="./images/paidbookimage/19.jpg">
+                            <h2>An Honest Thief</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star"></span>
+                            <p class="price">$14.99</p>
+                            <p><button>Pay</button></p>
+                        </a>
+                    </div>
+                    <div class="col-md-2 book-poster">
+                        <a href="./payment/index.html"><img src="./images/paidbookimage/20.jpg">
+                            <h2>Nine Stories</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <p class="price">$29.99</p>
+                            <p><button>Pay</button></p>
+                        </a>
+                    </div>
+
+                            
+            </div>
+        </div>
+    </div>
+
+
+<div id="freepage" class="row">
+<div class="col-md-12">
+    <nav aria-label="Page navigation">
+        <ul class="pagination">
+        <li class="page-item">
+        <a href="../nextpage/paid.html" class="page-link" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+        </a>
+        </li>
+        <li class="page-item"><a href="../paid/page1.html" class="page-link">1</a></li>
+        <li class="page-item"><a href="../paid/page2.html" class="page-link">2</a></li>
+       
+        <li class="page-item">
+        <a href="../paid/page2.html" class="page-link" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+        </a>
+        </li>
+        </ul>
+</div>
+
+  
+</div>
+
+
+    <div class="row">
+        <div id="footer" class="col-md-12 footer">
+            <button id="scroll" onclick="scrollToTop()">
+                <img  src="./images/up.png" width="10px" height="10px">
+            </button>
+            <p> <a href="">Disclaimer</a> | <a href=""> Forms </a> | <a href=""> DownLoad </a> | <a href="">
+                    FAQs</a> | <a href="">Terms and Conditions </a> | <a href="">Website Policies </a> | <a href="">
+                    Feedback </a> | <a href=""> Help </a> | <a href=""> Site Map </a> | <a href="">
+                    Articles </a> | <a href=""> Tenders </a> </p>
+                    <P><h2>ⓒ Kabilan Enterprise</h2></P>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

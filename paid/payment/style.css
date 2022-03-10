@@ -1,0 +1,81 @@
+body{
+    background-image: url(./images/s-3.jpg);
+    background-size: cover;
+    color: white;
+}
+
+
+.bs-example  div[class^="col"] {
+	border: 1px solid white;
+    background-color: rgba(53, 71, 16, 0.473);
+	text-align: center;
+	padding-top: 8px;
+	padding-bottom: 8px;
+    border-bottom-right-radius: 180px;
+    border-top-left-radius: 180px;
+    box-shadow: 0 .5rem 1rem rgba(66, 61, 61, 0.651);
+	}
+
+
+.row{
+    justify-content: center;
+    padding: 50px;
+   
+}
+h1{
+    color: rgb(207, 218, 188);
+    font-size: 50px;
+    font-weight: 400;
+}
+
+
+
+
+    .col-sm-8{
+        align-items: center;
+        justify-content: center;
+        color: white;
+        padding: 20px;
+        text-shadow:  0 .5rem 1rem rgba(66, 61, 61, 0.651);
+
+       
+      
+    }
+   input{
+       align-items: center;
+       color:white;
+       background-color: darkcyan;
+       font-size: 30px;
+       box-shadow: 0 .5rem 1rem rgba(66, 61, 61, 0.651);
+       padding: 10px;
+       margin-top: 10px;
+       border-radius: 10px;
+       cursor: pointer;
+      
+   }
+   p{
+       color: rgb(61, 216, 61);
+       font-size: 50px;
+       font-weight: 400;
+       text-shadow:  0 .5rem 1rem rgba(66, 61, 61, 0.651);
+   }
+   .col-sm-12{
+    color: cornsilk;
+    font-size: 50px;
+    font-weight: 400;
+
+   }
+    a:link{
+   color: white;
+    font-size: 50px;
+    font-weight: 400;
+    background-color: rgba(100, 168, 36, 0.63);
+    border-radius: 10px;
+    text-decoration: none;
+
+   }
+
+   td{
+       color: rgb(253, 190, 30);
+       font-size: 20px;
+   }

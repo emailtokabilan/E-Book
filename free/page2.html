@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Free</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://css.gg/shopping-bag.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="../nextpage/style.css">
+</head>
+
+<body>
+
+    <header class="container-lg head">
+        <div class="container-lg">
+            <ul class="nav justify-content-center">
+                <h1 id="titlehead" class="text-info">Read Book
+                    <lord-icon src="https://cdn.lordicon.com/wxnxiano.json" trigger="loop"
+                        style="width:100px;height:50px">
+                    </lord-icon>
+                </h1>
+            </ul>
+            <ul class="nav justify-content-center">
+                <a class="nav-link active text-info" href="../index.html">Home</a>
+            
+                <div class="dropdown">
+                    <a  role="button" data-toggle="dropdown" class=" nav-link text-info" data-target="#" href="#">
+                              books 
+                          </a>
+                    <ul class="dropdown-menu text-info " >
+                        <li><a href="../nextpage/free.html">Free books </a></li>
+                        <li><a href="../nextpage/paid.html">paid books</a></li>
+                    
+                    </ul>
+                  </div>
+                
+                <a class="nav-link text-info" href="#">About</a>
+                <form action="#">
+                    <input type="text" class="btn btn-light" name="search" placeholder="Search Here" id="searchbar"
+                        onkeyup="search_books()">
+                    <button type="button" id="searchbar" class="btn btn-success">Search</button>
+                    <ol id='list'>
+                        <li class="books_search">The Mysterious Affair at Styles</li>
+                        <li class="books_search">Alice in Wonderland</li>
+                        <li class="books_search">Helga Out of Hedgelands</li>
+                        <li class="books_search"><a href="./book/The-Lost-World/pg123098.html">The Lost World</a></li>
+                        <li class="books_search">Adventures of Pinocchio</li>
+                        <li class="books_search"></li>
+                        <li class="books_search"></li>
+                        <li class="books_search"></li>
+                        <li class="books_search"></li>
+                        <li class="books_search"></li>
+                        <li class="books_search"></li>
+                        <li class="books_search"></li>
+                        <li class="books_search"></li>
+                        <li class="books_search"></li>
+                        <li class="books_search"></li>
+                        <li class="books_search"></li>
+                        <li class="books_search"></li>
+                    </ol>
+                </form>
+            </ul>
+
+        </div>
+    </header>
+    <div class="container-lg head">
+        <div class="bs-example container-lg ">
+            <div class="row">
+                <div class="col-md-2 book-poster">
+                    <a id="lost" href="./books/Shard-of-Glass/137684.html"><img src="./images/shard of glass.jpg">
+                        <h2>Shard of Glass</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a>
+                    
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a id="lost" href="./books/Single-Miss-Tennessee-bw-The-Cryerer/136167.html"><img src="./images/single.jpg">
+                        <h2>Single Miss Tennessee</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a>
+                    
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a id="lost" href="./books/Snake-Eyes/pg138026.html"><img src="./images/snake eyes.jpg">
+                        <h2>Snake Eyes</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a>
+                    
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a id="lost" href="./books/Soldier-Sailor/141221.html"><img src="./images/soldier sailor.jpg">
+                        <h2>Soldier Sailor</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a>
+                    
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a id="lost" href="./books/Star-Dragon/pg130325.html"><img src="./images/star dragon.jpg">
+                        <h2>Star Dragon</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a>
+                    
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a id="lost" href="./books/Straws/137665.html"><img src="./images/straws.jpg">
+                        <h2>Straws</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a>
+                    
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a id="lost" href="./books/Teams/140333.html"><img src="./images/teams.jpg">
+                        <h2>Teams</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a>
+                    
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a id="lost" href="./books/The-Bear/140116.html"><img src="./images/the bear.jpg">
+                        <h2>The Bear</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a>
+                    
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a id="lost" href="./books/The-Ebony-Frame/142285.html"><img src="./images/ebony frame.jpg">
+                        <h2>The Ebony Frame</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a>
+                    
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a id="lost" href="./books/The-Fifth-of-October/145798.html"><img src="./images/fifth of october.jpg">
+                        <h2>The Fifth of October</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a>
+                    
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a id="lost" href="./books/The-Galloping-Ghost/136760.html"><img src="./images/galloping ghost.jpg">
+                        <h2>The Galloping Ghost</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a>
+                    
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a id="lost" href="./books/The-Ghost-Breaker/140230.html"><img src="./images/ghost breaker.jpg">
+                        <h2>The Ghost Breaker</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a>
+                    
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a id="lost" href="./books/The-Ghost-Pirates/pg128507.html"><img src="./images/the ghost pirates.jpg">
+                        <h2>The Ghost Pirates</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a>
+                    
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a id="lost" href="./books/The-Ghost-Ship/136762.html"><img src="./images/ghost ship.jpg">
+                        <h2>The Ghost Ship</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a>
+                    
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a id="lost" href="./books/The-Ghost/pg132132.html"><img src="./images/the ghost.jpg">
+                        <h2>The Ghost</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a>
+                    
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a id="lost" href="./books/The-Grey-Room/126286.html"><img src="./images/grey room.jpg">
+                        <h2>The Grey Room</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a>
+                    
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a id="lost" href="./books/The-Haunted-House/pg131791.html"><img src="./images/haunted.jpg">
+                        <h2>The Haunted House</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a>
+                    
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a id="lost" href="./books/The-Legend-of-Sleepy-Hollow/pg124575.html"><img src="./images/sleepy hollow.jpg">
+                        <h2>The Legend of Sleepy Hollow</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a>
+                    
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a id="lost" href="./books/The-Lost-Stradivarius/132541.html"><img src="./images/the lost stradivarius.jpg">
+                        <h2>The Lost Stradivarius</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a>
+                    
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a id="lost" href="./books/The-Messenger/136120.html"><img src="./images/messenger.jpg">
+                        <h2>The Messenger</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a>
+                    
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a id="lost" href="./books/The-Shadow-World/138326.html"><img src="./images/shadow world.jpg">
+                        <h2>The Shadow World</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a>
+                    
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a id="lost" href="./books/The-Shape-of-Fear/126152.html"><img src="./images/the shape of fear.jpg">
+                        <h2>The Shape of Fear</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a>
+                    
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a id="lost" href="./books/The-Wall/137910.html"><img src="./images/the wall.jpg">
+                        <h2>The Wall</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a>
+                    
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a id="lost" href="./books/Timeline/141169.html"><img src="./images/time line.jpg">
+                        <h2>Timeline</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a>
+                    
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a id="lost" href="./books/Uranium-Fist/136486.html"><img src="./images/uranium fist.jpg">
+                        <h2>Uranium Fist</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a>
+                    
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a id="lost" href="./books/Utmarker/145281.html"><img src="./images/utmarker.jpg">
+                        <h2>Utmarker</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a>
+                    
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a id="lost" href="./books/Ventus/pg138381.html"><img src="./images/ventus.jpg">
+                        <h2>Ventus</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a>
+                    
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a id="lost" href="./books/Wild-Hard-Sweet/137822.html"><img src="./images/wild hard.jpg">
+                        <h2>Wild Hard Sweet</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a>
+                    
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a id="lost" href="./books/Woman/137479.html"><img src="./images/woman.jpg">
+                        <h2>Woman</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a>
+                    
+                </div>
+                <div class="col-md-2 book-poster">
+                    <a id="lost" href="./books/Youngling/140310.html"><img src="./images/youngling.jpg">
+                        <h2>Youngling</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <lord-icon src="https://cdn.lordicon.com/cmrzxpzz.json" trigger="loop"
+                        style="width:70px;height:70px">
+                        </lord-icon>
+                        <p><button>Read</button></p>
+
+                    </a>
+                    
+                </div>
+              
+            </div>
+        </div>
+    </div>
+
+
+<div id="freepage" class="row">
+<div class="col-md-12">
+    <nav aria-label="Page navigation">
+        <ul class="pagination">
+        <li class="page-item">
+        <a href="../nextpage/free.html" class="page-link" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+        </a>
+        </li>
+        <li class="page-item"><a href="../free/page1.html" class="page-link">1</a></li>
+        <li class="page-item"><a href="../free/page2.html" class="page-link">2</a></li>
+       
+        <li class="page-item">
+        <a href="../free/page2.html" class="page-link" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+        </a>
+        </li>
+        </ul>
+    </nav>
+</div>
+
+  
+</div>
+
+
+    <div class="row">
+        <div id="footer" class="col-md-12 footer">
+            <button id="scroll" onclick="scrollToTop()">
+                <img  src="../nextpage/images/up.png" width="10px" height="10px">
+            </button>
+            <p> <a href="">Disclaimer</a> | <a href=""> Forms </a> | <a href=""> DownLoad </a> | <a href="">
+                    FAQs</a> | <a href="">Terms and Conditions </a> | <a href="">Website Policies </a> | <a href="">
+                    Feedback </a> | <a href=""> Help </a> | <a href=""> Site Map </a> | <a href="">
+                    Articles </a> | <a href=""> Tenders </a> </p>
+                    <P id="copyright"><h2>ⓒ Kabilan Enterprise</h2></P>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+    <script src="../nextpage/script.js"></script>
+</body>
+
+</html>
