@@ -44,10 +44,11 @@ header{
     text-transform: capitalize;
 }
 .book-poster img{
-    width: 310px;
+    width: 100%;
     height: 310px;
     justify-content: center;
     margin-left: -10px;
+    border-radius: 8px;
   
 }
 a:link {
@@ -83,7 +84,7 @@ a:link {
 
     #freepage{
         justify-content: center;
-        margin-left: 90rem;
+        margin-left: 120rem;
        
         
     }
